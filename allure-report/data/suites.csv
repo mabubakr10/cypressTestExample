@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Oct 10 22:55:47 PKT 2020","Sat Oct 10 22:55:51 PKT 2020","3824","","Login to Application of third one","","","","Login to the sendoso application with the valid credentials for the thrid one (example #1)",""
+"passed","Sat Oct 10 22:55:22 PKT 2020","Sat Oct 10 22:55:26 PKT 2020","4539","","Login to Application","","","","Login to the sendoso application with the valid credentials. (example #1)",""
+"passed","Sat Oct 10 22:55:35 PKT 2020","Sat Oct 10 22:55:39 PKT 2020","3467","","Login to Application for the second","","","","Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",""
