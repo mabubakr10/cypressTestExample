@@ -1,5 +1,5 @@
 
-const URL = 'https://integration-app.sendoso.com/'
+const URL = 'https://core-qa.sendoso.com/'
 const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
@@ -14,18 +14,17 @@ class LoginPage {
 
   static visic() {
    // cy.getCookies().should('have.length', 1)
-    cy.clearLocalStorage()
+    cy.clearLocalStorage();
+    console.log("Clearing Storage");
     cy.clearCookies()
+    console.log("Clearing Cookies");
     cy.visit(URL)
+    console.log("Hitting Core QA URL");
 
-    //cy.clearCookies()
-/*    cy.reload(true)
-    cy.clearCookies()
-    */
   }
   static fillUsername(username) {
     cy.get(USERNAME_INPUT).type(username)
-    console.log(username)
+    console.log("Entered"+username+" inside username  field")
   }
 
   static fillPassword(password) {
@@ -51,6 +50,9 @@ class LoginPage {
     cy.switchToIframe(frameToSwitch).clear().type("testing");
   }
 
+    static closePopUp() {
+      cy.xpath('//button[text()="Close"]').click();
+    }
 }
 
 export default LoginPage

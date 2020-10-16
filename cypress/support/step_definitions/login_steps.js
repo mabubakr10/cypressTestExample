@@ -6,10 +6,8 @@ Before(() => {
 });
 
 Given('I open login page', () => {
-  // cy.visit('http://zero.webappsecurity.com/login.html')
   LoginPage.visic()
-  cy.log(URL)
-  //cy.wait(100000)
+
 })
 
 And('I fill username with of sendoso applicaton {string}',username=>{
@@ -44,4 +42,7 @@ When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (fileName,key)=> {
     //keyValues=LoginPage.readFileJson(fileName, key)
      LoginPage.readFileJson(fileName,key)
 
+});
+Given(/^I close pop up button$/, function () {
+    LoginPage.closePopUp();
 });

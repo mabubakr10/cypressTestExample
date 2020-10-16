@@ -6,5 +6,9 @@
   "testing":{
      "type":"home",
      "password":"111 111-1111"
+  },
+  "singleItem":{
+    "type":"afshan.shakoor@sendoso.com",
+    "password":"Sendoso@123???"
   }
 }

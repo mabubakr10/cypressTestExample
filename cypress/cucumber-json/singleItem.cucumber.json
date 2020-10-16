@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing Iframes with single Item",
+    "line": 2,
+    "id": "testing-iframes-with-single-item",
+    "tags": [
+      {
+        "name": "@feature-tag",
+        "line": 1
+      }
+    ],
+    "uri": "singleItem.feature",
+    "elements": [
+      {
+        "id": "testing-iframes-with-single-item;verify-single-item-touch-with-iframes",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify single item touch with iframes",
+        "tags": [
+          {
+            "name": "@feature-tag",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I read the file with the \"profiles\" and \"singleItem\"",
+            "result": {
+              "status": "passed",
+              "duration": 149000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open login page",
+            "result": {
+              "status": "passed",
+              "duration": 8065000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I fill username with of sendoso applicaton \"afshan.shakoor@sendoso.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 1313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I fill password with of sendoso applicaton \"Sendoso@123???\"",
+            "result": {
+              "status": "passed",
+              "duration": 377000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the submit button of second button",
+            "result": {
+              "status": "passed",
+              "duration": 131000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I close pop up button",
+            "result": {
+              "status": "passed",
+              "duration": 10381000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
