@@ -1,5 +1,5 @@
 
-const URL = 'https://integration-app.sendoso.com/'
+const URL = 'https://core-qa.sendoso.com/'
 const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
@@ -29,8 +29,8 @@ class LoginPage {
   }
 
   static fillPassword(password) {
-    debugger
-    cy.get(PASSWORD_INPUT).type(this.data.password)
+  //  debugger
+    cy.get(PASSWORD_INPUT).type(password)
   }
 
   static submit() {

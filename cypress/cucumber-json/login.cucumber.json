@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 121000000
+              "duration": 136000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 6975000000
+              "duration": 6534000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I fill username with of sendoso applicaton \"omer.bakhtiar+5@sendoso.com\"",
             "result": {
               "status": "passed",
-              "duration": 824000000
+              "duration": 1429000000
             }
           },
           {
@@ -61,8 +61,9 @@
             "line": 8,
             "name": "I fill password with of sendoso applicaton \"Omer@1989\"",
             "result": {
-              "status": "passed",
-              "duration": 319000000
+              "status": "failed",
+              "duration": 17000000,
+              "error_message": "TypeError: Cannot read property 'password' of undefined\n    at Function.fillPassword (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/login.feature:159:45)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/login.feature:72:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/login.feature:10620:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/login.feature:9962:35)\nFrom previous event:\n    at Context.thenFn (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:155043:23)\n    at Context.then (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:155477:21)\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169097:15\nFrom previous event:\n    at runCommand (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169076:8)\n    at next (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169222:14)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169250:16"
             }
           },
           {
@@ -71,8 +72,7 @@
             "line": 9,
             "name": "I click on the submit button of second button",
             "result": {
-              "status": "passed",
-              "duration": 128000000
+              "status": "skipped"
             }
           }
         ]

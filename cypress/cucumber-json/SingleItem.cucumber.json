@@ -13,10 +13,10 @@
     "uri": "SingleItem.feature",
     "elements": [
       {
-        "id": "single-item-send-by-selecting-from-the-sending-menu;login-to-the-sendoso-application-with-the-valid-credentials.",
+        "id": "single-item-send-by-selecting-from-the-sending-menu;send-a-single-item-touch",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Login to the sendoso application with the valid credentials.",
+        "line": 16,
+        "name": "Send a single-item touch",
         "tags": [
           {
             "name": "@SingleItem",
@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 158000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 15067000000
+              "duration": 7460000000
             }
           },
           {
@@ -51,9 +51,8 @@
             "line": 7,
             "name": "I fill username with of sendoso applicaton \"jaffar.lone+automation+1@sendoso.com\"",
             "result": {
-              "status": "failed",
-              "duration": 50067000000,
-              "error_message": "AssertionError: Timed out retrying: Expected to find element: `#1-email`, but never found it.\n    at Function.fillUsername (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:152:10)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:69:25)\n    at Context.resolveAndRunStepDefinition (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:10620:9)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:9962:35)"
+              "status": "passed",
+              "duration": 1440000000
             }
           },
           {
@@ -62,7 +61,8 @@
             "line": 8,
             "name": "I fill password with of sendoso applicaton \"Ricochet_37_@_#_qe\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 433000000
             }
           },
           {
@@ -71,16 +71,18 @@
             "line": 9,
             "name": "I click on the submit button of second button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 125000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "I close up the pop up button",
+            "name": "I close up the pop up button after login",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9002000000
             }
           },
           {
@@ -89,7 +91,9 @@
             "line": 11,
             "name": "I click on the Send button",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 50151000000,
+              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<span data-v-4d24e304=\"\" class=\"stl-nav__link_text send-action\">Send</span>`\n\nis being covered by another element:\n\n`<div class=\"modal fade notice-modal show\" id=\"close\" style=\"display: block;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n    at $Cy.ensureDescendents (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:161173:26)\n    at ensureDescendents (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:149779:8)\n    at ensureDescendentsAndScroll (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:149786:14)\n    at ensureElIsNotCovered (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:149915:5)\n    at runAllChecks (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150056:52)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150071:16)\nFrom previous event:\n    at tryFn (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165189:21)\n    at whenStable (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165227:12)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:164742:16\nFrom previous event:\n    at $Cy.retry (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:164722:38)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150074:19)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150076:7\nFrom previous event:\n    at Object.verify (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150003:21)\n    at perform (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:152036:29)\nFrom previous event:\n    at mouseAction (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:152074:20)\n    at Context.click (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:152093:14)\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\nFrom Your Spec Code:\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:44:95)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:10630:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:9972:35)\nFrom Your Spec Code:\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:44:95)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:10630:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:9972:35)"
             }
           },
           {
@@ -97,6 +101,15 @@
             "keyword": "Then ",
             "line": 12,
             "name": "I click on the single item touch",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I signout of the application",
             "result": {
               "status": "skipped"
             }
