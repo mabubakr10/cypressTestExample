@@ -16,21 +16,26 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="added code to fix the issue, browser wont load" />
+    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/plugins/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iupUZYHjiYWHpwX9Jaix9EofVC" />
@@ -41,20 +46,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/cucumber-json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cypress/support/step_definitions" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cypress/cucumber-json" />
-      <recent name="$PROJECT_DIR$/cypress/integration" />
-    </key>
+  <component name="RunManager">
+    <configuration name="cy:open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cy:open" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.cy:open" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,24 +76,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602767347540</updated>
-      <workItem from="1602767348655" duration="96000" />
-      <workItem from="1602852967994" duration="7640000" />
+      <workItem from="1602767348655" duration="505000" />
+      <workItem from="1603008166282" duration="520000" />
     </task>
-    <task id="LOCAL-00001" summary="inital draft of code for single item">
-      <created>1602856145238</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1602856145239</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added code to fix the issue, browser wont load">
-      <created>1603009237141</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1603009237142</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,47 +89,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="inital draft of code for single item" />
-    <MESSAGE value="added code to fix the issue, browser wont load" />
-    <option name="LAST_COMMIT_MESSAGE" value="added code to fix the issue, browser wont load" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="689" height="201" key="GridCell.Tab.0.bottom" timestamp="1602856117910">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state width="689" height="201" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1602856117910" />
-    <state width="689" height="201" key="GridCell.Tab.0.center" timestamp="1602856117908">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state width="689" height="201" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1602856117908" />
-    <state width="689" height="201" key="GridCell.Tab.0.left" timestamp="1602856117903">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state width="689" height="201" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1602856117903" />
-    <state width="689" height="201" key="GridCell.Tab.0.right" timestamp="1602856117909">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state width="689" height="201" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1602856117909" />
-    <state x="314" y="170" key="Vcs.Push.Dialog.v2" timestamp="1603009252042">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state x="314" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1603009252042" />
-    <state x="441" y="179" width="598" height="490" key="find.popup" timestamp="1602929366465">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state x="441" y="179" width="598" height="490" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1602929366465" />
-    <state x="462" y="359" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1602928732360">
-      <screen x="0" y="23" width="1440" height="830" />
-    </state>
-    <state x="462" y="359" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.829@0.23.1440.829" timestamp="1602927662754" />
-    <state x="462" y="359" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.830@0.23.1440.830" timestamp="1602928732360" />
   </component>
 </project>

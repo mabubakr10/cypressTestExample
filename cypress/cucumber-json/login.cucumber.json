@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 333000000
+              "duration": 121000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 25831000000
+              "duration": 6975000000
             }
           },
           {
@@ -51,9 +51,8 @@
             "line": 7,
             "name": "I fill username with of sendoso applicaton \"omer.bakhtiar+5@sendoso.com\"",
             "result": {
-              "status": "failed",
-              "duration": 50182000000,
-              "error_message": "AssertionError: Timed out retrying: Expected to find element: `#1-email`, but never found it.\n    at Function.fillUsername (https://integration-app.sendoso.com/__cypress/tests?p=cypress/integration/login.feature:152:10)\n    at Context.eval (https://integration-app.sendoso.com/__cypress/tests?p=cypress/integration/login.feature:69:25)\n    at Context.resolveAndRunStepDefinition (https://integration-app.sendoso.com/__cypress/tests?p=cypress/integration/login.feature:10620:9)\n    at Context.eval (https://integration-app.sendoso.com/__cypress/tests?p=cypress/integration/login.feature:9962:35)"
+              "status": "passed",
+              "duration": 824000000
             }
           },
           {
@@ -62,7 +61,8 @@
             "line": 8,
             "name": "I fill password with of sendoso applicaton \"Omer@1989\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 319000000
             }
           },
           {
@@ -71,7 +71,8 @@
             "line": 9,
             "name": "I click on the submit button of second button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 128000000
             }
           }
         ]
