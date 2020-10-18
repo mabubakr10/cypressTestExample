@@ -1,7 +1,8 @@
+
 {
-  "phoneNumber":{
-     "type":"omer.bakhtiar+5@sendoso.com",
-     "password":"Omer@1989"
+  "credentials":{
+     "type":"jaffar.lone+automation+1@sendoso.com",
+     "password":"Ricochet_37_@_#_qe"
   },
   "testing":{
      "type":"home",

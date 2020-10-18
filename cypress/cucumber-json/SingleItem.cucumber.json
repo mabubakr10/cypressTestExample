@@ -15,7 +15,7 @@
       {
         "id": "single-item-send-by-selecting-from-the-sending-menu;login-to-the-sendoso-application-with-the-valid-credentials.",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 15,
         "name": "Login to the sendoso application with the valid credentials.",
         "tags": [
           {
@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 131000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 9251000000
+              "duration": 15067000000
             }
           },
           {
@@ -51,8 +51,9 @@
             "line": 7,
             "name": "I fill username with of sendoso applicaton \"jaffar.lone+automation+1@sendoso.com\"",
             "result": {
-              "status": "passed",
-              "duration": 639000000
+              "status": "failed",
+              "duration": 50067000000,
+              "error_message": "AssertionError: Timed out retrying: Expected to find element: `#1-email`, but never found it.\n    at Function.fillUsername (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:152:10)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:69:25)\n    at Context.resolveAndRunStepDefinition (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:10620:9)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/SingleItem.feature:9962:35)"
             }
           },
           {
@@ -61,8 +62,7 @@
             "line": 8,
             "name": "I fill password with of sendoso applicaton \"Ricochet_37_@_#_qe\"",
             "result": {
-              "status": "passed",
-              "duration": 450000000
+              "status": "skipped"
             }
           },
           {
@@ -71,8 +71,7 @@
             "line": 9,
             "name": "I click on the submit button of second button",
             "result": {
-              "status": "passed",
-              "duration": 129000000
+              "status": "skipped"
             }
           },
           {
@@ -81,9 +80,25 @@
             "line": 10,
             "name": "I close up the pop up button",
             "result": {
-              "status": "failed",
-              "duration": 18000000,
-              "error_message": "ReferenceError: frameToSwitch is not defined\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:116:21)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:10628:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:9970:35)\nFrom previous event:\n    at Context.thenFn (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:155043:23)\n    at Context.then (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:155477:21)\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169097:15\nFrom previous event:\n    at runCommand (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169076:8)\n    at next (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169222:14)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169250:16"
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I click on the Send button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click on the single item touch",
+            "result": {
+              "status": "skipped"
             }
           }
         ]

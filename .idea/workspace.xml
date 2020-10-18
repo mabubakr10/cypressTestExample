@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/integration/SingleItem.feature" afterDir="false" />
+    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="inital draft of code for single item">
+      <change afterPath="$PROJECT_DIR$/cypress/support/step_definitions/SingleItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/SingleItem.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/SingleItem.cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/login.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/login.cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/profiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/fixtures/profiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/SingleItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/SingleItem.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +48,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/integration" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/cucumber-json" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/support/step_definitions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/cucumber-json" />
+      <recent name="$PROJECT_DIR$/cypress/integration" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,8 +72,16 @@
       <option name="presentableId" value="Default" />
       <updated>1602767347540</updated>
       <workItem from="1602767348655" duration="96000" />
-      <workItem from="1602852967994" duration="735000" />
+      <workItem from="1602852967994" duration="7362000" />
     </task>
+    <task id="LOCAL-00001" summary="inital draft of code for single item">
+      <created>1602856145238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602856145239</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,5 +98,40 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inital draft of code for single item" />
+    <option name="LAST_COMMIT_MESSAGE" value="inital draft of code for single item" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="689" height="201" key="GridCell.Tab.0.bottom" timestamp="1602856117910">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="689" height="201" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1602856117910" />
+    <state width="689" height="201" key="GridCell.Tab.0.center" timestamp="1602856117908">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="689" height="201" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1602856117908" />
+    <state width="689" height="201" key="GridCell.Tab.0.left" timestamp="1602856117903">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="689" height="201" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1602856117903" />
+    <state width="689" height="201" key="GridCell.Tab.0.right" timestamp="1602856117909">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="689" height="201" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1602856117909" />
+    <state x="314" y="170" key="Vcs.Push.Dialog.v2" timestamp="1602856238542">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="314" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1602856238542" />
+    <state x="441" y="179" width="598" height="490" key="find.popup" timestamp="1602929366465">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="441" y="179" width="598" height="490" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1602929366465" />
+    <state x="462" y="359" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1602928732360">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="462" y="359" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.829@0.23.1440.829" timestamp="1602927662754" />
+    <state x="462" y="359" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.830@0.23.1440.830" timestamp="1602928732360" />
   </component>
 </project>
