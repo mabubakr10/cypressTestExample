@@ -28,14 +28,39 @@
   <component name="ChangeListManager">
     <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/plugins/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/packages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/1b481fe57862a527.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/5764a2e870629465.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/da031606b34f4138.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/timeline.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/severity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/profiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/fixtures/profiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iupUZYHjiYWHpwX9Jaix9EofVC" />
@@ -49,9 +74,25 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/support/step_definitions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.allure:report">
+    <configuration name="allure:report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="allure:report" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="cy:open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -64,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.allure:report" />
         <item itemvalue="npm.cy:open" />
       </list>
     </recent_temporary>
@@ -77,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602767347540</updated>
       <workItem from="1602767348655" duration="505000" />
-      <workItem from="1603008166282" duration="520000" />
+      <workItem from="1603008166282" duration="6266000" />
     </task>
     <servers />
   </component>
@@ -107,5 +149,63 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="144" y="90" key="DiffContextDialog" timestamp="1603009058107">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="144" y="90" key="DiffContextDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009058107" />
+    <state x="458" y="288" key="Github.CreatePullRequestDialog" timestamp="1603009258655">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="458" y="288" key="Github.CreatePullRequestDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009258655" />
+    <state width="1419" height="369" key="GridCell.Tab.0.bottom" timestamp="1603103725596">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603099087315" />
+    <state width="1419" height="369" key="GridCell.Tab.0.bottom/0.23.1440.783@0.23.1440.783" timestamp="1603103725596" />
+    <state width="1419" height="369" key="GridCell.Tab.0.center" timestamp="1603103725595">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603099087313" />
+    <state width="1419" height="369" key="GridCell.Tab.0.center/0.23.1440.783@0.23.1440.783" timestamp="1603103725595" />
+    <state width="1419" height="369" key="GridCell.Tab.0.left" timestamp="1603103725594">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603099087311" />
+    <state width="1419" height="369" key="GridCell.Tab.0.left/0.23.1440.783@0.23.1440.783" timestamp="1603103725594" />
+    <state width="1419" height="369" key="GridCell.Tab.0.right" timestamp="1603103725595">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603099087313" />
+    <state width="1419" height="369" key="GridCell.Tab.0.right/0.23.1440.783@0.23.1440.783" timestamp="1603103725595" />
+    <state x="0" y="91" width="1296" height="648" key="MergeDialog" timestamp="1603009176914">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="0" y="91" width="1296" height="648" key="MergeDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009176914" />
+    <state x="358" y="183" key="MultipleFileMergeDialog" timestamp="1603009176962">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="358" y="183" key="MultipleFileMergeDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009176962" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1603102522965">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1603102522965" />
+    <state x="348" y="180" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1603009164195">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="348" y="180" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.23.1440.783@0.23.1440.783" timestamp="1603009164195" />
+    <state x="320" y="154" key="Vcs.Push.Dialog.v2" timestamp="1603009286557">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="320" y="154" key="Vcs.Push.Dialog.v2/0.23.1440.783@0.23.1440.783" timestamp="1603009286557" />
+    <state x="342" y="153" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1603009248962">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="342" y="153" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009248962" />
+    <state x="468" y="343" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1603042910197">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="468" y="343" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.783@0.23.1440.783" timestamp="1603042910197" />
   </component>
 </project>

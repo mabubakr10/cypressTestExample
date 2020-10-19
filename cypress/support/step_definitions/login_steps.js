@@ -16,10 +16,6 @@ And('I fill username with of sendoso applicaton {string}',username=>{
      LoginPage.fillUsername(username)
 })
 
-And('I fill password with of sendoso applicaton {string}',password=>{
-    LoginPage.fillPassword(password)
-})
-
 When('I click on submit login', () => {
   LoginPage.submit()
 
@@ -43,5 +39,20 @@ When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (fileName,key)=> {
     let keyValues={};
     //keyValues=LoginPage.readFileJson(fileName, key)
      LoginPage.readFileJson(fileName,key)
+
+});
+Given(/^I open up the integration page$/, function () {
+    LoginPage.visic()
+});
+Given(/^I enter the username in the username field on the login page$/, function () {
+    LoginPage.enterUserName()
+});
+
+Given(/^I enter the password in the password field on the login page$/, function () {
+    LoginPage.enterPassword()
+});
+
+Given(/^I click on the close popup of the application$/, function () {
+    LoginPage.closePopup()
 
 });

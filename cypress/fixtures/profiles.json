@@ -1,6 +1,7 @@
 {
-  "phoneNumber":{
-     "type":"omer.bakhtiar+5@sendoso.com",
+  "coffeeurl":{
+     "url":"https://integration-app.sendoso.com",
+     "username":"omer.bakhtiar+5@sendoso.com",
      "password":"Omer@1989"
   },
   "testing":{
