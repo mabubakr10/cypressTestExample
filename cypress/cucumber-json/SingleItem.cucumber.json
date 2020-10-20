@@ -15,7 +15,7 @@
       {
         "id": "single-item-send-by-selecting-from-the-sending-menu;send-a-single-item-touch",
         "keyword": "Scenario",
-        "line": 17,
+        "line": 18,
         "name": "Send a single-item touch",
         "tags": [
           {
@@ -29,10 +29,10 @@
             "arguments": [],
             "keyword": "And ",
             "line": 5,
-            "name": "I read the file with the \"profiles\" and \"phoneNumber\"",
+            "name": "I read the file with the \"profiles\" and \"SingleItem\"",
             "result": {
               "status": "passed",
-              "duration": 187000000
+              "duration": 145000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 11667000000
+              "duration": 6475000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I fill username with of sendoso applicaton \"jaffar.lone+automation+1@sendoso.com\"",
             "result": {
               "status": "passed",
-              "duration": 2664000000
+              "duration": 1521000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I fill password with of sendoso applicaton \"Ricochet_37_@_#_qe\"",
             "result": {
               "status": "passed",
-              "duration": 2470000000
+              "duration": 430000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I click on the submit button of second button",
             "result": {
               "status": "passed",
-              "duration": 14521000000
+              "duration": 10192000000
             }
           },
           {
@@ -82,8 +82,8 @@
             "name": "I close up the pop up button after login",
             "result": {
               "status": "failed",
-              "duration": 3253000000,
-              "error_message": "SyntaxError: Failed to execute 'evaluate' on 'Document': Type conversion failed while evaluating the expression.\nError: Failed to execute 'evaluate' on 'Document': Type conversion failed while evaluating the expression.\nFrom previous event:\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169097:15\nFrom previous event:\n    at runCommand (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169076:8)\n    at next (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169222:14)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169250:16"
+              "duration": 3291000000,
+              "error_message": "SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.\nError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.\nFrom previous event:\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169097:15\nFrom previous event:\n    at runCommand (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169076:8)\n    at next (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169222:14)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169250:16"
             }
           },
           {
@@ -109,6 +109,15 @@
             "keyword": "Then ",
             "line": 13,
             "name": "I select single send method of sending",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I add mailing address",
             "result": {
               "status": "skipped"
             }

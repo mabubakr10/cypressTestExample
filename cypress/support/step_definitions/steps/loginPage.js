@@ -9,8 +9,6 @@ class LoginPage {
    this.dataSet = null
  }
 
-
-
   static visic() {
    // cy.getCookies().should('have.length', 1)
     cy.clearLocalStorage()
@@ -54,7 +52,6 @@ class LoginPage {
     }
 
     static closePopup() {
-       // cy.wait(20000)
         cy.get(Close_PopUp).click({timeout:2000})
     }
 }

@@ -1,5 +1,6 @@
 import { Given, When, Then, And,Before } from 'cypress-cucumber-preprocessor/steps'
 import LoginPage from "./steps/loginPage";
+import SingleItem from "./steps/SingleItem";
 
 Then(/^I click on the Send button$/, function () {
     { force: true }
@@ -14,6 +15,7 @@ Then(/^I click on the single item touch$/, function () {
 Given(/^I close up the pop up button after login$/, function () {
     cy.wait(3000)
     LoginPage.closePopup()
+    cy.xpath("")
 });
 Then(/^I signout of the application$/, function () {
     { force: true }
@@ -26,4 +28,7 @@ Then(/^I select single send method of sending$/, function () {
     { force: true }
     cy.wait(2000)
     cy.get('.container > .row > .col-md-4 > .form-group > #send_option').select('4')
+});
+Then(/^I add mailing address$/, function () {
+    SingleItem.AddressPick()
 });

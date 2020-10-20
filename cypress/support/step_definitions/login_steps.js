@@ -15,7 +15,9 @@ Given('I open login page', () => {
 And('I fill username with of sendoso applicaton {string}',username=>{
      LoginPage.fillUsername(username)
 })
-
+And('I fill password with of sendoso applicaton {string}',username=>{
+    LoginPage.enterPassword()
+})
 When('I click on submit login', () => {
   LoginPage.submit()
 

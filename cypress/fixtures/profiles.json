@@ -7,5 +7,15 @@
   "testing":{
      "type":"home",
      "password":"111 111-1111"
+  },
+  "SingleItem": {
+    "url":"https://core-qa.sendoso.com",
+    "username":"jaffar.lone+automation+1@sendoso.com",
+    "password":"Ricochet_37_@_#_qe",
+    "MailingAdd":"1211 6th Avenue",
+    "Floor":"100",
+    "City": "NY",
+    "Zip": "10036",
+    "Country": "United States"
   }
 }

@@ -11,7 +11,8 @@ Feature: Single Item Send by selecting from the sending menu
     Then I click on the Send button
     Then I click on the single item touch
     Then I select single send method of sending
+    Then I add mailing address
 
     Examples:
       |username                            |password          |fileName|key        |
-      |jaffar.lone+automation+1@sendoso.com|Ricochet_37_@_#_qe|profiles|phoneNumber|
+      |jaffar.lone+automation+1@sendoso.com|Ricochet_37_@_#_qe|profiles|SingleItem |
