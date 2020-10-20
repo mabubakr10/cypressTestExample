@@ -1,5 +1,4 @@
 
-const URL = 'https://core-qa.sendoso.com/'
 const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
@@ -16,7 +15,7 @@ class LoginPage {
    // cy.getCookies().should('have.length', 1)
     cy.clearLocalStorage()
     cy.clearCookies()
-    cy.visit(URL)
+    cy.visit(this.data.url)
 
     //cy.clearCookies()
 /*    cy.reload(true)
@@ -26,11 +25,6 @@ class LoginPage {
   static fillUsername(username) {
     cy.get(USERNAME_INPUT).type(username)
     console.log(username)
-  }
-
-  static fillPassword(password) {
-  //  debugger
-    cy.get(PASSWORD_INPUT).type(password)
   }
 
   static submit() {
@@ -51,13 +45,17 @@ class LoginPage {
     cy.switchToIframe(frameToSwitch).clear().type("testing");
   }
 
+    static enterUserName() {
+        cy.get(USERNAME_INPUT).type(this.data.username)
+    }
+
+    static enterPassword(){
+        cy.get(PASSWORD_INPUT).type(this.data.password)
+    }
+
     static closePopup() {
-        { force: true }
-        cy.get(Close_PopUp).click({timeout:5000})
-        cy.xpath("('.wm-visual-design-button')[4]").click()
-        cy.wait(2000)
-        cy.xpath("(.wm-visual-design-button')[1]").click()
-        cy.wait(2000)
+       // cy.wait(20000)
+        cy.get(Close_PopUp).click({timeout:2000})
     }
 }
 

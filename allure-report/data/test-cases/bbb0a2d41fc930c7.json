@@ -1,12 +1,12 @@
 {
-  "uid" : "1b481fe57862a527",
-  "name" : "Login to the sendoso application with the valid credentials for the thrid one (example #1)",
-  "fullName" : "Login to the sendoso application with the valid credentials for the thrid one (example #1)",
-  "historyId" : "c7d8f44ac36f42183fea1993d0fb7727",
+  "uid" : "bbb0a2d41fc930c7",
+  "name" : "Login to the sendoso application with the valid credentials. (example #1)",
+  "fullName" : "Login to the sendoso application with the valid credentials. (example #1)",
+  "historyId" : "d4864b21ee006f8c58704223c7531ada",
   "time" : {
-    "start" : 1602352547999,
-    "stop" : 1602352551823,
-    "duration" : 3824
+    "start" : 1602352522101,
+    "stop" : 1602352526640,
+    "duration" : 4539
   },
   "status" : "passed",
   "flaky" : false,
@@ -37,8 +37,8 @@
     "steps" : [ {
       "name" : "viewport (\"1920\"; \"1080\")",
       "time" : {
-        "start" : 1602352548006,
-        "stop" : 1602352548015,
+        "start" : 1602352522109,
+        "stop" : 1602352522118,
         "duration" : 9
       },
       "status" : "passed",
@@ -52,17 +52,17 @@
     }, {
       "name" : "Given I open login page",
       "time" : {
-        "start" : 1602352548022,
-        "stop" : 1602352549799,
-        "duration" : 1777
+        "start" : 1602352522125,
+        "stop" : 1602352525001,
+        "duration" : 2876
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "clearCookies",
         "time" : {
-          "start" : 1602352548023,
-          "stop" : 1602352548037,
-          "duration" : 14
+          "start" : 1602352522126,
+          "stop" : 1602352522139,
+          "duration" : 13
         },
         "status" : "passed",
         "steps" : [ ],
@@ -75,8 +75,8 @@
       }, {
         "name" : "clearLocalStorage",
         "time" : {
-          "start" : 1602352548037,
-          "stop" : 1602352548040,
+          "start" : 1602352522140,
+          "stop" : 1602352522143,
           "duration" : 3
         },
         "status" : "passed",
@@ -90,9 +90,9 @@
       }, {
         "name" : "visit (\"https://integration-app.sendoso.com\")",
         "time" : {
-          "start" : 1602352548040,
-          "stop" : 1602352549760,
-          "duration" : 1720
+          "start" : 1602352522143,
+          "stop" : 1602352524940,
+          "duration" : 2797
         },
         "status" : "passed",
         "steps" : [ ],
@@ -105,8 +105,8 @@
       }, {
         "name" : "POST https://sendoso.auth0.com/usernamepassword/challenge",
         "time" : {
-          "start" : 1602352549760,
-          "stop" : 1602352549760,
+          "start" : 1602352524940,
+          "stop" : 1602352524940,
           "duration" : 0
         },
         "status" : "passed",
@@ -120,9 +120,9 @@
       }, {
         "name" : "clearCookies",
         "time" : {
-          "start" : 1602352549760,
-          "stop" : 1602352549792,
-          "duration" : 32
+          "start" : 1602352524940,
+          "stop" : 1602352524994,
+          "duration" : 54
         },
         "status" : "passed",
         "steps" : [ ],
@@ -135,8 +135,8 @@
       }, {
         "name" : "log (\"function URL() { [native code] }\")",
         "time" : {
-          "start" : 1602352549792,
-          "stop" : 1602352549795,
+          "start" : 1602352524994,
+          "stop" : 1602352524997,
           "duration" : 3
         },
         "status" : "passed",
@@ -155,19 +155,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "And I fill username with of sendoso applicaton \"omer.bakhtiar+5@sendoso.com\"",
+      "name" : "And I fill username with of sendoso applicaton \"manager@sendoso.com\"",
       "time" : {
-        "start" : 1602352549799,
-        "stop" : 1602352551402,
-        "duration" : 1603
+        "start" : 1602352525001,
+        "stop" : 1602352526135,
+        "duration" : 1134
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get (\"#1-email\")",
         "time" : {
-          "start" : 1602352549800,
-          "stop" : 1602352550133,
-          "duration" : 333
+          "start" : 1602352525001,
+          "stop" : 1602352525010,
+          "duration" : 9
         },
         "status" : "passed",
         "steps" : [ ],
@@ -178,11 +178,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "type (\"omer.bakhtiar+5@sendoso.com\")",
+        "name" : "type (\"manager@sendoso.com\")",
         "time" : {
-          "start" : 1602352550133,
-          "stop" : 1602352551396,
-          "duration" : 1263
+          "start" : 1602352525010,
+          "stop" : 1602352526128,
+          "duration" : 1118
         },
         "status" : "passed",
         "steps" : [ ],
@@ -200,19 +200,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "And I fill password with of sendoso applicaton \"Omer@1989\"",
+      "name" : "And I fill password with of sendoso applicaton \"Sendit415415!!\"",
       "time" : {
-        "start" : 1602352551402,
-        "stop" : 1602352551717,
-        "duration" : 315
+        "start" : 1602352526135,
+        "stop" : 1602352526523,
+        "duration" : 388
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get (\"input[name=\"password\"]\")",
         "time" : {
-          "start" : 1602352551403,
-          "stop" : 1602352551416,
-          "duration" : 13
+          "start" : 1602352526137,
+          "stop" : 1602352526151,
+          "duration" : 14
         },
         "status" : "passed",
         "steps" : [ ],
@@ -223,11 +223,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "type (\"Omer@1989\")",
+        "name" : "type (\"Sendit415415!!\")",
         "time" : {
-          "start" : 1602352551416,
-          "stop" : 1602352551714,
-          "duration" : 298
+          "start" : 1602352526151,
+          "stop" : 1602352526517,
+          "duration" : 366
         },
         "status" : "passed",
         "steps" : [ ],
@@ -247,17 +247,17 @@
     }, {
       "name" : "When I click on submit login",
       "time" : {
-        "start" : 1602352551717,
-        "stop" : 1602352551823,
-        "duration" : 106
+        "start" : 1602352526523,
+        "stop" : 1602352526640,
+        "duration" : 117
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get (\"button[name=\"submit\"]\")",
         "time" : {
-          "start" : 1602352551718,
-          "stop" : 1602352551724,
-          "duration" : 6
+          "start" : 1602352526524,
+          "stop" : 1602352526535,
+          "duration" : 11
         },
         "status" : "passed",
         "steps" : [ ],
@@ -270,9 +270,9 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1602352551724,
-          "stop" : 1602352551821,
-          "duration" : 97
+          "start" : 1602352526535,
+          "stop" : 1602352526638,
+          "duration" : 103
         },
         "status" : "passed",
         "steps" : [ ],
@@ -285,8 +285,8 @@
       }, {
         "name" : "POST https://sendoso.auth0.com/usernamepassword/login",
         "time" : {
-          "start" : 1602352551821,
-          "stop" : 1602352551821,
+          "start" : 1602352526638,
+          "stop" : 1602352526638,
           "duration" : 0
         },
         "status" : "passed",
@@ -325,13 +325,13 @@
   } ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Login to Application of third one"
+    "value" : "Login to Application"
   }, {
     "name" : "tag",
-    "value" : "third"
+    "value" : "feature-tag"
   }, {
     "name" : "feature",
-    "value" : "Login to Application of third one"
+    "value" : "Login to Application"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -344,8 +344,8 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ "third" ]
+    "tags" : [ "feature-tag" ]
   },
-  "source" : "1b481fe57862a527.json",
+  "source" : "bbb0a2d41fc930c7.json",
   "parameterValues" : [ ]
 }

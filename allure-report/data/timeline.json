@@ -3,7 +3,7 @@
   "name" : "timeline",
   "children" : [ {
     "name" : "Login to the sendoso application with the valid credentials for the thrid one (example #1)",
-    "uid" : "1b481fe57862a527",
+    "uid" : "c562e30d7605fe5b",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
@@ -15,27 +15,27 @@
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
-    "uid" : "5764a2e870629465",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1602352535798,
-      "stop" : 1602352539265,
-      "duration" : 3467
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "Login to the sendoso application with the valid credentials. (example #1)",
-    "uid" : "da031606b34f4138",
+    "uid" : "bbb0a2d41fc930c7",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
       "start" : 1602352522101,
       "stop" : 1602352526640,
       "duration" : 4539
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
+    "uid" : "7cd70ec3a432b957",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1602352535798,
+      "stop" : 1602352539265,
+      "duration" : 3467
     },
     "flaky" : false,
     "newFailed" : false,

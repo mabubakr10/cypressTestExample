@@ -1,8 +1,8 @@
-
 {
-  "credentials":{
-     "type":"jaffar.lone+automation+1@sendoso.com",
-     "password":"Ricochet_37_@_#_qe"
+  "coffeeurl":{
+     "url":"https://integration-app.sendoso.com",
+     "username":"omer.bakhtiar+5@sendoso.com",
+     "password":"Omer@1989"
   },
   "testing":{
      "type":"home",
