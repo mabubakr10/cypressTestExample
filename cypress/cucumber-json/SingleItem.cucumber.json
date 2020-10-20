@@ -15,7 +15,7 @@
       {
         "id": "single-item-send-by-selecting-from-the-sending-menu;send-a-single-item-touch",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 17,
         "name": "Send a single-item touch",
         "tags": [
           {
@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 158000000
+              "duration": 187000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 7460000000
+              "duration": 11667000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I fill username with of sendoso applicaton \"jaffar.lone+automation+1@sendoso.com\"",
             "result": {
               "status": "passed",
-              "duration": 1440000000
+              "duration": 2664000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I fill password with of sendoso applicaton \"Ricochet_37_@_#_qe\"",
             "result": {
               "status": "passed",
-              "duration": 433000000
+              "duration": 2470000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I click on the submit button of second button",
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 14521000000
             }
           },
           {
@@ -81,8 +81,9 @@
             "line": 10,
             "name": "I close up the pop up button after login",
             "result": {
-              "status": "passed",
-              "duration": 9002000000
+              "status": "failed",
+              "duration": 3253000000,
+              "error_message": "SyntaxError: Failed to execute 'evaluate' on 'Document': Type conversion failed while evaluating the expression.\nError: Failed to execute 'evaluate' on 'Document': Type conversion failed while evaluating the expression.\nFrom previous event:\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169097:15\nFrom previous event:\n    at runCommand (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169076:8)\n    at next (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169222:14)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169250:16"
             }
           },
           {
@@ -91,9 +92,7 @@
             "line": 11,
             "name": "I click on the Send button",
             "result": {
-              "status": "failed",
-              "duration": 50151000000,
-              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<span data-v-4d24e304=\"\" class=\"stl-nav__link_text send-action\">Send</span>`\n\nis being covered by another element:\n\n`<div class=\"modal fade notice-modal show\" id=\"close\" style=\"display: block;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n    at $Cy.ensureDescendents (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:161173:26)\n    at ensureDescendents (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:149779:8)\n    at ensureDescendentsAndScroll (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:149786:14)\n    at ensureElIsNotCovered (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:149915:5)\n    at runAllChecks (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150056:52)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150071:16)\nFrom previous event:\n    at tryFn (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165189:21)\n    at whenStable (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165227:12)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:164742:16\nFrom previous event:\n    at $Cy.retry (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:164722:38)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150074:19)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150076:7\nFrom previous event:\n    at Object.verify (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150003:21)\n    at perform (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:152036:29)\nFrom previous event:\n    at mouseAction (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:152074:20)\n    at Context.click (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:152093:14)\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\nFrom Your Spec Code:\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:44:95)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:10630:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:9972:35)\nFrom Your Spec Code:\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:44:95)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:10630:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/SingleItem.feature:9972:35)"
+              "status": "skipped"
             }
           },
           {
@@ -109,7 +108,7 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "I signout of the application",
+            "name": "I select single send method of sending",
             "result": {
               "status": "skipped"
             }

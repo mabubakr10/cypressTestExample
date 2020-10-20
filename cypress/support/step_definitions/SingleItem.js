@@ -1,19 +1,29 @@
 import { Given, When, Then, And,Before } from 'cypress-cucumber-preprocessor/steps'
+import LoginPage from "./steps/loginPage";
 
 Then(/^I click on the Send button$/, function () {
-            cy.get('.main-nav > .stl-sidebar__header > .stl-mb-11 > .stl-button > .stl-nav__link_text').click()
+    { force: true }
+    cy.wait(3000)
+    cy.get('.send-action').click()
 });
 Then(/^I click on the single item touch$/, function () {
-    cy.get('.row > #send_page_touches > .col-sm-4:nth-child(1) > .gift-wrap > .img-gift').click()
-    cy.get('#send_page_touches > .col-sm-4 > .gift-wrap > .hide > #egift_60760_0').type('60760')
+    { force: true }
+    cy.wait(3000)
+    cy.xpath("//div[@class='col-sm-4 egift_radio_btn_div'][1]").click()
 });
 Given(/^I close up the pop up button after login$/, function () {
-    cy.wait(2000)
-    cy.get('#close > .modal-dialog > .modal-content > .modal-footer > .col-md-3').click()
+    cy.wait(3000)
+    LoginPage.closePopup()
 });
-
 Then(/^I signout of the application$/, function () {
+    { force: true }
     cy.wait(2000)
-    cy.get('.stl-nav__list > .stl-position-relative > .stl-nav__link > .stl-nav__link_icon > .icon-setting').click()
-    cy.get('.stl-nav__list > .stl-position-relative > .stl-dropdown__menu > .stl-dropdown__link:nth-child(2) > span').click()
+    cy.xpath("//*[@id=\"global_nav_sidebar\"]/div/div[4]/nav/ul/li[3]/a").click()
+    cy.wait(2000)
+    cy.xpath("//*[@id=\"global_nav_sidebar\"]/div/div[4]/nav/ul/li[3]/div/a[2]").click()
+});
+Then(/^I select single send method of sending$/, function () {
+    { force: true }
+    cy.wait(2000)
+    cy.get('.container > .row > .col-md-4 > .form-group > #send_option').select('4')
 });

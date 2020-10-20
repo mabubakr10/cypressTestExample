@@ -51,6 +51,14 @@ class LoginPage {
     cy.switchToIframe(frameToSwitch).clear().type("testing");
   }
 
+    static closePopup() {
+        { force: true }
+        cy.get(Close_PopUp).click({timeout:5000})
+        cy.xpath("('.wm-visual-design-button')[4]").click()
+        cy.wait(2000)
+        cy.xpath("(.wm-visual-design-button')[1]").click()
+        cy.wait(2000)
+    }
 }
 
 export default LoginPage

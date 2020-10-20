@@ -19,14 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="added code to fix the issue, browser wont load">
+    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="added code for closing browser and also signout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/SingleItem.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/SingleItem.cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/login.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/login.cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/second.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/second.cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/integration/SingleItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/SingleItem.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/SingleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/SingleItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/seconPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/seconPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +80,14 @@
       <workItem from="1602767348655" duration="505000" />
       <workItem from="1603008166282" duration="520000" />
     </task>
+    <task id="LOCAL-00001" summary="added code for closing browser and also signout">
+      <created>1603021640955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603021640956</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +117,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added code for closing browser and also signout" />
+    <option name="LAST_COMMIT_MESSAGE" value="added code for closing browser and also signout" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="164" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603019088677">
       <screen x="0" y="23" width="1440" height="828" />
@@ -130,5 +142,9 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="689" height="193" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1603019894542" />
+    <state x="330" y="156" key="Vcs.Push.Dialog.v2" timestamp="1603021653427">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="330" y="156" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1603021653427" />
   </component>
 </project>

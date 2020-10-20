@@ -8,6 +8,7 @@ import LoginPage from "./loginPage"
 static submit_page_second() {
     console.log(LoginPage.data)
     cy.get(SUBMIT_BUTTON_Second).click()
+    cy.wait(4000)
 }
  
 }
