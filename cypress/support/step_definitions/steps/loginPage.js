@@ -51,6 +51,7 @@ class LoginPage {
   }
 
     static closePopUp() {
+     cy.wait(12000);
       cy.xpath('//button[text()="Close"]').click();
     }
 }

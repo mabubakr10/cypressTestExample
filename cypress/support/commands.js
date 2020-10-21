@@ -29,12 +29,11 @@ Cypress.Commands.add('readJSonData', (fileName,key) => {
     this.data = jsonObj[key]
   });
 
-Cypress.Commands.add('switchToIframe', (iframe) => {
-  return cy
-    .get(iframe)
-    .its('0.contentDocument.body')
-    .should('be.visible')
-    .then(cy.wrap);
-});
-
+  Cypress.Commands.add('switchToIframe', (iframe) => {
+    return cy
+        .get(iframe)
+        .its('0.contentDocument.body')
+        .should('be.visible')
+        .then(cy.wrap);
+  });
 })

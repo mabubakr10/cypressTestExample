@@ -2,11 +2,12 @@ import { Given, When, Then, And,Before } from 'cypress-cucumber-preprocessor/ste
 import LoginPage from './steps/loginPage'
 
 Before(() => {
-  cy.viewport(1920, 1080)
+  cy.viewport(2000, 3000)
 });
 
 Given('I open login page', () => {
-  LoginPage.visic()
+  // LoginPage.visic()
+    LoginPage.switchToFrameFun();
 
 })
 
