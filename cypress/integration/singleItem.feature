@@ -7,6 +7,7 @@ Feature: Testing Iframes with single Item
     And I fill username with of sendoso applicaton "<username>"
     And I fill password with of sendoso applicaton "<password>"
     And I click on the submit button of second button
+    And I close the popup of the advertise in our application
     And I close pop up button
     And I click on "<tab>" Tab
     And I click on create New Touch button
@@ -34,5 +35,5 @@ Feature: Testing Iframes with single Item
     Then I click on okay button
 
     Examples:
-      |username                  |password      |fileName|key       |fileName |tab    |Touch       |product       |chargeCostTo  |TouchName|FundingSource       |SendTouchTo               |customMessage                               |mailingAddress|recipeintEmail            |RecipientFullName|ButtonText |message|
-      |afshan.shakoor@sendoso.com|Sendoso@123???|profiles|singleItem|profiles |Touches|Single Items|CypressProduct|Funding Source|touchName|QuotingCalculator FS|To a single person/company|This is automation testing with cypress tool|247 East      |afshan.shakoor@sendoso.com|Afshan Shakoor    |Send      |Your item(s) are processing! You'll get an email with tracking info when your package is shipped and delivered. You can get real-time updates at Sendoso.com/analytics|
+      |username                  |password      |fileName     |key       |fileName |tab    |Touch       |product       |chargeCostTo  |TouchName|FundingSource       |SendTouchTo               |customMessage                               |mailingAddress|recipeintEmail            |RecipientFullName|ButtonText |message|
+      |afshan.shakoor@sendoso.com|Sendoso@123???|touchCreation|createtouch|profiles |Touches|Single Items|CypressProduct|Funding Source|touchName|QuotingCalculator FS|To a single person/company|This is automation testing with cypress tool|247 East      |afshan.shakoor@sendoso.com|Afshan Shakoor    |Send      |Your item(s) are processing! You'll get an email with tracking info when your package is shipped and delivered. You can get real-time updates at Sendoso.com/analytics|

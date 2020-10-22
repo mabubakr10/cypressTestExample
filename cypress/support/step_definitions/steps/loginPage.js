@@ -38,23 +38,30 @@ class LoginPage {
   }
 
    static readFileJson(fileName, key) {
-    cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
-      this.data = jsonObj[key]
+    cy.readFile("cypress/fixtures/touchCreation.json").then(jsonObj => {
+    this.data = jsonObj[key]
     });
   }
 
-  static switchToFrameFun()
-  {
-    const frameToSwitch="#mce_0_ifr";
-    const body='0.contentDocument.body'
-    cy.visit('https://the-internet.herokuapp.com/iframe');
-    cy.switchToIframe(frameToSwitch).clear().type("testing");
-  }
+  // static switchToFrameFun()
+  // {
+  //   const frameToSwitch="#mce_0_ifr";
+  //   const body='0.contentDocument.body'
+  //   cy.visit('https://the-internet.herokuapp.com/iframe');
+  //   cy.switchToIframe(frameToSwitch).clear().type("testing");
+  // }
 
     static closePopUp() {
      cy.get(Close_PopUp).click({timeout:3000, multiple: true ,force: true});
 
     }
+
+
+    static closePopupAdvertise()
+    {
+     cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
+     }
+
 }
 
 export default LoginPage

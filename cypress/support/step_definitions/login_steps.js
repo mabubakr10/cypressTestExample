@@ -47,3 +47,6 @@ When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (fileName,key)=> {
 Given(/^I close pop up button$/, function () {
     LoginPage.closePopUp();
 });
+Given( /^I close the popup of the advertise in our application$/, function () {
+LoginPage.closePopupAdvertise();
+} );

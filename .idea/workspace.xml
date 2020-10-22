@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="Completed handling IFrames with handwritten touch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/example.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/fixtures/touchCreation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/singleItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/singleItem.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
