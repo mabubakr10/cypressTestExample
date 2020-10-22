@@ -1,8 +1,9 @@
 import LoginPage from "./loginPage";
-const createTouchButton = '//a[contains(text(),"Create New Touch")]';
-const nextButton="//div[@class='col-lg-2 ml-auto']//input[@name='commit']";
-const touchName="#touch_name";
-const displaynameField="#touch_name_for_sender",
+
+const createTouchButton = '//a[contains(text(),"Create New Touch")]',
+nextButton="//div[@class='col-lg-2 ml-auto']//input[@name='commit']",
+touchName="#touch_name",
+displaynameField="#touch_name_for_sender",
 finishButton="//input[@value = 'Finish']",
 sendButton="//a[@href='/send']",
 sendToDropDown="#send_option",
@@ -11,8 +12,8 @@ recipientName="#send_name",
 messageField='#swal2-content',
 okayButton="//button[@type='button'][contains(text(),'OK')]",
 mailingAddressField="#street_number";
-
 let splittedUrl;
+
 class touchPage
 {
 
@@ -61,7 +62,6 @@ class touchPage
         let fundingSourcetoSelect="#touch_funding_source_id";
         cy.get(fundingSourcetoSelect).select(LoginPage.data.FS);
         cy.log("Selected funding source is "+LoginPage.data.FS)
-        // cy.SelectByText(fundingSourcetoSelect,fundingSource)
     }
 
     static editTouchName()
@@ -75,7 +75,7 @@ class touchPage
 
     }
 
-    static enterDisplayName(displayname) {
+    static enterDisplayName() {
      cy.get(displaynameField).clear();
      cy.get(displaynameField).type(LoginPage.data.TouchName+" "+splittedUrl);
      cy.log(LoginPage.data.TouchName+" enterted inside display name field")
@@ -146,7 +146,8 @@ class touchPage
         cy.get(messageField).should('have.text',LoginPage.data.message);
         cy.log("Verified the success message displayed after sending touch is "+LoginPage.data.message);
     }
-    static clickOkayButton() {
+    static clickOkayButton()
+    {
     cy.xpath(okayButton).click();
     cy.log("Clicked on okay button on popup")
     }
