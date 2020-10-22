@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"singleItem\"",
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 130000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 7286000000
+              "duration": 7019000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I fill username with of sendoso applicaton \"afshan.shakoor@sendoso.com\"",
             "result": {
               "status": "passed",
-              "duration": 1312000000
+              "duration": 1241000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I fill password with of sendoso applicaton \"Sendoso@123???\"",
             "result": {
               "status": "passed",
-              "duration": 384000000
+              "duration": 399000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I click on the submit button of second button",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 132000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "I close pop up button",
             "result": {
               "status": "passed",
-              "duration": 13305000000
+              "duration": 12350000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "I click on \"Touches\" Tab",
             "result": {
               "status": "passed",
-              "duration": 2924000000
+              "duration": 2767000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I click on create New Touch button",
             "result": {
               "status": "passed",
-              "duration": 2224000000
+              "duration": 3311000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "I select \"Single Items\" touch under Inventoried Sends at index",
             "result": {
               "status": "passed",
-              "duration": 458000000
+              "duration": 435000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 3197000000
+              "duration": 2957000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "I select \"CypressProduct\" product from existing items",
             "result": {
               "status": "passed",
-              "duration": 252000000
+              "duration": 246000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 2311000000
+              "duration": 2069000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "I select charge cost to \"Funding Source\"",
             "result": {
               "status": "passed",
-              "duration": 338000000
+              "duration": 363000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "I select \"QuotingCalculator FS\" funding source to associate touch",
             "result": {
               "status": "passed",
-              "duration": 288000000
+              "duration": 363000000
             }
           },
           {
@@ -171,8 +171,9 @@
             "line": 19,
             "name": "I edit up the touchName \"touchName\" appearing at the page of enter touch details",
             "result": {
-              "status": "passed",
-              "duration": 975000000
+              "status": "failed",
+              "duration": 306000000,
+              "error_message": "CypressError: `cy.type()` failed because it targeted a disabled element.\n\nThe element typed into was:\n\n  > <input placeholder=\" \" class=\"floating-input small-floating-label, character-limit-validation\" required=\"required\" data-max-char-limit=\"50\" data-apply-characters-limit=\"false\" type=\"text\" value=\"Custom\" name=\"touch[name]\" id=\"touch_name\">\n\nEnsure the element does not have an attribute named `disabled` before typing into it.\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154738:27\nFrom previous event:\n    at onReady (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154730:14)\n    at runAllChecks (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150909:14)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150918:16)\nFrom previous event:\n    at tryFn (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:166066:21)\n    at whenStable (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:166104:12)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165619:16\nFrom previous event:\n    at $Cy.retry (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165599:38)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150921:19)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150923:7\nFrom previous event:\n    at Object.verify (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150850:21)\n    at handleFocused (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154702:29)\n    at $Cy.type (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154761:12)\n    at $Cy.now (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:170624:47)\n    at clear (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154824:17)\nFrom previous event:\n    at Context.clear (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154842:47)\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:170550:21)\nFrom Your Spec Code:\n    at Function.editTouchName (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:311:25)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:444:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10879:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10221:35)\nFrom Your Spec Code:\n    at Function.editTouchName (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:311:25)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:444:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10879:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10221:35)"
             }
           },
           {
@@ -181,8 +182,7 @@
             "line": 20,
             "name": "I enter the display name \"touchName\" for sender",
             "result": {
-              "status": "passed",
-              "duration": 708000000
+              "status": "skipped"
             }
           },
           {
@@ -191,8 +191,7 @@
             "line": 21,
             "name": "I click on the next step of the create touch",
             "result": {
-              "status": "passed",
-              "duration": 254000000
+              "status": "skipped"
             }
           },
           {
@@ -201,8 +200,7 @@
             "line": 22,
             "name": "I verify that user is on the sales force tracking page",
             "result": {
-              "status": "passed",
-              "duration": 3634000000
+              "status": "skipped"
             }
           },
           {
@@ -211,8 +209,7 @@
             "line": 23,
             "name": "I click on the next step of the create touch",
             "result": {
-              "status": "passed",
-              "duration": 2918000000
+              "status": "skipped"
             }
           },
           {
@@ -221,8 +218,7 @@
             "line": 24,
             "name": "I click on the Finish button appearing on add touch to group page",
             "result": {
-              "status": "passed",
-              "duration": 5294000000
+              "status": "skipped"
             }
           },
           {
@@ -231,8 +227,7 @@
             "line": 25,
             "name": "I click on Send button",
             "result": {
-              "status": "passed",
-              "duration": 6599000000
+              "status": "skipped"
             }
           },
           {
@@ -241,8 +236,7 @@
             "line": 26,
             "name": "I select \"touchName\" touch",
             "result": {
-              "status": "passed",
-              "duration": 326000000
+              "status": "skipped"
             }
           },
           {
@@ -251,8 +245,7 @@
             "line": 27,
             "name": "I select the \"To a single person/company\"option to send touch to",
             "result": {
-              "status": "passed",
-              "duration": 802000000
+              "status": "skipped"
             }
           },
           {
@@ -261,8 +254,7 @@
             "line": 28,
             "name": "I enter \"This is automation testing with cypress tool\" custom message for touch",
             "result": {
-              "status": "passed",
-              "duration": 5648000000
+              "status": "skipped"
             }
           },
           {
@@ -271,8 +263,7 @@
             "line": 29,
             "name": "I enter \"247 East\" Mailing Address",
             "result": {
-              "status": "passed",
-              "duration": 3083000000
+              "status": "skipped"
             }
           },
           {
@@ -281,8 +272,7 @@
             "line": 30,
             "name": "I Enter \"afshan.shakoor@sendoso.com\" Recipients Email",
             "result": {
-              "status": "passed",
-              "duration": 740000000
+              "status": "skipped"
             }
           },
           {
@@ -291,8 +281,7 @@
             "line": 31,
             "name": "I Enter \"Afshan Shakoor\"Recipients Full",
             "result": {
-              "status": "passed",
-              "duration": 798000000
+              "status": "skipped"
             }
           },
           {
@@ -301,8 +290,7 @@
             "line": 32,
             "name": "I click on \"Send\" button on screen",
             "result": {
-              "status": "passed",
-              "duration": 391000000
+              "status": "skipped"
             }
           },
           {
@@ -311,8 +299,7 @@
             "line": 33,
             "name": "I verify action has been performed with message \"Your item(s) are processing! You'll get an email with tracking info when your package is shipped and delivered. You can get real-time updates at Sendoso.com/analytics\"",
             "result": {
-              "status": "passed",
-              "duration": 7158000000
+              "status": "skipped"
             }
           },
           {
@@ -321,8 +308,7 @@
             "line": 34,
             "name": "I click on okay button",
             "result": {
-              "status": "passed",
-              "duration": 327000000
+              "status": "skipped"
             }
           }
         ]

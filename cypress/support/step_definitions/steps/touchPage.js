@@ -9,7 +9,8 @@ sendToDropDown="#send_option",
 recipientEmailField="#send_email",
 recipientName="#send_name",
 messageField='#swal2-content',
-okayButton="//button[@type='button'][contains(text(),'OK')]";
+okayButton="//button[@type='button'][contains(text(),'OK')]",
+mailingAddressField="#street_number";
 
 let splittedUrl;
 class touchPage
@@ -113,7 +114,6 @@ class touchPage
     }
 
     static enterMailingAddress(mailingAddress) {
-        const mailingAddressField="#street_number";
         cy.get(mailingAddressField).clear();
         cy.get(mailingAddressField).type(mailingAddress);
         cy.wait(2000);
@@ -147,7 +147,6 @@ class touchPage
     static verifyActionPerformed(message) {
         cy.get(messageField).should('have.text', message);
         cy.log("Verified the success message displayed after sending touch is "+message);
-
     }
     static clickOkayButton() {
     cy.xpath(okayButton).click();
