@@ -6,8 +6,8 @@ Before(() => {
 });
 
 Given('I open login page', () => {
-  // LoginPage.visic()
-    LoginPage.switchToFrameFun();
+  LoginPage.visic()
+  //   LoginPage.switchToFrameFun();
 
 })
 

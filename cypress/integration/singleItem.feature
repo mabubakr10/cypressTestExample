@@ -21,7 +21,6 @@ Feature: Testing Iframes with single Item
     Then I click on the next step of the create touch
     Then I verify that user is on the sales force tracking page
     Then I click on the next step of the create touch
-##    Then I verify that user is on the add group page of the touch
     Then I click on the Finish button appearing on add touch to group page
     Then I click on Send button
     Then I select "<TouchName>" touch
@@ -30,10 +29,10 @@ Feature: Testing Iframes with single Item
     Then I enter "<mailingAddress>" Mailing Address
     Then I Enter "<recipeintEmail>" Recipients Email
     Then I Enter "<RecipientFullName>"Recipients Full
+    Then I click on "<ButtonText>" button on screen
+    Then I verify action has been performed with message "<message>"
+    Then I click on okay button
 
-
-
-      #And I close up the pop up button
     Examples:
-      |username                  |password      |fileName|key       |fileName |tab    |Touch       |product       |chargeCostTo  |TouchName|FundingSource       |SendTouchTo               |customMessage                               |mailingAddress|recipeintEmail|RecipientFullName|
-      |afshan.shakoor@sendoso.com|Sendoso@123???|profiles|singleItem|profiles |Touches|Single Items|CypressProduct|Funding Source|touchName|QuotingCalculator FS|To a single person/company|This is automation testing with cypress tool|247 East      |afshan.shakoor@sendoso.com|Afshan Shakoor|
+      |username                  |password      |fileName|key       |fileName |tab    |Touch       |product       |chargeCostTo  |TouchName|FundingSource       |SendTouchTo               |customMessage                               |mailingAddress|recipeintEmail            |RecipientFullName|ButtonText |message|
+      |afshan.shakoor@sendoso.com|Sendoso@123???|profiles|singleItem|profiles |Touches|Single Items|CypressProduct|Funding Source|touchName|QuotingCalculator FS|To a single person/company|This is automation testing with cypress tool|247 East      |afshan.shakoor@sendoso.com|Afshan Shakoor    |Send      |Your item(s) are processing! You'll get an email with tracking info when your package is shipped and delivered. You can get real-time updates at Sendoso.com/analytics|

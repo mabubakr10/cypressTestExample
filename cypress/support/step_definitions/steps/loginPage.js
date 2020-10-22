@@ -46,6 +46,7 @@ class LoginPage {
   static switchToFrameFun()
   {
     const frameToSwitch="#mce_0_ifr";
+    const body='0.contentDocument.body'
     cy.visit('https://the-internet.herokuapp.com/iframe');
     cy.switchToIframe(frameToSwitch).clear().type("testing");
   }

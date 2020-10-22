@@ -22,8 +22,9 @@ import './commands'
 
 
 import '@shelex/cypress-allure-plugin';
-import './commands';
-require('cypress-xpath')
+import './commands.js';
+require('cypress-xpath');
+
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from

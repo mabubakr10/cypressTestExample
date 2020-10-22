@@ -6,8 +6,10 @@ const displaynameField="#touch_name_for_sender",
 finishButton="//input[@value = 'Finish']",
 sendButton="//a[@href='/send']",
 sendToDropDown="#send_option",
-recipientEmailField="#send_emailr",
-recipientName="#send_name";
+recipientEmailField="#send_email",
+recipientName="#send_name",
+messageField='#swal2-content',
+okayButton="//button[@type='button'][contains(text(),'OK')]";
 
 let splittedUrl;
 class touchPage
@@ -133,20 +135,23 @@ class touchPage
     static verifySaleForceTrackingPage()
     {
         cy.wait(3500);
-        // cy.xpath("//h2[contains(text(),'Salesforce Tracking:')]").then(($salesForce) => {
-        //     const saleForceText = $salesForce.text()
-        //     cy.log("element text is "+saleForceText)
-        //     expect(saleForceText).to.equals(+
-        //         "Salesforce Tracking:")
-        //
-        //
-        // })
-        // cy.get(singleElementSelector)
-        //     .then((element) => {
-        //         expect(element.text()).to.equal('foo');
-        //     });
-        cy.xpath("//h2[contains(text(),'Salesforce Tracking:')]").should('be.visible')
+        cy.xpath("//h2[contains(text(),'Salesforce Tracking:')]").should('be.visible');
+    }
 
+    static sendTouch(buttonText) {
+     const buttonToClick="//button[text()='"+buttonText+"']";
+     cy.xpath(buttonToClick).click();
+     cy.log("Clicked on "+buttonText+ "on send screen");
+    }
+
+    static verifyActionPerformed(message) {
+        cy.get(messageField).should('have.text', message);
+        cy.log("Verified the success message displayed after sending touch is "+message);
+
+    }
+    static clickOkayButton() {
+    cy.xpath(okayButton).click();
+    cy.log("Clicked on okay button on popup")
     }
 }
 export default touchPage

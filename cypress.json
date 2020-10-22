@@ -8,8 +8,7 @@
   "viewportHeight": 768,
   "projectId": "ysysvz",
   "chromeWebSecurity": false,
-  "experimentalSourceRewriting": true
-
-
+  "experimentalSourceRewriting": true,
+  "supportFile": "cypress/support/index.js"
 }
 

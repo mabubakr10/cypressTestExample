@@ -68,3 +68,13 @@ touchPage.enterFullName(fullName);
 Then( /^I verify that user is on the sales force tracking page$/, function () {
 touchPage.verifySaleForceTrackingPage();
 } );
+
+Then( /^I click on "([^"]*)" button on screen$/, buttonToClick=> {
+    touchPage.sendTouch(buttonToClick);
+} );
+Then( /^I verify action has been performed with message "([^"]*)"$/, message=> {
+touchPage.verifyActionPerformed(message);
+} );
+Then( /^I click on okay button$/, function () {
+touchPage.clickOkayButton();
+} );
