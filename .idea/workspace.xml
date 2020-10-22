@@ -19,20 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/singleItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/singleItem.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/touchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/touchPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/touches_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/touches_steps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="Completed handling IFrames with handwritten touch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,8 +61,16 @@
       <option name="presentableId" value="Default" />
       <updated>1602767347540</updated>
       <workItem from="1602767348655" duration="96000" />
-      <workItem from="1603353882948" duration="9218000" />
+      <workItem from="1603353882948" duration="9545000" />
     </task>
+    <task id="LOCAL-00001" summary="Completed handling IFrames with handwritten touch">
+      <created>1603370461266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603370461267</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +87,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed handling IFrames with handwritten touch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed handling IFrames with handwritten touch" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1603353965284">
@@ -110,6 +109,10 @@
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="208" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1603353965284" />
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603370466557">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.814@0.23.1440.814" timestamp="1603370466557" />
     <state x="418" y="178" width="604" height="490" key="find.popup" timestamp="1603364448852">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
