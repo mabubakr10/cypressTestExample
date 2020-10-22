@@ -1,9 +1,9 @@
 import { Given, When, Then, And,Before } from 'cypress-cucumber-preprocessor/steps'
 import LoginPage from './steps/loginPage'
 
-Before(() => {
+/*Before(() => {
   cy.viewport(1920, 1080)
-});
+});*/
 
 Given('I open login page', () => {
   // cy.visit('http://zero.webappsecurity.com/login.html')

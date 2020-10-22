@@ -55,7 +55,7 @@ class LoginPage {
 
     static closePopup() {
        // cy.wait(20000)
-        cy.get(Close_PopUp).click({timeout:2000})
+        cy.get(Close_PopUp).click({timeout:2000, multiple: true ,force: true})
     }
 }
 
