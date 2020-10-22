@@ -7,14 +7,8 @@ Before(() => {
 
 Given('I open login page', () => {
   LoginPage.visic()
-  //   LoginPage.switchToFrameFun();
 
 })
-
-
-// And('I fill username with of sendoso applicaton {string}',username=>{
-//      LoginPage.fillUsername(username)
-// })
 
 And('I fill password with of sendoso applicaton',()=>{
     LoginPage.fillPassword();
@@ -31,14 +25,6 @@ When('I add {int} and {int}',(a,b)=>{
 
 });
 
-Then('I read the file',()=>{
-
-  /*  cy.fixture('profile').as('prf')
-    cy.log("testing")
-    cy.get("@prf").then((prf)=>{
-        cy.log(prf.phoneNumber.type)
-    })*/
-});
 When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (filepath,key)=> {
     let keyValues={};
      LoginPage.readFileJson(filepath,key)

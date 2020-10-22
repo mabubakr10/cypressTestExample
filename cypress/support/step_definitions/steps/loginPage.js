@@ -45,7 +45,6 @@ class LoginPage {
 
     }
 
-
     static closePopupAdvertise()
     {
      cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
