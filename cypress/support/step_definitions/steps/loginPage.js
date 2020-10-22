@@ -20,15 +20,9 @@ class LoginPage {
     console.log("Clearing Cookies");
     cy.visit(URL)
     console.log("Hitting Core QA URL");
-
-  }
-  static fillUsername(username) {
-    cy.get(USERNAME_INPUT).type(username)
-    console.log("Entered"+username+" inside username  field")
   }
 
-  static fillPassword(password) {
-    debugger
+  static fillPassword() {
     cy.get(PASSWORD_INPUT).type(this.data.password)
   }
 
@@ -37,8 +31,8 @@ class LoginPage {
     //cy.get(Close_PopUp).click()
   }
 
-   static readFileJson(fileName, key) {
-    cy.readFile("cypress/fixtures/touchCreation.json").then(jsonObj => {
+   static readFileJson(filePath, key) {
+    cy.readFile(filePath).then(jsonObj => {
     this.data = jsonObj[key]
     });
   }
@@ -62,6 +56,11 @@ class LoginPage {
      cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
      }
 
+    static enterUserName() {
+
+     cy.get(USERNAME_INPUT).type(this.data.username)
+     console.log("Entered"+this.data.username+" inside username  field")
+    }
 }
 
 export default LoginPage

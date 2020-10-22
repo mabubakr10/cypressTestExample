@@ -11,12 +11,13 @@ Given('I open login page', () => {
 
 })
 
-And('I fill username with of sendoso applicaton {string}',username=>{
-     LoginPage.fillUsername(username)
-})
 
-And('I fill password with of sendoso applicaton {string}',password=>{
-    LoginPage.fillPassword(password)
+// And('I fill username with of sendoso applicaton {string}',username=>{
+//      LoginPage.fillUsername(username)
+// })
+
+And('I fill password with of sendoso applicaton',()=>{
+    LoginPage.fillPassword();
 })
 
 When('I click on submit login', () => {
@@ -38,10 +39,9 @@ Then('I read the file',()=>{
         cy.log(prf.phoneNumber.type)
     })*/
 });
-When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (fileName,key)=> {
+When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (filepath,key)=> {
     let keyValues={};
-    //keyValues=LoginPage.readFileJson(fileName, key)
-     LoginPage.readFileJson(fileName,key)
+     LoginPage.readFileJson(filepath,key)
 
 });
 Given(/^I close pop up button$/, function () {
@@ -49,4 +49,7 @@ Given(/^I close pop up button$/, function () {
 });
 Given( /^I close the popup of the advertise in our application$/, function () {
 LoginPage.closePopupAdvertise();
+} );
+Given( /^I fill username with of sendoso applicaton$/, function () {
+LoginPage.enterUserName();
 } );

@@ -21,10 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="Completed handling IFrames with handwritten touch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/fixtures/example.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/fixtures/touchCreation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/touchCreation.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/fixtures/touchCreation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/integration/singleItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/singleItem.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/touchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/touchPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/touches_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/touches_steps.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,10 +122,10 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.814@0.23.1440.814" timestamp="1603370466557" />
-    <state x="418" y="178" width="604" height="490" key="find.popup" timestamp="1603364448852">
+    <state x="418" y="178" width="604" height="490" key="find.popup" timestamp="1603375196332">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state x="418" y="178" width="604" height="490" key="find.popup/0.23.1440.808@0.23.1440.808" timestamp="1603364448852" />
+    <state x="418" y="178" width="604" height="490" key="find.popup/0.23.1440.808@0.23.1440.808" timestamp="1603375196332" />
     <state x="443" y="143" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603372145801">
       <screen x="0" y="23" width="1440" height="814" />
     </state>

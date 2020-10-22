@@ -15,7 +15,7 @@
       {
         "id": "testing-iframes-with-single-item;verify-single-item-touch-with-iframes",
         "keyword": "Scenario",
-        "line": 38,
+        "line": 39,
         "name": "Verify single item touch with iframes",
         "tags": [
           {
@@ -29,10 +29,10 @@
             "arguments": [],
             "keyword": "And ",
             "line": 5,
-            "name": "I read the file with the \"profiles\" and \"singleItem\"",
+            "name": "I read the file with the \"cypress/fixtures/touchCreation.json\" and \"createtouch\"",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 138000000
             }
           },
           {
@@ -42,27 +42,27 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 7019000000
+              "duration": 7105000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I fill username with of sendoso applicaton \"afshan.shakoor@sendoso.com\"",
+            "name": "I fill username with of sendoso applicaton",
             "result": {
               "status": "passed",
-              "duration": 1241000000
+              "duration": 1345000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "I fill password with of sendoso applicaton \"Sendoso@123???\"",
+            "name": "I fill password with of sendoso applicaton",
             "result": {
               "status": "passed",
-              "duration": 399000000
+              "duration": 373000000
             }
           },
           {
@@ -72,243 +72,257 @@
             "name": "I click on the submit button of second button",
             "result": {
               "status": "passed",
-              "duration": 132000000
+              "duration": 126000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "I close pop up button",
+            "name": "I close the popup of the advertise in our application",
             "result": {
               "status": "passed",
-              "duration": 12350000000
+              "duration": 28428000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "I click on \"Touches\" Tab",
+            "name": "I close pop up button",
             "result": {
               "status": "passed",
-              "duration": 2767000000
+              "duration": 236000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "I click on create New Touch button",
+            "name": "I click on \"Touches\" Tab",
             "result": {
               "status": "passed",
-              "duration": 3311000000
+              "duration": 7596000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "I select \"Single Items\" touch under Inventoried Sends at index",
+            "name": "I click on create New Touch button",
             "result": {
               "status": "passed",
-              "duration": 435000000
+              "duration": 2043000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 14,
-            "name": "I click on the next step of the create touch",
+            "name": "I select touch under Inventoried Sends at index",
             "result": {
               "status": "passed",
-              "duration": 2957000000
+              "duration": 422000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
-            "name": "I select \"CypressProduct\" product from existing items",
+            "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 246000000
+              "duration": 3039000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "I click on the next step of the create touch",
+            "name": "I select product from existing items",
             "result": {
               "status": "passed",
-              "duration": 2069000000
+              "duration": 237000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 17,
-            "name": "I select charge cost to \"Funding Source\"",
+            "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 363000000
+              "duration": 2217000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "I select \"QuotingCalculator FS\" funding source to associate touch",
+            "name": "I select charge cost to\"",
             "result": {
               "status": "passed",
-              "duration": 363000000
+              "duration": 336000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
-            "name": "I edit up the touchName \"touchName\" appearing at the page of enter touch details",
+            "name": "I select funding source to associate touch",
             "result": {
-              "status": "failed",
-              "duration": 306000000,
-              "error_message": "CypressError: `cy.type()` failed because it targeted a disabled element.\n\nThe element typed into was:\n\n  > <input placeholder=\" \" class=\"floating-input small-floating-label, character-limit-validation\" required=\"required\" data-max-char-limit=\"50\" data-apply-characters-limit=\"false\" type=\"text\" value=\"Custom\" name=\"touch[name]\" id=\"touch_name\">\n\nEnsure the element does not have an attribute named `disabled` before typing into it.\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154738:27\nFrom previous event:\n    at onReady (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154730:14)\n    at runAllChecks (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150909:14)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150918:16)\nFrom previous event:\n    at tryFn (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:166066:21)\n    at whenStable (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:166104:12)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165619:16\nFrom previous event:\n    at $Cy.retry (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:165599:38)\n    at retryActionability (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150921:19)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150923:7\nFrom previous event:\n    at Object.verify (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:150850:21)\n    at handleFocused (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154702:29)\n    at $Cy.type (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154761:12)\n    at $Cy.now (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:170624:47)\n    at clear (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154824:17)\nFrom previous event:\n    at Context.clear (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:154842:47)\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:170550:21)\nFrom Your Spec Code:\n    at Function.editTouchName (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:311:25)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:444:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10879:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10221:35)\nFrom Your Spec Code:\n    at Function.editTouchName (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:311:25)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:444:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10879:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10221:35)"
+              "status": "passed",
+              "duration": 301000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "I enter the display name \"touchName\" for sender",
+            "name": "I edit up the touchName appearing at the page of enter touch details",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 965000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 21,
-            "name": "I click on the next step of the create touch",
+            "name": "I enter the display name for sender",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 822000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "I verify that user is on the sales force tracking page",
+            "name": "I click on the next step of the create touch",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 274000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 23,
-            "name": "I click on the next step of the create touch",
+            "name": "I verify that user is on the sales force tracking page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3633000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "I click on the Finish button appearing on add touch to group page",
+            "name": "I click on the next step of the create touch",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1851000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 25,
-            "name": "I click on Send button",
+            "name": "I click on the Finish button appearing on add touch to group page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3121000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 26,
-            "name": "I select \"touchName\" touch",
+            "name": "I click on Send button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8688000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 27,
-            "name": "I select the \"To a single person/company\"option to send touch to",
+            "name": "I select touch",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 526000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 28,
-            "name": "I enter \"This is automation testing with cypress tool\" custom message for touch",
+            "name": "I select the option to send touch to",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 819000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 29,
-            "name": "I enter \"247 East\" Mailing Address",
+            "name": "I enter custom message for touch",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6177000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 30,
-            "name": "I Enter \"afshan.shakoor@sendoso.com\" Recipients Email",
+            "name": "I enter Mailing Address",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3075000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 31,
-            "name": "I Enter \"Afshan Shakoor\"Recipients Full",
+            "name": "I Enter Recipients Email",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 826000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 32,
-            "name": "I click on \"Send\" button on screen",
+            "name": "I Enter Recipients Full",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 773000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 33,
-            "name": "I verify action has been performed with message \"Your item(s) are processing! You'll get an email with tracking info when your package is shipped and delivered. You can get real-time updates at Sendoso.com/analytics\"",
+            "name": "I click on \"Send\" button on screen",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 378000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 34,
-            "name": "I click on okay button",
+            "name": "I verify action has been performed with message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7155000000
             }
           }
         ]

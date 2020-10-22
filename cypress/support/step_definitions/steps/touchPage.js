@@ -15,10 +15,7 @@ mailingAddressField="#street_number";
 let splittedUrl;
 class touchPage
 {
-    constructor()
-    {
-        this.dataSet = null
-    }
+
     static clickTab(tabName)
     {
      let tabToClick="//span[text()='"+tabName+"']";
@@ -34,7 +31,8 @@ class touchPage
 
     static selectTouchtype(touchType)
     {
-        let touchName="//div[@id=\"collapse-inventoried-sends-gift\"]//span[contains(text(),'"+touchType+"')]"
+        let tochtape=LoginPage.data.touch;
+        let touchName="//div[@id=\"collapse-inventoried-sends-gift\"]//span[contains(text(),'"+LoginPage.data.touch+"')]"
         cy.xpath(touchName).click();
         cy.log("Selected "+touchType+" touch type");
 
@@ -46,41 +44,41 @@ class touchPage
         cy.log("Clicked on next button of create touch")
     }
 
-    static selectProduct(productToSelect)
+    static selectProduct()
     {
-        let product="//div[@title='"+productToSelect+"']";
+        let product="//div[@title='"+LoginPage.data.product+"']";
         cy.xpath(product).click();
     }
 
-    static selectChargeCostTo(chargeCostTo) {
+    static selectChargeCostTo() {
         let chargeCostToDropDown="#touch_funding_source_based";
-        cy.get(chargeCostToDropDown).select(chargeCostTo);
-        cy.log("Selected charge cost to "+chargeCostTo)
+        cy.get(chargeCostToDropDown).select(LoginPage.data.chargeCostTo);
+        cy.log("Selected charge cost to "+LoginPage.data.chargeCostTo)
     }
 
     static selectFundingSource(fundingSource)
     {
         let fundingSourcetoSelect="#touch_funding_source_id";
-        cy.get(fundingSourcetoSelect).select(fundingSource);
-        cy.log("Selected funding source is "+fundingSource)
+        cy.get(fundingSourcetoSelect).select(LoginPage.data.FS);
+        cy.log("Selected funding source is "+LoginPage.data.FS)
         // cy.SelectByText(fundingSourcetoSelect,fundingSource)
     }
 
-    static editTouchName(touchname)
+    static editTouchName()
     {
         cy.get(touchName).clear();
         cy.url().then(url => {
         splittedUrl=(url.split('/')[4])
-        cy.get(touchName).type(touchname+" "+splittedUrl);
-        cy.log(touchname+" enterted inside touch name field")
+        cy.get(touchName).type(LoginPage.data.TouchName+" "+splittedUrl);
+        cy.log(LoginPage.data.TouchName+" enterted inside touch name field")
         });
 
     }
 
     static enterDisplayName(displayname) {
      cy.get(displaynameField).clear();
-     cy.get(displaynameField).type(displayname+" "+splittedUrl);
-     cy.log(displayname+" enterted inside display name field")
+     cy.get(displaynameField).type(LoginPage.data.TouchName+" "+splittedUrl);
+     cy.log(LoginPage.data.TouchName+" enterted inside display name field")
     }
 
     static clickFinishButton() {
@@ -94,41 +92,40 @@ class touchPage
     cy.log("Clicked on Send button");
     }
 
-    static selectTouch(touch) {
-    let touchToSelect="//strong[contains(text(),'"+touch+" "+splittedUrl+"')]/parent::center/parent::div/label"
+    static selectTouch() {
+    let touchToSelect="//strong[contains(text(),'"+LoginPage.data.TouchName+" "+splittedUrl+"')]/parent::center/parent::div/label"
     cy.xpath(touchToSelect).click();
     }
 
-    static selectoptionToSendTouchTo(sendtouchTo)
+    static selectoptionToSendTouchTo()
     {
-        cy.get(sendToDropDown).select(sendtouchTo);
-        cy.log("Selected "+sendtouchTo+"")
+        cy.get(sendToDropDown).select(LoginPage.data.SendTouchTo);
+        cy.log("Selected "+LoginPage.data.SendTouchTo)
 
     }
 
-    static enterCustomMessage(custommessage) {
+    static enterCustomMessage() {
         const frameToSwitch="#send_custom_message_ifr";
-        cy.switchToIframe(frameToSwitch).clear().type(custommessage);
+        cy.switchToIframe(frameToSwitch).clear().type(LoginPage.data.customMessage);
         cy.log("Entered custom message");
 
     }
 
-    static enterMailingAddress(mailingAddress) {
+    static enterMailingAddress() {
         cy.get(mailingAddressField).clear();
-        cy.get(mailingAddressField).type(mailingAddress);
+        cy.get(mailingAddressField).type(LoginPage.data.mailingAddress);
         cy.wait(2000);
         cy.get(mailingAddressField).type('{downarrow}{enter}')
     }
 
-    static enterRecipientEmail(recipientsEmail) {
-
-        cy.get(recipientEmailField).type(recipientsEmail);
-        cy.log("Entered "+recipientsEmail+" inside recipient email field")
+    static enterRecipientEmail() {
+        cy.get(recipientEmailField).type(LoginPage.data.recipeintEmail);
+        cy.log("Entered "+LoginPage.data.recipeintEmail+" inside recipient email field")
     }
 
-    static enterFullName(fullName) {
-       cy.get(recipientName).clear().type(fullName);
-       cy.log("Entered "+fullName+" inside name field")
+    static enterFullName() {
+       cy.get(recipientName).clear().type(LoginPage.data.RecipientFullName);
+       cy.log("Entered "+LoginPage.data.RecipientFullName+" inside name field")
 
     }
 
@@ -144,9 +141,10 @@ class touchPage
      cy.log("Clicked on "+buttonText+ "on send screen");
     }
 
-    static verifyActionPerformed(message) {
-        cy.get(messageField).should('have.text', message);
-        cy.log("Verified the success message displayed after sending touch is "+message);
+    static verifyActionPerformed()
+    {
+        cy.get(messageField).should('have.text',LoginPage.data.message);
+        cy.log("Verified the success message displayed after sending touch is "+LoginPage.data.message);
     }
     static clickOkayButton() {
     cy.xpath(okayButton).click();
