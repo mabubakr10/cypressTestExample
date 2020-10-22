@@ -6,11 +6,6 @@ const SUBMIT_BUTTON = 'button[name="submit"]'
 const Close_PopUp='.btn-modal-close'
 
 class LoginPage {
- constructor() {
-   this.dataSet = null
- }
-
-
 
   static visic() {
    // cy.getCookies().should('have.length', 1)
