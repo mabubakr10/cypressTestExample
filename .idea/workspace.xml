@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="Completed handling IFrames with handwritten touch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/singleItem.cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/fixtures/touchCreation.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/fixtures/touchCreation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/singleItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/singleItem.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/touchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/touchPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/touches_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/touches_steps.js" afterDir="false" />
+    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="adding files to gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/01c61138-2f0b-48a1-b292-053aa72de50e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/06ff2b2d-5d0b-4b1a-8846-6cbaa4d59bfe-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1828443a-b148-4de4-97dd-c8d8aa5fe363-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/28c3d528-3dc7-4713-88c3-de7da47a284c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2b45cb31-981a-413d-85fb-f45bd0815a9d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2e54ebd1-cccf-4924-aa2b-fa05e47612b0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/34a5dd02-7191-4172-aa93-aea5284b2483-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/36f220e3-25d9-4af3-8b93-83e1a2d64d18-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4951bf78-0cf0-4b55-94b3-a3086be3de8b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4dd97e66-a000-48bd-ae3b-7bedb794129b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5969aa9f-0e05-442e-a197-65dafa8d97eb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/77702b9f-0c11-4d55-b210-deaa40051bbe-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/84f5b716-d9bb-45d3-82cc-d4dfa566cc98-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8f27236e-32df-4340-bffb-d657e82d8cb2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b62489d2-ccaf-40b1-ad91-dd4f9fa1869d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c6272c5d-c95e-48b9-8fc2-c3f6613aa37b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d15f09ce-901d-44d9-8149-8e3f09755f2f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ea059471-0395-402b-9c2f-1f55001c69fd-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
