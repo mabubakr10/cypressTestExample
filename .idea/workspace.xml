@@ -7,24 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="adding files to gitignore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/01c61138-2f0b-48a1-b292-053aa72de50e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/06ff2b2d-5d0b-4b1a-8846-6cbaa4d59bfe-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1828443a-b148-4de4-97dd-c8d8aa5fe363-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/28c3d528-3dc7-4713-88c3-de7da47a284c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2b45cb31-981a-413d-85fb-f45bd0815a9d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2e54ebd1-cccf-4924-aa2b-fa05e47612b0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/34a5dd02-7191-4172-aa93-aea5284b2483-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/36f220e3-25d9-4af3-8b93-83e1a2d64d18-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4951bf78-0cf0-4b55-94b3-a3086be3de8b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4dd97e66-a000-48bd-ae3b-7bedb794129b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5969aa9f-0e05-442e-a197-65dafa8d97eb-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/77702b9f-0c11-4d55-b210-deaa40051bbe-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/84f5b716-d9bb-45d3-82cc-d4dfa566cc98-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8f27236e-32df-4340-bffb-d657e82d8cb2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b62489d2-ccaf-40b1-ad91-dd4f9fa1869d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c6272c5d-c95e-48b9-8fc2-c3f6613aa37b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d15f09ce-901d-44d9-8149-8e3f09755f2f-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ea059471-0395-402b-9c2f-1f55001c69fd-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iupUZYHjiYWHpwX9Jaix9EofVC" />
@@ -115,9 +102,18 @@
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1398" height="208" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1603353965284" />
-    <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603370466557">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="144" y="89" key="MergeDialog" timestamp="1603457237183">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
+    <state x="144" y="89" key="MergeDialog/0.23.1440.804@0.23.1440.804" timestamp="1603457237183" />
+    <state x="358" y="190" key="MultipleFileMergeDialog" timestamp="1603457237223">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="358" y="190" key="MultipleFileMergeDialog/0.23.1440.804@0.23.1440.804" timestamp="1603457237223" />
+    <state x="320" y="161" key="Vcs.Push.Dialog.v2" timestamp="1603457259712">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="320" y="161" key="Vcs.Push.Dialog.v2/0.23.1440.804@0.23.1440.804" timestamp="1603457259712" />
     <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.814@0.23.1440.814" timestamp="1603370466557" />
     <state x="418" y="178" width="604" height="490" key="find.popup" timestamp="1603375196332">
       <screen x="0" y="23" width="1440" height="808" />
@@ -127,5 +123,9 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="443" y="143" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.814@0.23.1440.814" timestamp="1603372145801" />
+    <state x="392" y="217" key="git4idea.merge.GitPullDialog" timestamp="1603457032692">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="392" y="217" key="git4idea.merge.GitPullDialog/0.23.1440.804@0.23.1440.804" timestamp="1603457032692" />
   </component>
 </project>
