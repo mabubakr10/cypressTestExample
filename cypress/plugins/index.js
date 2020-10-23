@@ -21,3 +21,8 @@ module.exports = (on, config) => {
   AllureWriter(on, config);
   return config;
 }
+
+afterEach(() => {
+  // runs after each test in the block
+})
+
