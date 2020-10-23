@@ -24,10 +24,11 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-// Cypress.Commands.add('readJSonData', (fileName,key) => {
-//   cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
-//     this.data = jsonObj[key]
-//   });
+import 'cypress-wait-until';
+Cypress.Commands.add('readJSonData', (fileName,key) => {
+  cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
+    this.data = jsonObj[key]
+  });
 
   Cypress.Commands.add('switchToIframe', (iframe) => {
     return cy
@@ -37,3 +38,4 @@
         .then(cy.wrap);
   });
 
+})
