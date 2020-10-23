@@ -5,7 +5,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:tests": "cypress run",
-    "cy:cucumber:open": "yarn cypress open --env allure=true --config integrationFolder=cypress/integration/cucumber,ignoreTestFiles=*.js,testFiles=**/*.{feature,features} --browser chrome",
+    "cy:cucumber:open": "yarn cypress open --env allure=true --config integrationFolder=cypress/integration,ignoreTestFiles=*.js,testFiles=**/*.{feature,features} --browser chrome",
     "allure:report": "allure generate allure-results --clean -o allure-report",
     "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
     "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
