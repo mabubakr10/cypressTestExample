@@ -15,7 +15,7 @@
       {
         "id": "single-item-send-by-selecting-from-the-sending-menu;send-a-single-item-touch",
         "keyword": "Scenario",
-        "line": 18,
+        "line": 28,
         "name": "Send a single-item touch",
         "tags": [
           {
@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"SingleItem\"",
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 163000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 6475000000
+              "duration": 9315000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I fill username with of sendoso applicaton \"jaffar.lone+automation+1@sendoso.com\"",
             "result": {
               "status": "passed",
-              "duration": 1521000000
+              "duration": 785000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I fill password with of sendoso applicaton \"Ricochet_37_@_#_qe\"",
             "result": {
               "status": "passed",
-              "duration": 430000000
+              "duration": 482000000
             }
           },
           {
@@ -72,54 +72,157 @@
             "name": "I click on the submit button of second button",
             "result": {
               "status": "passed",
-              "duration": 10192000000
+              "duration": 13132000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "I close up the pop up button after login",
+            "name": "I close the cameo pop up",
             "result": {
-              "status": "failed",
-              "duration": 3291000000,
-              "error_message": "SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.\nError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.\nFrom previous event:\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169097:15\nFrom previous event:\n    at runCommand (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169076:8)\n    at next (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169222:14)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169250:16"
+              "status": "passed",
+              "duration": 3552000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 11,
-            "name": "I click on the Send button",
+            "name": "I close up the pop up button after login",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3202000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "I click on the single item touch",
+            "name": "I click on the Send button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6916000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "I select single send method of sending",
+            "name": "I click on the single item touch",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3333000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
+            "name": "I select single send method of sending",
+            "result": {
+              "status": "passed",
+              "duration": 2307000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I add the Recipient Name",
+            "result": {
+              "status": "passed",
+              "duration": 1169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
             "name": "I add mailing address",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 744000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I add the Suite",
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I add the City",
+            "result": {
+              "status": "passed",
+              "duration": 395000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I add the State",
+            "result": {
+              "status": "passed",
+              "duration": 309000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I add the Zip",
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I add the country",
+            "result": {
+              "status": "passed",
+              "duration": 524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I click on the Send button to send the touch",
+            "result": {
+              "status": "passed",
+              "duration": 252000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I click on the OK button",
+            "result": {
+              "status": "passed",
+              "duration": 7976000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I signout of the application",
+            "result": {
+              "status": "passed",
+              "duration": 7856000000
             }
           }
         ]

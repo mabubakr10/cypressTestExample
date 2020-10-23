@@ -1,13 +1,11 @@
-
+import LoginPage from "./loginPage"
 const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const Close_PopUp='.btn-modal-close'
 
 class SingleItem {
-    constructor() {
-        this.dataSet = null
-    }
+
 
     static visic() {
         cy.clearLocalStorage()
@@ -37,10 +35,27 @@ class SingleItem {
     }
     static AddressPick()
     {
- //       cy.get(By.id("send_name")).type(this
-
+       cy.get("#street_number").type(LoginPage.data.MailingAdd)
+        cy.get("#street_number").click()
     }
-
+    static Suite(){
+        cy.get("#route").type(LoginPage.data.Floor)
+    }
+    static City(){
+        cy.get("#locality").type(LoginPage.data.City)
+    }
+    static State(){
+        cy.get("#administrative_area_level_1").type(LoginPage.data.State)
+    }
+    static Zip(){
+        cy.get("#postal_code").type(LoginPage.data.Zip)
+    }
+    static Country(){
+        cy.get("#country").type(LoginPage.data.Country)
+    }
+    static RecipientName(){
+        cy.get("#send_name").type(LoginPage.data.RecipientName)
+    }
 }
 
 export default SingleItem

@@ -1,5 +1,15 @@
 [ {
-  "uid" : "bbb0a2d41fc930c7",
+  "uid" : "f22cdf106cf40662",
+  "name" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
+  "time" : {
+    "start" : 1602352535798,
+    "stop" : 1602352539265,
+    "duration" : 3467
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2a9b600e57630f8",
   "name" : "Login to the sendoso application with the valid credentials. (example #1)",
   "time" : {
     "start" : 1602352522101,
@@ -9,22 +19,12 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c562e30d7605fe5b",
+  "uid" : "d77ca0f82a381379",
   "name" : "Login to the sendoso application with the valid credentials for the thrid one (example #1)",
   "time" : {
     "start" : 1602352547999,
     "stop" : 1602352551823,
     "duration" : 3824
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7cd70ec3a432b957",
-  "name" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
-  "time" : {
-    "start" : 1602352535798,
-    "stop" : 1602352539265,
-    "duration" : 3467
   },
   "status" : "passed",
   "severity" : "normal"

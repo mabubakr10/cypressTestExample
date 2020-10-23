@@ -14,11 +14,6 @@ class LoginPage {
     cy.clearLocalStorage()
     cy.clearCookies()
     cy.visit(this.data.url)
-
-    //cy.clearCookies()
-/*    cy.reload(true)
-    cy.clearCookies()
-    */
   }
   static fillUsername(username) {
     cy.get(USERNAME_INPUT).type(username)
@@ -52,7 +47,7 @@ class LoginPage {
     }
 
     static closePopup() {
-        cy.get(Close_PopUp).click({timeout:2000})
+        cy.get(Close_PopUp).click({timeout:2000, multiple: true ,force: true})
     }
 }
 

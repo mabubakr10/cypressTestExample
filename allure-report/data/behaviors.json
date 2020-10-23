@@ -5,7 +5,7 @@
     "name" : "Login to Application",
     "children" : [ {
       "name" : "Login to the sendoso application with the valid credentials. (example #1)",
-      "uid" : "bbb0a2d41fc930c7",
+      "uid" : "d2a9b600e57630f8",
       "parentUid" : "f61c9974ba11ed39e018a8a39cc59404",
       "status" : "passed",
       "time" : {
@@ -22,7 +22,7 @@
     "name" : "Login to Application for the second",
     "children" : [ {
       "name" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
-      "uid" : "7cd70ec3a432b957",
+      "uid" : "f22cdf106cf40662",
       "parentUid" : "e934b0dc48e6a2ff4c0c5b58f206c328",
       "status" : "passed",
       "time" : {
@@ -39,7 +39,7 @@
     "name" : "Login to Application of third one",
     "children" : [ {
       "name" : "Login to the sendoso application with the valid credentials for the thrid one (example #1)",
-      "uid" : "c562e30d7605fe5b",
+      "uid" : "d77ca0f82a381379",
       "parentUid" : "7cc0c14b68621e9ed7ab4a112b629949",
       "status" : "passed",
       "time" : {

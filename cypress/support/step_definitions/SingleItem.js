@@ -15,7 +15,7 @@ Then(/^I click on the single item touch$/, function () {
 Given(/^I close up the pop up button after login$/, function () {
     cy.wait(3000)
     LoginPage.closePopup()
-    cy.xpath("")
+   // cy.xpath("")
 });
 Then(/^I signout of the application$/, function () {
     { force: true }
@@ -31,4 +31,32 @@ Then(/^I select single send method of sending$/, function () {
 });
 Then(/^I add mailing address$/, function () {
     SingleItem.AddressPick()
+});
+Given(/^I close the cameo pop up$/, function () {
+    cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
+});
+Then(/^I add the Suite$/, function () {
+    SingleItem.Suite()
+});
+Then(/^I add the City$/, function () {
+    SingleItem.City()
+
+});
+Then(/^I add the State$/, function () {
+    SingleItem.State()
+});
+Then(/^I add the country$/, function () {
+    SingleItem.Country()
+});
+Then(/^I add the Zip$/, function () {
+    SingleItem.Zip()
+});
+Then(/^I click on the OK button$/, function () {
+    cy.xpath("//button[@class='swal2-confirm swal2-styled']").click()
+});
+Then(/^I add the Recipient Name$/, function () {
+    SingleItem.RecipientName()
+});
+Then(/^I click on the Send button to send the touch$/, function () {
+    cy.get("#send_submit").click()
 });
