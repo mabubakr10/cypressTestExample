@@ -22,7 +22,7 @@ module.exports = (on, config) => {
   return config;
 }
 
-afterEach(() => {
-  // runs after each test in the block
-})
+// afterEach(() => {
+//   // runs after each test in the block
+// })
 

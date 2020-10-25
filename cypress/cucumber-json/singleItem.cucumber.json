@@ -15,7 +15,7 @@
       {
         "id": "testing-iframes-with-single-item;verify-single-item-touch-with-iframes",
         "keyword": "Scenario",
-        "line": 39,
+        "line": 38,
         "name": "Verify single item touch with iframes",
         "tags": [
           {
@@ -32,7 +32,7 @@
             "name": "I read the file with the \"cypress/fixtures/touchCreation.json\" and \"createtouch\"",
             "result": {
               "status": "passed",
-              "duration": 138000000
+              "duration": 186000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 7105000000
+              "duration": 7732000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I fill username with of sendoso applicaton",
             "result": {
               "status": "passed",
-              "duration": 1345000000
+              "duration": 775000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I fill password with of sendoso applicaton",
             "result": {
               "status": "passed",
-              "duration": 373000000
+              "duration": 382000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I click on the submit button of second button",
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 11608000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "I close the popup of the advertise in our application",
             "result": {
               "status": "passed",
-              "duration": 28428000000
+              "duration": 3418000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "I close pop up button",
             "result": {
               "status": "passed",
-              "duration": 236000000
+              "duration": 189000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I click on \"Touches\" Tab",
             "result": {
               "status": "passed",
-              "duration": 7596000000
+              "duration": 2601000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "I click on create New Touch button",
             "result": {
               "status": "passed",
-              "duration": 2043000000
+              "duration": 2237000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "I select touch under Inventoried Sends at index",
             "result": {
               "status": "passed",
-              "duration": 422000000
+              "duration": 580000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 3039000000
+              "duration": 2937000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "I select product from existing items",
             "result": {
               "status": "passed",
-              "duration": 237000000
+              "duration": 235000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 2217000000
+              "duration": 3146000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "I select charge cost to\"",
             "result": {
               "status": "passed",
-              "duration": 336000000
+              "duration": 344000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "I select funding source to associate touch",
             "result": {
               "status": "passed",
-              "duration": 301000000
+              "duration": 418000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "I edit up the touchName appearing at the page of enter touch details",
             "result": {
               "status": "passed",
-              "duration": 965000000
+              "duration": 814000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "I enter the display name for sender",
             "result": {
               "status": "passed",
-              "duration": 822000000
+              "duration": 763000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 274000000
+              "duration": 290000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I verify that user is on the sales force tracking page",
             "result": {
               "status": "passed",
-              "duration": 3633000000
+              "duration": 3612000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "I click on the next step of the create touch",
             "result": {
               "status": "passed",
-              "duration": 1851000000
+              "duration": 2481000000
             }
           },
           {
@@ -232,7 +232,7 @@
             "name": "I click on the Finish button appearing on add touch to group page",
             "result": {
               "status": "passed",
-              "duration": 3121000000
+              "duration": 2745000000
             }
           },
           {
@@ -242,7 +242,7 @@
             "name": "I click on Send button",
             "result": {
               "status": "passed",
-              "duration": 8688000000
+              "duration": 6302000000
             }
           },
           {
@@ -252,7 +252,7 @@
             "name": "I select touch",
             "result": {
               "status": "passed",
-              "duration": 526000000
+              "duration": 392000000
             }
           },
           {
@@ -262,7 +262,7 @@
             "name": "I select the option to send touch to",
             "result": {
               "status": "passed",
-              "duration": 819000000
+              "duration": 839000000
             }
           },
           {
@@ -271,8 +271,9 @@
             "line": 29,
             "name": "I enter custom message for touch",
             "result": {
-              "status": "passed",
-              "duration": 6177000000
+              "status": "failed",
+              "duration": 65000000,
+              "error_message": "TypeError: cy.switchToIframe is not a function\n    at Function.enterCustomMessage (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:686:10)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:807:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:11224:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/singleItem.feature:10566:35)\nFrom previous event:\n    at Context.thenFn (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:155043:23)\n    at Context.then (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:155477:21)\n    at Context.<anonymous> (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169673:21)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169097:15\nFrom previous event:\n    at runCommand (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169076:8)\n    at next (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169222:14)\n    at https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:169250:16"
             }
           },
           {
@@ -281,8 +282,7 @@
             "line": 30,
             "name": "I enter Mailing Address",
             "result": {
-              "status": "passed",
-              "duration": 3075000000
+              "status": "skipped"
             }
           },
           {
@@ -291,8 +291,7 @@
             "line": 31,
             "name": "I Enter Recipients Email",
             "result": {
-              "status": "passed",
-              "duration": 826000000
+              "status": "skipped"
             }
           },
           {
@@ -301,8 +300,7 @@
             "line": 32,
             "name": "I Enter Recipients Full",
             "result": {
-              "status": "passed",
-              "duration": 773000000
+              "status": "skipped"
             }
           },
           {
@@ -311,8 +309,7 @@
             "line": 33,
             "name": "I click on \"Send\" button on screen",
             "result": {
-              "status": "passed",
-              "duration": 378000000
+              "status": "skipped"
             }
           },
           {
@@ -321,8 +318,7 @@
             "line": 34,
             "name": "I verify action has been performed with message",
             "result": {
-              "status": "passed",
-              "duration": 7155000000
+              "status": "skipped"
             }
           }
         ]

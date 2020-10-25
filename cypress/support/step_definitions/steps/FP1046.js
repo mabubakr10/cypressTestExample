@@ -4,7 +4,7 @@ const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const Close_PopUp='.btn-modal-close'
 
-class SingleItem {
+class FP1046 {
 
 
     static visic() {
@@ -58,4 +58,4 @@ class SingleItem {
     }
 }
 
-export default SingleItem
+export default FP1046

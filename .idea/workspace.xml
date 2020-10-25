@@ -19,9 +19,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="adding files to gitignore">
+    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="Resolved the conflicts with main branch">
+      <change afterPath="$PROJECT_DIR$/cypress/integration/FP1046.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/packages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/timeline.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/retry-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/severity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/summary.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/SingleItem.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/SingleItem.cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/integration/SingleItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/SingleItem.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/plugins/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/SingleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/SingleItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/SingleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/FP1046.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +73,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/integration" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,6 +83,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/integration" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
@@ -78,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603370461267</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Resolved the conflicts with main branch">
+      <created>1603473397719</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603473397719</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,9 +137,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed handling IFrames with handwritten touch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed handling IFrames with handwritten touch" />
+    <MESSAGE value="Resolved the conflicts with main branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved the conflicts with main branch" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="194" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603630677438">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="194" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1603630677438" />
     <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1603353965284">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
@@ -125,16 +169,17 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="358" y="190" key="MultipleFileMergeDialog/0.23.1440.804@0.23.1440.804" timestamp="1603457237223" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603473385324">
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603473406199">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="320" y="161" key="Vcs.Push.Dialog.v2/0.23.1440.804@0.23.1440.804" timestamp="1603457259712" />
     <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.814@0.23.1440.814" timestamp="1603370466557" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1603473385324" />
-    <state x="418" y="178" width="604" height="490" key="find.popup" timestamp="1603375196332">
-      <screen x="0" y="23" width="1440" height="808" />
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1603473406199" />
+    <state x="418" y="181" width="604" height="501" key="find.popup" timestamp="1603632592715">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="418" y="178" width="604" height="490" key="find.popup/0.23.1440.808@0.23.1440.808" timestamp="1603375196332" />
+    <state x="418" y="181" width="604" height="501" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1603632592715" />
     <state x="443" y="143" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603372145801">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
