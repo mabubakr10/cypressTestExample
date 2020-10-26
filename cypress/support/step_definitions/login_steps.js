@@ -2,22 +2,16 @@ import { Given, When, Then, And,Before } from 'cypress-cucumber-preprocessor/ste
 import LoginPage from './steps/loginPage'
 
 Before(() => {
-  cy.viewport(1920, 1080)
+  cy.viewport(2000, 3000)
 });
 
 Given('I open login page', () => {
-  // cy.visit('http://zero.webappsecurity.com/login.html')
   LoginPage.visic()
-  cy.log(URL)
-  //cy.wait(100000)
+
 })
 
-And('I fill username with of sendoso applicaton {string}',username=>{
-     LoginPage.fillUsername(username)
-})
-
-And('I fill password with of sendoso applicaton {string}',password=>{
-    LoginPage.fillPassword(password)
+And('I fill password with of sendoso applicaton',()=>{
+    LoginPage.fillPassword();
 })
 
 When('I click on submit login', () => {
@@ -31,17 +25,17 @@ When('I add {int} and {int}',(a,b)=>{
 
 });
 
-Then('I read the file',()=>{
-
-  /*  cy.fixture('profile').as('prf')
-    cy.log("testing")
-    cy.get("@prf").then((prf)=>{
-        cy.log(prf.phoneNumber.type)
-    })*/
-});
-When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (fileName,key)=> {
+When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (filepath,key)=> {
     let keyValues={};
-    //keyValues=LoginPage.readFileJson(fileName, key)
-     LoginPage.readFileJson(fileName,key)
+     LoginPage.readFileJson(filepath,key)
 
 });
+Given(/^I close pop up button$/, function () {
+    LoginPage.closePopUp();
+});
+Given( /^I close the popup of the advertise in our application$/, function () {
+LoginPage.closePopupAdvertise();
+} );
+Given( /^I fill username with of sendoso applicaton$/, function () {
+LoginPage.enterUserName();
+} );
