@@ -7,5 +7,22 @@
   "testing":{
      "type":"home",
      "password":"111 111-1111"
-  }
+  },
+  "signUpPlg": {
+   "url": "https://core-qa.sendoso.com",
+   "username": "farooq_super_admin@sendoso.com",
+   "password": "A542ef$bc0dd8%",
+   "numberCC": "4242424242424242",
+   "expiryCC": "1224",
+   "cvcCC": "123"
+},
+
+"plgUser": {
+   "url": "https://core-qa.sendoso.com",
+   "username": "abubakr+23@sendoso.com",
+   "password": "yREAhDN8tqUt7!",
+   "numberCC": "4242424242424242",
+   "expiryCC": "1224",
+   "cvcCC": "123"
+}
 }

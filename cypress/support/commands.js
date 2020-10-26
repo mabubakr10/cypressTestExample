@@ -37,4 +37,9 @@ Cypress.Commands.add('switchToIframe', (iframe) => {
     .then(cy.wrap);
 });
 
+Cypress.Commands.add('getText', { prevSubject: 'element' }, ($element) => {
+  cy.wrap($element).scrollIntoView();
+  return cy.wrap($element).invoke('text');
+})
+
 })
