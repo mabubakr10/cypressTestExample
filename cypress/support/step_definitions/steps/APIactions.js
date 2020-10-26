@@ -27,6 +27,8 @@ class APIactions{
                 access_token = resp.body["access_token"]
                 Cypress.log(resp.body);
             })
+            Cypress.env("auth_bearer_token").set("abcdef");
+            console.log(Cypress.env("auth_bearer_token"));
         })
         //logout of the app
         cy.request("https://"+instance+".sendoso.com/user_logout");
@@ -35,7 +37,7 @@ class APIactions{
     static getTouches(instance){
 
         cy.request({
-            method: 'POST',
+            method: 'GET',
             url: "http://"+instance+".sendoso.com/api/v3/touches.json", //get from cypress.env.json
             auth: { bearer: access_token },
             body: {
@@ -43,7 +45,25 @@ class APIactions{
                 scope: 'public write update',
             }
         })
-            .its('body');
+            .its('body')
+    }
+    static sendTouch(touchID, instance){
+        cy.request({
+            method: 'POST',
+            url: "https://"+instance+".sendoso.com/api/v3/send.json", //get from cypress.env.json
+            auth: { bearer: access_token },
+            body: {
+                "send": {
+                    "touch_id": "61383",
+                    "via": "single_email_address",
+                    "amount": 10,
+                    "email": "sibgha.ilyas@sendoso.com"
+                }
+            }
+        })
+            .its('body').should('include', {message: 'EGifts send Successfully', success: true})
+        //logout of the app
+        cy.request("https://"+instance+".sendoso.com/user_logout");
     }
 }
 export default APIactions;
