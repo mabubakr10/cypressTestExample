@@ -1,30 +1,24 @@
 
+const URL = 'https://core-qa.sendoso.com/'
 const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const Close_PopUp='.btn-modal-close'
 
 class LoginPage {
- constructor() {
-   this.dataSet = null
- }
-
-
 
   static visic() {
    // cy.getCookies().should('have.length', 1)
-    cy.clearLocalStorage()
+    cy.clearLocalStorage();
+    console.log("Clearing Storage");
     cy.clearCookies()
-    cy.visit(this.data.url)
-
-    //cy.clearCookies()
-/*    cy.reload(true)
-    cy.clearCookies()
-    */
+    console.log("Clearing Cookies");
+    cy.visit(URL)
+    console.log("Hitting Core QA URL");
   }
-  static fillUsername(username) {
-    cy.get(USERNAME_INPUT).type(username)
-    console.log(username)
+
+  static fillPassword() {
+    cy.get(PASSWORD_INPUT).type(this.data.password)
   }
 
   static submit() {
@@ -32,30 +26,34 @@ class LoginPage {
     //cy.get(Close_PopUp).click()
   }
 
-   static readFileJson(fileName, key) {
-    cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
-      this.data = jsonObj[key]
+   static readFileJson(filePath, key) {
+    cy.readFile(filePath).then(jsonObj => {
+    this.data = jsonObj[key]
     });
   }
 
-  static switchToFrameFun()
-  {
-    const frameToSwitch="#mce_0_ifr";
-    cy.visit('https://the-internet.herokuapp.com/iframe');
-    cy.switchToIframe(frameToSwitch).clear().type("testing");
-  }
+  // static switchToFrameFun()
+  // {
+  //   const frameToSwitch="#mce_0_ifr";
+  //   const body='0.contentDocument.body'
+  //   cy.visit('https://the-internet.herokuapp.com/iframe');
+  //   cy.switchToIframe(frameToSwitch).clear().type("testing");
+  // }
+
+    static closePopUp() {
+     cy.get(Close_PopUp).click({timeout:3000, multiple: true ,force: true});
+
+    }
+
+    static closePopupAdvertise()
+    {
+     cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
+     }
 
     static enterUserName() {
-        cy.get(USERNAME_INPUT).type(this.data.username)
-    }
 
-    static enterPassword(){
-        cy.get(PASSWORD_INPUT).type(this.data.password)
-    }
-
-    static closePopup() {
-       // cy.wait(20000)
-        cy.get(Close_PopUp).click({timeout:2000, multiple: true ,force: true})
+     cy.get(USERNAME_INPUT).type(this.data.username)
+     console.log("Entered"+this.data.username+" inside username  field")
     }
 }
 
