@@ -24,9 +24,5 @@
    "numberCC": "4242424242424242",
    "expiryCC": "1224",
    "cvcCC": "123"
-},
-  "singleItem":{
-    "type":"afshan.shakoor@sendoso.com",
-    "password":"Sendoso@123???"
-  }
+}
 }
