@@ -1,0 +1,18 @@
+{
+  "createtouch": {
+    "url":"http://core-qa.sendoso.com",
+    "username":"afshan.shakoor@sendoso.com",
+    "password":"Sendoso@123???",
+    "touch": "Single Items",
+    "product": "CypressProduct",
+    "chargeCostTo": "Funding Source",
+    "FS": "QuotingCalculator FS",
+    "TouchName": "handlingIframes",
+    "SendTouchTo": "To a single person/company",
+    "customMessage": "This is automation testing with cypress tool",
+    "mailingAddress": "247 East",
+    "recipeintEmail": "afshan.shakoor@sendoso.com",
+    "RecipientFullName": "Afshan Shakoor",
+    "message": "Your item(s) are processing! You'll get an email with tracking info when your package is shipped and delivered. You can get real-time updates at Sendoso.com/analytics"
+  }
+}
