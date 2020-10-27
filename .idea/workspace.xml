@@ -5,7 +5,6 @@
     <select />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
@@ -16,8 +15,7 @@
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/TouchCreation.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/TouchCreation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/touchCreation_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/touchCreation_steps.js" afterDir="false" />
-=======
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="adding files to gitignore">
+      <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="adding files to gitignore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
 >>>>>>> b1c886034c8f49d6d3e3e30b7298d08acfaa9c3f
     </list>
@@ -59,7 +57,6 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cypress/support/step_definitions" />
@@ -92,7 +89,6 @@
         <item itemvalue="npm.cy:open" />
       </list>
     </recent_temporary>
-=======
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -105,13 +101,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602767347540</updated>
-<<<<<<< HEAD
       <workItem from="1602767348655" duration="505000" />
       <workItem from="1603008166282" duration="6266000" />
       <workItem from="1603103744114" duration="2413000" />
       <workItem from="1603178636261" duration="806000" />
       <workItem from="1603357509157" duration="1873000" />
-=======
       <workItem from="1602767348655" duration="96000" />
       <workItem from="1603353882948" duration="9545000" />
 >>>>>>> b1c886034c8f49d6d3e3e30b7298d08acfaa9c3f
@@ -141,7 +135,6 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state x="144" y="90" key="DiffContextDialog" timestamp="1603009058107">
       <screen x="0" y="23" width="1440" height="783" />
@@ -203,7 +196,6 @@
       <screen x="0" y="23" width="1440" height="783" />
     </state>
     <state x="468" y="343" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.783@0.23.1440.783" timestamp="1603042910197" />
-=======
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed handling IFrames with handwritten touch" />
     <option name="LAST_COMMIT_MESSAGE" value="Completed handling IFrames with handwritten touch" />
