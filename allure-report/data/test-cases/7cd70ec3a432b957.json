@@ -1,12 +1,12 @@
 {
-  "uid" : "da031606b34f4138",
-  "name" : "Login to the sendoso application with the valid credentials. (example #1)",
-  "fullName" : "Login to the sendoso application with the valid credentials. (example #1)",
-  "historyId" : "d4864b21ee006f8c58704223c7531ada",
+  "uid" : "7cd70ec3a432b957",
+  "name" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
+  "fullName" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
+  "historyId" : "679eeda50a54e50e6b3663a4847b87d8",
   "time" : {
-    "start" : 1602352522101,
-    "stop" : 1602352526640,
-    "duration" : 4539
+    "start" : 1602352535798,
+    "stop" : 1602352539265,
+    "duration" : 3467
   },
   "status" : "passed",
   "flaky" : false,
@@ -37,9 +37,9 @@
     "steps" : [ {
       "name" : "viewport (\"1920\"; \"1080\")",
       "time" : {
-        "start" : 1602352522109,
-        "stop" : 1602352522118,
-        "duration" : 9
+        "start" : 1602352535806,
+        "stop" : 1602352535814,
+        "duration" : 8
       },
       "status" : "passed",
       "steps" : [ ],
@@ -52,17 +52,17 @@
     }, {
       "name" : "Given I open login page",
       "time" : {
-        "start" : 1602352522125,
-        "stop" : 1602352525001,
-        "duration" : 2876
+        "start" : 1602352535821,
+        "stop" : 1602352537645,
+        "duration" : 1824
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "clearCookies",
         "time" : {
-          "start" : 1602352522126,
-          "stop" : 1602352522139,
-          "duration" : 13
+          "start" : 1602352535822,
+          "stop" : 1602352535832,
+          "duration" : 10
         },
         "status" : "passed",
         "steps" : [ ],
@@ -75,9 +75,9 @@
       }, {
         "name" : "clearLocalStorage",
         "time" : {
-          "start" : 1602352522140,
-          "stop" : 1602352522143,
-          "duration" : 3
+          "start" : 1602352535832,
+          "stop" : 1602352535836,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -90,9 +90,9 @@
       }, {
         "name" : "visit (\"https://integration-app.sendoso.com\")",
         "time" : {
-          "start" : 1602352522143,
-          "stop" : 1602352524940,
-          "duration" : 2797
+          "start" : 1602352535836,
+          "stop" : 1602352537614,
+          "duration" : 1778
         },
         "status" : "passed",
         "steps" : [ ],
@@ -105,8 +105,8 @@
       }, {
         "name" : "POST https://sendoso.auth0.com/usernamepassword/challenge",
         "time" : {
-          "start" : 1602352524940,
-          "stop" : 1602352524940,
+          "start" : 1602352537614,
+          "stop" : 1602352537614,
           "duration" : 0
         },
         "status" : "passed",
@@ -120,9 +120,9 @@
       }, {
         "name" : "clearCookies",
         "time" : {
-          "start" : 1602352524940,
-          "stop" : 1602352524994,
-          "duration" : 54
+          "start" : 1602352537614,
+          "stop" : 1602352537638,
+          "duration" : 24
         },
         "status" : "passed",
         "steps" : [ ],
@@ -135,8 +135,8 @@
       }, {
         "name" : "log (\"function URL() { [native code] }\")",
         "time" : {
-          "start" : 1602352524994,
-          "stop" : 1602352524997,
+          "start" : 1602352537638,
+          "stop" : 1602352537641,
           "duration" : 3
         },
         "status" : "passed",
@@ -157,17 +157,17 @@
     }, {
       "name" : "And I fill username with of sendoso applicaton \"manager@sendoso.com\"",
       "time" : {
-        "start" : 1602352525001,
-        "stop" : 1602352526135,
-        "duration" : 1134
+        "start" : 1602352537645,
+        "stop" : 1602352539156,
+        "duration" : 1511
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get (\"#1-email\")",
         "time" : {
-          "start" : 1602352525001,
-          "stop" : 1602352525010,
-          "duration" : 9
+          "start" : 1602352537646,
+          "stop" : 1602352538010,
+          "duration" : 364
         },
         "status" : "passed",
         "steps" : [ ],
@@ -180,9 +180,9 @@
       }, {
         "name" : "type (\"manager@sendoso.com\")",
         "time" : {
-          "start" : 1602352525010,
-          "stop" : 1602352526128,
-          "duration" : 1118
+          "start" : 1602352538010,
+          "stop" : 1602352539149,
+          "duration" : 1139
         },
         "status" : "passed",
         "steps" : [ ],
@@ -200,64 +200,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "And I fill password with of sendoso applicaton \"Sendit415415!!\"",
+      "name" : "And I click on the submit button of second button",
       "time" : {
-        "start" : 1602352526135,
-        "stop" : 1602352526523,
-        "duration" : 388
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "get (\"input[name=\"password\"]\")",
-        "time" : {
-          "start" : 1602352526137,
-          "stop" : 1602352526151,
-          "duration" : 14
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "type (\"Sendit415415!!\")",
-        "time" : {
-          "start" : 1602352526151,
-          "stop" : 1602352526517,
-          "duration" : 366
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : true
-    }, {
-      "name" : "When I click on submit login",
-      "time" : {
-        "start" : 1602352526523,
-        "stop" : 1602352526640,
-        "duration" : 117
+        "start" : 1602352539156,
+        "stop" : 1602352539265,
+        "duration" : 109
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get (\"button[name=\"submit\"]\")",
         "time" : {
-          "start" : 1602352526524,
-          "stop" : 1602352526535,
-          "duration" : 11
+          "start" : 1602352539158,
+          "stop" : 1602352539168,
+          "duration" : 10
         },
         "status" : "passed",
         "steps" : [ ],
@@ -270,24 +225,9 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1602352526535,
-          "stop" : 1602352526638,
-          "duration" : 103
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "POST https://sendoso.auth0.com/usernamepassword/login",
-        "time" : {
-          "start" : 1602352526638,
-          "stop" : 1602352526638,
-          "duration" : 0
+          "start" : 1602352539168,
+          "stop" : 1602352539263,
+          "duration" : 95
         },
         "status" : "passed",
         "steps" : [ ],
@@ -300,14 +240,14 @@
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 3,
+      "stepsCount" : 2,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 18,
+    "stepsCount" : 14,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -325,13 +265,13 @@
   } ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Login to Application"
+    "value" : "Login to Application for the second"
   }, {
     "name" : "tag",
-    "value" : "feature-tag"
+    "value" : "second"
   }, {
     "name" : "feature",
-    "value" : "Login to Application"
+    "value" : "Login to Application for the second"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -344,8 +284,8 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ "feature-tag" ]
+    "tags" : [ "second" ]
   },
-  "source" : "da031606b34f4138.json",
+  "source" : "7cd70ec3a432b957.json",
   "parameterValues" : [ ]
 }

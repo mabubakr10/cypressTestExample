@@ -5,13 +5,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="adding files to gitignore">
+    <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/cucumber-json/egift.cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cucumber-json/egift.cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/profiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/fixtures/profiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/egift.feature" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/egift.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/login_steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/TouchCreation.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/TouchCreation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/steps/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/step_definitions/touchCreation_steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/step_definitions/touchCreation_steps.js" afterDir="false" />
+      <list default="true" id="47adcd86-b056-4f09-901f-cfdb7a00bae5" name="Default Changelist" comment="adding files to gitignore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+>>>>>>> b1c886034c8f49d6d3e3e30b7298d08acfaa9c3f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -40,11 +54,45 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/support/step_definitions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.allure:report">
+    <configuration name="allure:report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="allure:report" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="cy:open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cy:open" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.allure:report" />
+        <item itemvalue="npm.cy:open" />
+      </list>
+    </recent_temporary>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
+>>>>>>> b1c886034c8f49d6d3e3e30b7298d08acfaa9c3f
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,8 +101,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602767347540</updated>
+      <workItem from="1602767348655" duration="505000" />
+      <workItem from="1603008166282" duration="6266000" />
+      <workItem from="1603103744114" duration="2413000" />
+      <workItem from="1603178636261" duration="806000" />
+      <workItem from="1603357509157" duration="1873000" />
       <workItem from="1602767348655" duration="96000" />
       <workItem from="1603353882948" duration="9545000" />
+>>>>>>> b1c886034c8f49d6d3e3e30b7298d08acfaa9c3f
     </task>
     <task id="LOCAL-00001" summary="Completed handling IFrames with handwritten touch">
       <created>1603370461266</created>
@@ -81,6 +135,67 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="144" y="90" key="DiffContextDialog" timestamp="1603009058107">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="144" y="90" key="DiffContextDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009058107" />
+    <state x="458" y="288" key="Github.CreatePullRequestDialog" timestamp="1603009258655">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="458" y="288" key="Github.CreatePullRequestDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009258655" />
+    <state width="1419" height="369" key="GridCell.Tab.0.bottom" timestamp="1603103725596">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603099087315" />
+    <state width="1419" height="369" key="GridCell.Tab.0.bottom/0.23.1440.783@0.23.1440.783" timestamp="1603103725596" />
+    <state width="1419" height="369" key="GridCell.Tab.0.center" timestamp="1603103725595">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603099087313" />
+    <state width="1419" height="369" key="GridCell.Tab.0.center/0.23.1440.783@0.23.1440.783" timestamp="1603103725595" />
+    <state width="1419" height="369" key="GridCell.Tab.0.left" timestamp="1603103725594">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603099087311" />
+    <state width="1419" height="369" key="GridCell.Tab.0.left/0.23.1440.783@0.23.1440.783" timestamp="1603103725594" />
+    <state width="1419" height="369" key="GridCell.Tab.0.right" timestamp="1603103725595">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state width="1419" height="369" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603099087313" />
+    <state width="1419" height="369" key="GridCell.Tab.0.right/0.23.1440.783@0.23.1440.783" timestamp="1603103725595" />
+    <state x="0" y="91" width="1296" height="648" key="MergeDialog" timestamp="1603009176914">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="0" y="91" width="1296" height="648" key="MergeDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009176914" />
+    <state x="358" y="183" key="MultipleFileMergeDialog" timestamp="1603009176962">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="358" y="183" key="MultipleFileMergeDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009176962" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1603102522965">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1603102522965" />
+    <state x="348" y="180" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1603009164195">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="348" y="180" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.23.1440.783@0.23.1440.783" timestamp="1603009164195" />
+    <state x="320" y="154" key="Vcs.Push.Dialog.v2" timestamp="1603009286557">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="320" y="154" key="Vcs.Push.Dialog.v2/0.23.1440.783@0.23.1440.783" timestamp="1603009286557" />
+    <state x="342" y="153" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1603009248962">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="342" y="153" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.23.1440.783@0.23.1440.783" timestamp="1603009248962" />
+    <state x="667" y="172" width="586" height="735" key="find.popup" timestamp="1603179724266">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="172" width="586" height="735" key="find.popup/-1440.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1603179724266" />
+    <state x="468" y="343" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1603042910197">
+      <screen x="0" y="23" width="1440" height="783" />
+    </state>
+    <state x="468" y="343" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.783@0.23.1440.783" timestamp="1603042910197" />
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed handling IFrames with handwritten touch" />
     <option name="LAST_COMMIT_MESSAGE" value="Completed handling IFrames with handwritten touch" />
@@ -127,5 +242,6 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="392" y="217" key="git4idea.merge.GitPullDialog/0.23.1440.804@0.23.1440.804" timestamp="1603457032692" />
+>>>>>>> b1c886034c8f49d6d3e3e30b7298d08acfaa9c3f
   </component>
 </project>

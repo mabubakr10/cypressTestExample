@@ -3,7 +3,7 @@
   "name" : "packages",
   "children" : [ {
     "name" : "Login to the sendoso application with the valid credentials. (example #1)",
-    "uid" : "da031606b34f4138",
+    "uid" : "bbb0a2d41fc930c7",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -16,7 +16,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Scenario Outline name: Login to the sendoso application with the valid credentials for the second (example #1)",
-    "uid" : "5764a2e870629465",
+    "uid" : "7cd70ec3a432b957",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -29,7 +29,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Login to the sendoso application with the valid credentials for the thrid one (example #1)",
-    "uid" : "1b481fe57862a527",
+    "uid" : "c562e30d7605fe5b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
