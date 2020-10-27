@@ -10,9 +10,11 @@ Given(/^I generate auth0 token$/, function() {
 Then(/^I hit the get all touches endpoint and verify its response$/, function () {
     APIactions.getTouches(Cypress.env('instance'));
 });
-Then(/^I send a touch and verify response$/, function () {
-    APIactions.sendTouch("61383", Cypress.env('instance'))
+
+Then('I send a touch {string} and verify response',  (touch_id) => {
+    APIactions.sendTouch(touch_id, Cypress.env('instance'))
 });
-Then(/^I send a physical touch and verify response$/, function () {
-    APIactions.sendPhysicalGift("61310", Cypress.env('instance'));
+
+Then('I send a physical touch {string} and verify response', (touch_id) => {
+    APIactions.sendPhysicalGift(touch_id, Cypress.env('instance'));
 });

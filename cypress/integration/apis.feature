@@ -7,9 +7,9 @@ Feature: Touches API automation
 
   Scenario: Sending an eGift touch via send API
     Given I generate auth0 token
-    Then I send a touch and verify response
+    Then I send a touch "61383" and verify response
 
   Scenario: Sending a physical touch via send API
     Given I generate auth0 token
-    Then I send a physical touch and verify response
+    Then I send a physical touch "61310" and verify response
 
