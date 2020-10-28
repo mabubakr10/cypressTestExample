@@ -31,8 +31,9 @@
             "line": 5,
             "name": "I read the file with the \"profiles\" and \"signUpPlg\"",
             "result": {
-              "status": "passed",
-              "duration": 176000000
+              "status": "failed",
+              "duration": 50192000000,
+              "error_message": "AssertionError: Timed out retrying: `cy.readFile(\"profiles\")` failed because the file does not exist at the following path:\n\n`/Users/Abubakr/Documents/sendosoProject/profiles`\n    at Function.readFileJson (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:579:10)\n    at Context.eval (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:103:25)\n    at Context.resolveAndRunStepDefinition (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:11610:9)\n    at Context.eval (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:10952:35)"
             }
           },
           {
@@ -41,8 +42,7 @@
             "line": 6,
             "name": "I open up the core page",
             "result": {
-              "status": "passed",
-              "duration": 7657000000
+              "status": "skipped"
             }
           },
           {
@@ -51,8 +51,7 @@
             "line": 7,
             "name": "I enter the username in the username field on the login page",
             "result": {
-              "status": "passed",
-              "duration": 1442000000
+              "status": "skipped"
             }
           },
           {
@@ -61,8 +60,7 @@
             "line": 8,
             "name": "I enter the password in the password field on the login page",
             "result": {
-              "status": "passed",
-              "duration": 455000000
+              "status": "skipped"
             }
           },
           {
@@ -71,8 +69,7 @@
             "line": 9,
             "name": "I click on the submit button of second button",
             "result": {
-              "status": "passed",
-              "duration": 139000000
+              "status": "skipped"
             }
           },
           {
@@ -81,8 +78,7 @@
             "line": 10,
             "name": "I click on the Generate Self-Serve SignUp Link",
             "result": {
-              "status": "passed",
-              "duration": 7997000000
+              "status": "skipped"
             }
           },
           {
@@ -91,8 +87,7 @@
             "line": 11,
             "name": "I click on the Create Self-Serve SignUp button",
             "result": {
-              "status": "passed",
-              "duration": 122000000
+              "status": "skipped"
             }
           },
           {
@@ -101,8 +96,7 @@
             "line": 12,
             "name": "I enter the email id in the email field on the Generate Self-Serve SignUp page \"<username>\"",
             "result": {
-              "status": "passed",
-              "duration": 535000000
+              "status": "skipped"
             }
           },
           {
@@ -111,8 +105,7 @@
             "line": 13,
             "name": "I click on the Create button",
             "result": {
-              "status": "passed",
-              "duration": 3098000000
+              "status": "skipped"
             }
           },
           {
@@ -121,8 +114,7 @@
             "line": 14,
             "name": "I click on OK to close the pop up",
             "result": {
-              "status": "passed",
-              "duration": 261000000
+              "status": "skipped"
             }
           },
           {
@@ -131,9 +123,7 @@
             "line": 15,
             "name": "I copy and redirect to the Sign Up token",
             "result": {
-              "status": "failed",
-              "duration": 2787000000,
-              "error_message": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n    at Context.visit (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:158204:19)\nFrom Your Spec Code:\n    at Function.getLinkPlg (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:390:10)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:162:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:10899:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:10241:35)\nFrom Your Spec Code:\n    at Function.getLinkPlg (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:390:10)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:162:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:10899:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:10241:35)"
+              "status": "skipped"
             }
           },
           {

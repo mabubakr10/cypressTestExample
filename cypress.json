@@ -8,6 +8,17 @@
   "viewportHeight": 1600,
   "projectId": "ysysvz",
   "chromeWebSecurity": false,
-  "experimentalSourceRewriting": true
+  "experimentalSourceRewriting": true,
+  "supportFile": "cypress/support/index.js",
+
+  "env": {
+    "db": {
+      "host": "dev-sendoso.c7vion3zxz9k.us-west-2.rds.amazonaws.com",
+      "user": "root",
+      "password": "pbrxwxJjq9kWfHwgx7xZ",
+      "database": "core-sendoso",
+      "port": "3306"
+    }
+  }
 }
 

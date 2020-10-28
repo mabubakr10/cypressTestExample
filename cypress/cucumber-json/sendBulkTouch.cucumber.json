@@ -31,8 +31,9 @@
             "line": 5,
             "name": "I read the file with the \"profiles\" and \"plgUser\"",
             "result": {
-              "status": "passed",
-              "duration": 139000000
+              "status": "failed",
+              "duration": 50209000000,
+              "error_message": "AssertionError: Timed out retrying: `cy.readFile(\"profiles\")` failed because the file does not exist at the following path:\n\n`/Users/Abubakr/Documents/sendosoProject/profiles`\n    at Function.readFileJson (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:579:10)\n    at Context.eval (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:103:25)\n    at Context.resolveAndRunStepDefinition (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:11610:9)\n    at Context.eval (http://localhost:49190/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:10952:35)"
             }
           },
           {
@@ -41,9 +42,7 @@
             "line": 6,
             "name": "I open up the core page",
             "result": {
-              "status": "failed",
-              "duration": 566000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://core-qa.sendoso.com/\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:60675/__cypress/runner/cypress_runner.js:158546:25\n    at visitFailedByErr (http://localhost:60675/__cypress/runner/cypress_runner.js:157917:12)\n    at http://localhost:60675/__cypress/runner/cypress_runner.js:158526:13\nFrom previous event:\n    at go (http://localhost:60675/__cypress/runner/cypress_runner.js:158524:17)\n    at http://localhost:60675/__cypress/runner/cypress_runner.js:158590:20\nFrom previous event:\n    at visit (http://localhost:60675/__cypress/runner/cypress_runner.js:158588:38)\n    at Context.visit (http://localhost:60675/__cypress/runner/cypress_runner.js:158597:14)\nFrom Your Spec Code:\n    at Function.visic (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:293:10)\n    at Context.eval (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:178:25)\n    at Context.resolveAndRunStepDefinition (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:11003:9)\n    at Context.eval (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:10345:35)\nFrom Your Spec Code:\n    at Function.visic (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:293:10)\n    at Context.eval (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:178:25)\n    at Context.resolveAndRunStepDefinition (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:11003:9)\n    at Context.eval (http://localhost:60675/__cypress/tests?p=cypress/integration/plg/contactUs/sendBulkTouch.feature:10345:35)"
+              "status": "skipped"
             }
           },
           {
