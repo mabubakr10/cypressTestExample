@@ -15,7 +15,7 @@
       {
         "id": "login-to-application;creating-up-the-egift-with-coffee,sending-it-and-verifying-the-anaylytics.",
         "keyword": "Scenario",
-        "line": 14,
+        "line": 15,
         "name": "Creating up the egift with coffee,sending it and verifying the anaylytics.",
         "tags": [
           {
@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"coffeeurl\"",
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 116000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open up the integration page",
             "result": {
               "status": "passed",
-              "duration": 6474000000
+              "duration": 9948000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I enter the username in the username field on the login page",
             "result": {
               "status": "passed",
-              "duration": 1363000000
+              "duration": 542000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I enter the password in the password field on the login page",
             "result": {
               "status": "passed",
-              "duration": 327000000
+              "duration": 352000000
             }
           },
           {
@@ -72,27 +72,37 @@
             "name": "I click on the submit button of second button",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 119000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "I click on the close popup of the application",
+            "name": "I close the popup of the advertise in our application",
             "result": {
               "status": "passed",
-              "duration": 20283000000
+              "duration": 16961000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
+            "name": "I click on the close popup of the application",
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
             "name": "I click on the create touch button",
             "result": {
               "status": "passed",
-              "duration": 3039000000
+              "duration": 3930000000
             }
           }
         ]
