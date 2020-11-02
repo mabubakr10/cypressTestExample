@@ -1,5 +1,6 @@
 import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
 import contactUsLink from '../steps/plg/contactUs/contactUsLink'
+import sideBar from '../steps/plg/sideBarPanel'
 
 Before(() => {
     cy.viewport(1920, 1080)
@@ -27,6 +28,10 @@ And('I click on the Amazon Gift Card', () => {
 
 And('I select In bulk to multiple email addresses option from the drop down', () => {
     contactUsLink.selectHowToSend('In bulk to multiple email addresses')
+})
+
+And('I click on Account Balance option', () => {
+    sideBar.accountBalanceTab()
 })
 
 Then('I verify the new tab for Contact Us form', () => {

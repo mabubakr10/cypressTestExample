@@ -23,12 +23,11 @@ class plgUserSignUp {
         cy.get('[href="#/touch_collections"]').click()
     }
     static verifyContactUsNewTab() {
-        cy.get('[class="stl-button button--light"]').should('have.attr', 'target', '_blank')
+        cy.get('[href="https://sendoso.com/beta-feedback/"]').should('have.attr', 'target', '_blank')
     }
 
     static selectGiftCard(input) {
         cy.get('[class="stl-grid-row"]'+'img[alt='+input+']').click()
-        //[class="stl-grid-row"] img[alt="Amazon Gift Card"]
     }
 
     static selectHowToSend(input) {

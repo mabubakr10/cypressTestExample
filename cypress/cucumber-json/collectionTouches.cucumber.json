@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"plgUser\"",
             "result": {
               "status": "passed",
-              "duration": 232000000
+              "duration": 207000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I open up the core page",
             "result": {
               "status": "passed",
-              "duration": 8710000000
+              "duration": 6963000000
             }
           },
           {
@@ -51,9 +51,8 @@
             "line": 7,
             "name": "I enter the username in the username field on the login page",
             "result": {
-              "status": "failed",
-              "duration": 50060000000,
-              "error_message": "AssertionError: Timed out retrying: Expected to find element: `#1-email`, but never found it.\n    at Function.enterUserName (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:329:10)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:88:25)\n    at Context.resolveAndRunStepDefinition (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:11003:9)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:10345:35)"
+              "status": "passed",
+              "duration": 1326000000
             }
           },
           {
@@ -62,7 +61,8 @@
             "line": 8,
             "name": "I enter the password in the password field on the login page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 424000000
             }
           },
           {
@@ -71,7 +71,8 @@
             "line": 9,
             "name": "I click on the submit button of second button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 142000000
             }
           },
           {
@@ -80,7 +81,9 @@
             "line": 10,
             "name": "I click on the Collections tab to change view to collection of touches",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 86642000000,
+              "error_message": "AssertionError: Timed out retrying: Expected to find element: `[href=\"#/touch_collections\"]`, but never found it.\n    at Function.clickCollectionsTab (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:676:10)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:143:29)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:11621:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/contactUs/collectionTouches.feature:10963:35)"
             }
           },
           {
