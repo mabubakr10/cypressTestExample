@@ -1,6 +1,6 @@
 import { Given, When, Then, And,Before } from 'cypress-cucumber-preprocessor/steps'
 import LoginPage from "./steps/loginPage";
-import FP1046 from "./steps/FP1046";
+import FP1046_Single_item_send_steps from "./steps/FP1046_Single_item_send_steps";
 
 Then(/^I click on the Send button$/, function () {
     { force: true }
@@ -29,32 +29,32 @@ Then(/^I select single send method of sending$/, function () {
     cy.get('.container > .row > .col-md-4 > .form-group > #send_option').select('4')
 });
 Then(/^I add mailing address$/, function () {
-    FP1046.AddressPick()
+    FP1046_Single_item_send_steps.AddressPick()
 });
 Given(/^I close the cameo pop up$/, function () {
     cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
 });
 Then(/^I add the Suite$/, function () {
-    FP1046.Suite()
+    FP1046_Single_item_send_steps.Suite()
 });
 Then(/^I add the City$/, function () {
-    FP1046.City()
+    FP1046_Single_item_send_steps.City()
 
 });
 Then(/^I add the State$/, function () {
-    FP1046.State()
+    FP1046_Single_item_send_steps.State()
 });
 Then(/^I add the country$/, function () {
-    FP1046.Country()
+    FP1046_Single_item_send_steps.Country()
 });
 Then(/^I add the Zip$/, function () {
-    FP1046.Zip()
+    FP1046_Single_item_send_steps.Zip()
 });
 Then(/^I click on the OK button$/, function () {
     cy.xpath("//button[@class='swal2-confirm swal2-styled']").click()
 });
 Then(/^I add the Recipient Name$/, function () {
-    FP1046.RecipientName()
+    FP1046_Single_item_send_steps.RecipientName()
 });
 Then(/^I click on the Send button to send the touch$/, function () {
     cy.get("#send_submit").click()
