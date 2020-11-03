@@ -1,6 +1,6 @@
 import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
-import integrationPLG from '../steps/plg/integrationPage/integrationUpgrade'
-import sideBar from '../steps/plg/sideBarPanel'
+import integrationPLG from '../../steps/plg/integrationPage/integrationUpgrade'
+import sideBar from '../../steps/plg/sideBarPanel'
 
 Before(() => {
     cy.viewport(1920, 1080)
@@ -15,5 +15,5 @@ And('I verify the upgrade sign is present on all locked integrations', () => {
 })
 
 But('I verify the upgrade sign is not present on Salesforce integration', () => {
-    contactUsLink.verifyUpgrade('Salesforce')
+    integrationPLG.verifyUpgrade('Salesforce')
 })

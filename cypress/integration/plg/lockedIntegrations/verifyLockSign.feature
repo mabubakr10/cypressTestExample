@@ -11,8 +11,6 @@ Feature: Verify the 'Upgrade' is displayed against all locked integrations on th
         And I click on the integrations option
         And I verify the upgrade sign is present on all locked integrations
         But I verify the upgrade sign is not present on Salesforce integration
-
-
         Examples:
             | fileName | key     |
             | profiles | plgUser |
