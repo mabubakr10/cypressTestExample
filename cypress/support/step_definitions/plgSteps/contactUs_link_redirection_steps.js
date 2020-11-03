@@ -31,9 +31,29 @@ And('I select In bulk to multiple email addresses option from the drop down', ()
 })
 
 And('I click on Account Balance option', () => {
-    sideBar.accountBalanceTab()
+    sideBar.selectModule('Account Balance')
+})
+
+And('I click on Touches option', () => {
+    sideBar.selectModule('Touches')
+})
+
+And('I click on Inventory option', () => {
+    sideBar.selectModule('Inventory')
+})
+
+And('I click on Templates option', () => {
+    sideBar.selectModule('Templates')
+})
+
+And('I click on Analytics option', () => {
+    sideBar.selectModule('Analytics')
+})
+
+And('I click on Teams option', () => {
+    sideBar.selectModule('Teams')
 })
 
 Then('I verify the new tab for Contact Us form', () => {
-contactUsLink.verifyContactUsNewTab()
+    contactUsLink.verifyContactUsNewTab()
 })
