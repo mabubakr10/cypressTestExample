@@ -24,5 +24,14 @@
    "numberCC": "4242424242424242",
    "expiryCC": "1224",
    "cvcCC": "123"
-}
+},
+  "SingleItem": {
+    "MailingAdd": "32223 North US Highway 12",
+    "Floor": "1",
+    "City":"Volo",
+    "State": "IL",
+    "Zip": "60073",
+    "Country": "United States",
+    "RecipientName": "Jaffar"
+  }
 }
