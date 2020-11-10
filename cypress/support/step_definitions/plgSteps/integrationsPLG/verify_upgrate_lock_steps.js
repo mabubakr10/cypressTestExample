@@ -11,7 +11,7 @@ And('I click on the integrations option', () => {
 })
 
 And('I verify the upgrade sign is present on all locked integrations', () => {
-    integrationPLG.verifyUpgrade('Marketo', 'Cameo', 'Outreach', 'SalesLoft')
+    integrationPLG.verifyUpgrade('Marketo', 'Outreach', 'SalesLoft', 'Hubspot', 'Amazon', 'Oracle | Eloqua', 'Survey Monkey', 'Salesforce Pardot', 'Bombora', 'Rollworks', 'Influitive', 'Enboarder', 'Magento', 'Shopify')
 })
 
 But('I verify the upgrade sign is not present on Salesforce integration', () => {
