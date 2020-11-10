@@ -3,14 +3,18 @@ class integrationLinks {
         this.dataSet = null
     }
 
-    static verifyUpgrade(integration) {
-        cy.get('[class="integration-set-up"]').contains(integration).then(($btn) => {
+    static verifyUpgrade() {
+        cy.get('[class="integration-content"] h3').invoke('text').should((integrations) => {
 
-            if (integration != 'Salesforce') {
-                $btn.should('have.class', 'icon icon-lock stl-mr-3')
-            }
-            else {
-                $btn.should('not.have.class', 'icon icon-lock stl-mr-3')
+
+            for (const i = 0; i < integrations.size(); i++) {
+                if (integrations[i] != "Salesforce") {
+                    cy.get('[class="integration-content"] h3')[i].parents().siblings('[class="icon icon-lock stl-mr-3"]').should('have.text', 'Upgrade')
+                }
+
+                else {
+                    cy.log('Salesfoce integration: do not need to upgrade')
+                }
             }
         })
     }
