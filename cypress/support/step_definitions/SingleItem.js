@@ -10,7 +10,7 @@ Then(/^I click on the Send button$/, function () {
 });
 Then(/^I click on the single item touch$/, function () {
     { force: true }
-    cy.wait(10000)
+    cy.wait(2000)
     cy.xpath("//div[@class='col-sm-4 egift_radio_btn_div'][1]").click()
 });
 Given(/^I close up the pop up button after login$/, function () {
