@@ -2,13 +2,14 @@ import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/st
 import LoginPage from '../steps/loginPage'
 import plgLink from '../steps/plg/plgSignUp'
 
-Before(() => {
-    cy.viewport(1920, 1080)
-});
+ Before(() => {
+      cy.viewport(1000, 660)
+ });
 
 Given('I open up the core page', () => {
-    cy.clearCookies({ log: true })
-    cy.clearLocalStorage('test', { log: true })
+    // cy.clearCookies({ log: true })
+    // cy.clearLocalStorage('test', { log: true })
+    cy.viewport(1000, 660)
     LoginPage.visic()
     cy.log(URL)
 })
