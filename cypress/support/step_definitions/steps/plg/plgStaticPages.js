@@ -4,6 +4,7 @@ class plgStaticPages {
     constructor() {
         this.dataSet = null
     }
+    
     static clickTemplatesTab() {
         cy.get('a[href="/user_custom_templates"]').click()
     }
