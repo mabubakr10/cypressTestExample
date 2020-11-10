@@ -5,7 +5,6 @@ const SUBMIT_BUTTON = 'button[name="submit"]'
 const Close_PopUp='.btn-modal-close'
 
 class FP1046_Single_item_send_steps {
-
     static visic() {
         cy.clearLocalStorage()
         cy.clearCookies()
@@ -17,32 +16,34 @@ class FP1046_Single_item_send_steps {
     }
     static clickSendBtn(){
         { force: true }
-        cy.wait(3000)
-        // cy.visit("https://core-qa.sendoso.com/send#/")
         cy.get('.send-action').click()
     }
     static clickSingleItemtouch(){
         { force: true }
-        cy.wait(2000)
         cy.xpath("//div[@class='col-sm-4 egift_radio_btn_div'][1]").click()
     }
     static signout(){
         { force: true }
-        cy.wait(2000)
         cy.xpath("//*[@id=\"global_nav_sidebar\"]/div/div[4]/nav/ul/li[3]/a").click()
-        cy.wait(2000)
         cy.xpath("//*[@id=\"global_nav_sidebar\"]/div/div[4]/nav/ul/li[3]/div/a[2]").click()
     }
     static selectsingleitemsend(){
         { force: true }
-        cy.wait(2000)
         cy.get('.container > .row > .col-md-4 > .form-group > #send_option').select('4')
     }
+    static clickSendButton(){
+        cy.get("#send_submit").click()
+    }
+    static CloseCameo(){
+        cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
+    }
 
+    static ClickOK(){
+        cy.xpath("//button[@class='swal2-confirm swal2-styled']").click()
+    }
     static submit() {
         cy.get(SUBMIT_BUTTON).click()
     }
-
     static readFileJson(fileName, key) {
         cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
             this.data = jsonObj[key]

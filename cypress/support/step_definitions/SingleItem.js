@@ -23,14 +23,13 @@ Then(/^I add mailing address$/, function () {
     FP1046_Single_item_send_steps.AddressPick()
 });
 Given(/^I close the cameo pop up$/, function () {
-    cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
+    FP1046_Single_item_send_steps.CloseCameo()
 });
 Then(/^I add the Suite$/, function () {
     FP1046_Single_item_send_steps.Suite()
 });
 Then(/^I add the City$/, function () {
     FP1046_Single_item_send_steps.City()
-
 });
 Then(/^I add the State$/, function () {
     FP1046_Single_item_send_steps.State()
@@ -42,13 +41,13 @@ Then(/^I add the Zip$/, function () {
     FP1046_Single_item_send_steps.Zip()
 });
 Then(/^I click on the OK button$/, function () {
-    cy.xpath("//button[@class='swal2-confirm swal2-styled']").click()
+    FP1046_Single_item_send_steps.ClickOK()
 });
 Then(/^I add the Recipient Name$/, function () {
     FP1046_Single_item_send_steps.RecipientName()
 });
 Then(/^I click on the Send button to send the touch$/, function () {
-    cy.get("#send_submit").click()
+    FP1046_Single_item_send_steps.clickSendButton()
 });
 Given(/^I fill username with of sendoso applicaton "([^"]*)"$/, function () {
     LoginPage.enterUserName();
