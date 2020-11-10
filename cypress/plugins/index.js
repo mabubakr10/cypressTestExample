@@ -12,7 +12,7 @@
 
 const AllureWriter = require('@shelex/cypress-allure-plugin/writer');
 const cucumber = require('cypress-cucumber-preprocessor').default
-const mysql = require('mysql')
+// const mysql = require('mysql')
 
 /**
  * @type {Cypress.PluginConfig}

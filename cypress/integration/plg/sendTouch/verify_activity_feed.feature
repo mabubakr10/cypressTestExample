@@ -1,6 +1,6 @@
 @plgUser
 
-Feature: for PLG user, verify the Activity Logs in Activity Feed after sending touch
+Feature: for PLG user, verify the Activity Logs in Activity Feed after sending touch (flag on)
 
   Scenario Outline: Send eGift Touch and verify Activity Feed
     And I read the file with the "<fileName>" and "<key>"
@@ -8,7 +8,6 @@ Feature: for PLG user, verify the Activity Logs in Activity Feed after sending t
     And I enter the username in the username field on the login page
     And I enter the password in the password field on the login page
     And I click on the submit button of second button
-    And I close the popup of the advertise in our application
     And I am logged in as PLG user
     And I click the Send button
     And I select an eGift Touch

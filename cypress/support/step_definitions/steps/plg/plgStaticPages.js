@@ -43,5 +43,9 @@ class plgStaticPages {
     static verifyStaticTouches() {
         cy.get(staticHeading).should('have.text', 'Unlock more send options')
     }
+
+    static verifyStaticActivityFeed() {
+        cy.get('[class="icon icon-lock stl-text-size-12 stl-ml-2"]').should('be.visible')
+    }
 }
 export default plgStaticPages
