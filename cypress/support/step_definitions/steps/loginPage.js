@@ -7,11 +7,10 @@ const Close_PopUp = '.btn-modal-close'
 class LoginPage {
 
   static visic() {
-    // cy.getCookies().should('have.length', 1)
-    cy.clearLocalStorage();
-    console.log("Clearing Storage");
-    cy.clearCookies()
-    console.log("Clearing Cookies");
+    // cy.clearLocalStorage();
+    // console.log("Clearing Storage");
+    // cy.clearCookies()
+    // console.log("Clearing Cookies");
     cy.visit(URL)
     console.log("Hitting Core QA URL");
   }
@@ -22,7 +21,6 @@ class LoginPage {
 
   static submit() {
     cy.get(SUBMIT_BUTTON).click()
-    //cy.get(Close_PopUp).click()
   }
 
   static readFileJson(fileName, key) {
@@ -30,14 +28,6 @@ class LoginPage {
       this.data = jsonObj[key]
     });
   }
-
-  // static switchToFrameFun()
-  // {
-  //   const frameToSwitch="#mce_0_ifr";
-  //   const body='0.contentDocument.body'
-  //   cy.visit('https://the-internet.herokuapp.com/iframe');
-  //   cy.switchToIframe(frameToSwitch).clear().type("testing");
-  // }
 
   static closePopUp() {
     cy.get(Close_PopUp).click({ timeout: 3000, multiple: true, force: true });
