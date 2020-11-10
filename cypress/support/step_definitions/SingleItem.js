@@ -5,11 +5,12 @@ import FP1046_Single_item_send_steps from "./steps/FP1046_Single_item_send_steps
 Then(/^I click on the Send button$/, function () {
     { force: true }
     cy.wait(3000)
-    cy.get('.send-action').click()
+    // cy.visit("https://core-qa.sendoso.com/send#/")
+   cy.get('.send-action').click()
 });
 Then(/^I click on the single item touch$/, function () {
     { force: true }
-    cy.wait(3000)
+    cy.wait(10000)
     cy.xpath("//div[@class='col-sm-4 egift_radio_btn_div'][1]").click()
 });
 Given(/^I close up the pop up button after login$/, function () {

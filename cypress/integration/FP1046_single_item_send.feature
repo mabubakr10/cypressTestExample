@@ -2,7 +2,7 @@
 Feature: Single Item Send by selecting from the sending menu
   Scenario Outline: Send a single-item touch
     And I read the file with the "<filepath>" and "<key>"
-    Given I open login page
+    Given I open up the core page
     And I fill username with of sendoso applicaton "<username>"
     And I fill password with of sendoso applicaton "<password>"
     And I click on the submit button of second button
