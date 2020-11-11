@@ -16,9 +16,9 @@ class touchMain {
     }
 
     static verifyPreCreatedTouches() {
-        cy.get('[class="stl-card__content"] h3').invoke('text').should((eGifts) => {
+        cy.get('[class="stl-card__content"] h3').invoke('text').should((touches) => {
 
-            expect(eGifts.size()).to.equal(10)
+            expect(touches.size()).to.equal(10)
         })
     }
 }
