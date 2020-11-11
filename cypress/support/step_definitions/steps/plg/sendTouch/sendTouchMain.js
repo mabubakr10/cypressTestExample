@@ -14,5 +14,12 @@ class touchMain {
     static sendSummaryPayButton() {
         cy.get('[id="pay-btn"]').click()
     }
+
+    static verifyPreCreatedTouches() {
+        cy.get('[class="stl-card__content"] h3').invoke('text').should((eGifts) => {
+
+            expect(eGifts.size()).to.equal(10)
+        })
+    }
 }
 export default touchMain
