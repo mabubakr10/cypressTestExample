@@ -32,7 +32,7 @@
             "name": "I read the file with the \"profiles\" and \"coffeeurl\"",
             "result": {
               "status": "passed",
-              "duration": 116000000
+              "duration": 211000000
             }
           },
           {
@@ -41,8 +41,8 @@
             "line": 6,
             "name": "I open up the integration page",
             "result": {
-              "status": "passed",
-              "duration": 9948000000
+              "status": "undefined",
+              "duration": 21000000
             }
           },
           {
@@ -51,8 +51,7 @@
             "line": 7,
             "name": "I enter the username in the username field on the login page",
             "result": {
-              "status": "passed",
-              "duration": 542000000
+              "status": "skipped"
             }
           },
           {
@@ -61,8 +60,7 @@
             "line": 8,
             "name": "I enter the password in the password field on the login page",
             "result": {
-              "status": "passed",
-              "duration": 352000000
+              "status": "skipped"
             }
           },
           {
@@ -71,8 +69,7 @@
             "line": 9,
             "name": "I click on the submit button of second button",
             "result": {
-              "status": "passed",
-              "duration": 119000000
+              "status": "skipped"
             }
           },
           {
@@ -81,8 +78,7 @@
             "line": 10,
             "name": "I close the popup of the advertise in our application",
             "result": {
-              "status": "passed",
-              "duration": 16961000000
+              "status": "skipped"
             }
           },
           {
@@ -91,8 +87,7 @@
             "line": 11,
             "name": "I click on the close popup of the application",
             "result": {
-              "status": "passed",
-              "duration": 161000000
+              "status": "skipped"
             }
           },
           {
@@ -101,8 +96,7 @@
             "line": 12,
             "name": "I click on the create touch button",
             "result": {
-              "status": "passed",
-              "duration": 3930000000
+              "status": "skipped"
             }
           }
         ]
