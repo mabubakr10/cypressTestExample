@@ -2,7 +2,7 @@ import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/st
 import LoginPage from './steps/loginPage'
 
 Before(() => {
-  cy.viewport(2000, 3000)
+  cy.viewport(1280, 800)
 });
 
 Given('I open login page', () => {

@@ -11,5 +11,9 @@ class sideBarOptions {
     {
         cy.xpath('//*[@class="stl-nav__list"]').contains(module).click()
     }
+
+    static viewIntegrations() {
+        cy.xpath('[class="stl-nav stl-nav--horizontal"] [href="/integrations"]').click()
+    }
 }
 export default sideBarOptions
