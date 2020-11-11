@@ -7,10 +7,6 @@ const Close_PopUp = '.btn-modal-close'
 class LoginPage {
 
   static visic() {
-    // cy.clearLocalStorage();
-    // console.log("Clearing Storage");
-    // cy.clearCookies()
-    // console.log("Clearing Cookies");
     cy.visit(URL)
     console.log("Hitting Core QA URL");
   }
@@ -46,5 +42,4 @@ class LoginPage {
     cy.get(PASSWORD_INPUT).type(this.data.password)
   }
 }
-
 export default LoginPage
