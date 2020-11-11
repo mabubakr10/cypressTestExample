@@ -5,7 +5,6 @@ import directTouch from '../../steps/plg/sendTouch/sendSendosoDirect'
 import touchMain from '../../steps/plg/sendTouch/sendTouchMain'
 import accountBalanceView from '../../steps/plg/accountBalance/viewAccountBalance';
 
-
 Before(() => {
     cy.viewport(1920, 1080)
 });
@@ -45,6 +44,7 @@ And('I click the Pay button on Send Summary view', () => {
 And('I verify the eGift sent success message appears and click Okay', () => {
     eGiftTouch.sendEGiftSuccessMessage()
 })
+
 Then('I verify the todays date and touch was eGift item', () => {
     accountBalanceView.activityFeedView()
 })
