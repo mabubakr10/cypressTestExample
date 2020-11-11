@@ -1,0 +1,111 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Verify Touches Static Page",
+    "line": 2,
+    "id": "verify-touches-static-page",
+    "tags": [
+      {
+        "name": "@plgUser",
+        "line": 1
+      }
+    ],
+    "uri": "verifyTouches.feature",
+    "elements": [
+      {
+        "id": "verify-touches-static-page;for-plg-user,-verify-the-user-is-shown-a-static-touches-page",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "For PLG user, verify the user is shown a static Touches page",
+        "tags": [
+          {
+            "name": "@plgUser",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I read the file with the \"profiles\" and \"plgUser\"",
+            "result": {
+              "status": "passed",
+              "duration": 204000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open up the core page",
+            "result": {
+              "status": "passed",
+              "duration": 6590000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter the username in the username field on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 1316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter the password in the password field on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 418000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the submit button of second button",
+            "result": {
+              "status": "passed",
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am logged in as PLG user",
+            "result": {
+              "status": "failed",
+              "duration": 86906000000,
+              "error_message": "AssertionError: Timed out retrying: Expected to find element: `div[title=\"Close Survey\"]`, but never found it.\n    at Function.closeSurvey (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/verifyStaticPages/verifyTouches.feature:812:10)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/verifyStaticPages/verifyTouches.feature:300:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/verifyStaticPages/verifyTouches.feature:11621:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/verifyStaticPages/verifyTouches.feature:10963:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on the Touches tab",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I verify the user is shown a Touches static page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

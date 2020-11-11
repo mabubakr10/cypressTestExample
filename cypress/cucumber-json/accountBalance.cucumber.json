@@ -1,0 +1,108 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "PLG Contact us button on on Account Balance view",
+    "line": 2,
+    "id": "plg-contact-us-button-on-on-account-balance-view",
+    "tags": [
+      {
+        "name": "@plgUser",
+        "line": 1
+      }
+    ],
+    "uri": "accountBalance.feature",
+    "elements": [
+      {
+        "id": "plg-contact-us-button-on-on-account-balance-view;for-plg-user-verify-contact-us-button-on-account-balance-view",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "for PLG user verify Contact us button on Account Balance view",
+        "tags": [
+          {
+            "name": "@plgUser",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I read the file with the \"profiles\" and \"plgUser\"",
+            "result": {
+              "status": "passed",
+              "duration": 4109000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open up the core page",
+            "result": {
+              "status": "passed",
+              "duration": 94757000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter the username in the username field on the login page",
+            "result": {
+              "status": "failed",
+              "duration": 50174000000,
+              "error_message": "AssertionError: Timed out retrying: Expected to find element: `#1-email`, but never found it.\n    at Function.enterUserName (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/accountBalance.feature:623:10)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/accountBalance.feature:116:25)\n    at Context.resolveAndRunStepDefinition (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/accountBalance.feature:11686:9)\n    at Context.eval (https://core-qa.sendoso.com/__cypress/tests?p=cypress/integration/plg/contactUs/accountBalance.feature:11028:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter the password in the password field on the login page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the submit button of second button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I close the popup of the advertise in our application",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on Account Balance option",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I verify the new tab for Contact Us form",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
