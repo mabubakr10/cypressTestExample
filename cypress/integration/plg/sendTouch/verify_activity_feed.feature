@@ -1,7 +1,5 @@
 @plgUser
-
 Feature: for PLG user, verify the Activity Logs in Activity Feed after sending touch (flag on)
-
   Scenario Outline: Send eGift Touch and verify Activity Feed
     And I read the file with the "<fileName>" and "<key>"
     Given I open up the core page

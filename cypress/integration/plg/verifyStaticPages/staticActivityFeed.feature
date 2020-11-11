@@ -1,7 +1,5 @@
 @plgUser
-
 Feature: for PLG user, verify the Activity Feed is a static page
-
   Scenario Outline: Verify Activity Feed is a static page
     And I read the file with the "<fileName>" and "<key>"
     Given I open up the core page
