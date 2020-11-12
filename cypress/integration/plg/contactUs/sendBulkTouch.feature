@@ -1,6 +1,5 @@
 @plgUser
 Feature: PLG Contact us button on Send single touch in bulk
-
     Scenario Outline: for PLG user verify Contact us button on Send single touch in bulk to multiple email
         And I read the file with the "<fileName>" and "<key>"
         Given I open up the core page
@@ -11,7 +10,6 @@ Feature: PLG Contact us button on Send single touch in bulk
         And I click on the Amazon Gift Card
         And I select In bulk to multiple email addresses option from the drop down
         Then I verify the new tab for Contact Us form
-
         Examples:
             | fileName | key     |
             | profiles | plgUser |

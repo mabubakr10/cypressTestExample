@@ -1,11 +1,5 @@
 @plgUser
-<<<<<<< HEAD
 Feature: for PLG user, verify the pre created touches are available for a new user.
-=======
-
-Feature: for PLG user, verify the pre created touches are available for a new user.
-
->>>>>>> 01640b30840d43c5f7991de16c6048c6aac61c5c
     Scenario Outline: Sign up/in a PLG user
         And I read the file with the "<fileName>" and "<key>"
         Given I open up the core page
