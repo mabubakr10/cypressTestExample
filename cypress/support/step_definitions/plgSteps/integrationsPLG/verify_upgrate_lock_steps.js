@@ -6,7 +6,7 @@ Before(() => {
     cy.viewport(1920, 1080)
 });
 
-And('I click on the Account Balance Module', () => {
+And('I click on the integrations option', () => {
     sideBar.viewIntegrations()
 })
 

@@ -10,7 +10,7 @@ class plgUserSignUp {
     }
     
     static clickGenerateLink() {
-        cy.get('#admin-tabs > li:nth-child(26) > a').click()
+        cy.get('#admin-tabs > li:nth-child(14) > a').click()
     }
 
     static clickGenerateButton() {

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-class plgUserSignUp {
-=======
 class contactUsLink {
->>>>>>> 9e57cea... [PN-214] verify upgrade sign is displayed on locked integrations
     constructor() {
         this.dataSet = null
     }
@@ -38,8 +34,4 @@ class contactUsLink {
         cy.get('[name="send_option"]').select(input).should('have.value', '6')
     }
 }
-<<<<<<< HEAD
-export default plgUserSignUp
-=======
 export default contactUsLink
->>>>>>> 9e57cea... [PN-214] verify upgrade sign is displayed on locked integrations

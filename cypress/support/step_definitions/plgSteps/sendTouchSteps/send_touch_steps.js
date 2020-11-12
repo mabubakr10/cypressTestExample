@@ -5,7 +5,6 @@ import sendosoDirectTouch from '../../steps/plg/sendTouch/sendSendosoDirect'
 import touchMain from '../../steps/plg/sendTouch/sendTouchMain'
 import accountBalanceView from '../../steps/plg/accountBalance/viewAccountBalance'
 
-
 Before(() => {
     cy.viewport(1920, 1080)
 });

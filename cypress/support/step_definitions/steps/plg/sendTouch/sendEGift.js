@@ -24,6 +24,5 @@ class eGiftTouch {
     static sendEGiftTouch() {
         cy.get('[class="btn btn-primary btn-lg send_to_single_email fund_check_button"]').click()
     }
-
 }
 export default eGiftTouch

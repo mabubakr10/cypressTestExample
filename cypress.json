@@ -1,0 +1,24 @@
+{
+  "video": false,
+  "defaultCommandTimeout": 50000,
+  "pageLoadTimeout": 500000,
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "testFiles": "**/*.{feature,features}",
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "projectId": "ysysvz",
+  "chromeWebSecurity": false,
+  "experimentalSourceRewriting": true,
+  "supportFile": "cypress/support/index.js",
+
+  "env": {
+    "db": {
+      "host": "dev-sendoso.c7vion3zxz9k.us-west-2.rds.amazonaws.com",
+      "user": "root",
+      "password": "pbrxwxJjq9kWfHwgx7xZ",
+      "database": "core-sendoso",
+      "port": "3306"
+    }
+  }
+}
+
