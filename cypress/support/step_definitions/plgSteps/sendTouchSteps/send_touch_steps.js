@@ -1,6 +1,7 @@
 import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
 import sideBar from '../../steps/plg/sideBarPanel'
 import eGiftTouch from '../../steps/plg/sendTouch/sendEGift'
+import directTouch from '../../steps/plg/sendTouch/sendSendosoDirect'
 import touchMain from '../../steps/plg/sendTouch/sendTouchMain'
 import accountBalanceView from '../../steps/plg/accountBalance/viewAccountBalance';
 
@@ -10,6 +11,14 @@ Before(() => {
 
 And('I click the Send button', () => {
     sideBar.sendTouchButton()
+})
+
+And('I click the eGifts Main tab', () => {
+    eGiftTouch.clickeGiftsTab()
+})
+
+And('I click the Sendoso Direct Main tab', () => {
+    directTouch.clickSendosoDirectTab()
 })
 
 And('I select an eGift Touch', () => {
@@ -36,6 +45,10 @@ And('I verify the eGift sent success message appears and click Okay', () => {
     eGiftTouch.sendEGiftSuccessMessage()
 })
 
-Then ('I verify the todays date and touch was eGift item', () => {
+Then('I verify the todays date and touch was eGift item', () => {
     accountBalanceView.activityFeedView()
+})
+
+Then('I verify the pre-created touches', () => {
+    touchMain.verifyPreCreatedTouches()
 })

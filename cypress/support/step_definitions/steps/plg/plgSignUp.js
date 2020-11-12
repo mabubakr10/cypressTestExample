@@ -2,6 +2,7 @@ const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const emailPLG = 'test+' + Math.floor(Math.random() * 99999) + '@sendoso.com'
+const emailPLGnew
 
 class plgUserSignUp {
     constructor() {
@@ -9,7 +10,7 @@ class plgUserSignUp {
     }
     
     static clickGenerateLink() {
-        cy.get('#admin-tabs > li:nth-child(26) > a').click()
+        cy.get('#admin-tabs > li:nth-child(14) > a').click()
     }
 
     static clickGenerateButton() {
@@ -18,7 +19,7 @@ class plgUserSignUp {
 
     static addPlgEmail() {
         cy.get('input[id="reference_code_email"]').type(emailPLG)
-        console.log(emailPLG)
+        emailPLGnew = emailPLG;
     }
 
     static createLinkButton() {
@@ -58,7 +59,7 @@ class plgUserSignUp {
     }
 
     static logInPlg() {
-        cy.get(USERNAME_INPUT).type(emailPLG)
+        cy.get(USERNAME_INPUT).type(emailPLGnew)
         cy.get(PASSWORD_INPUT).type(this.data.password)
         cy.get(SUBMIT_BUTTON).click()
     }

@@ -1,0 +1,188 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "PLG Create user and login",
+    "line": 2,
+    "id": "plg-create-user-and-login",
+    "tags": [
+      {
+        "name": "@signUpPlg",
+        "line": 1
+      }
+    ],
+    "uri": "selfSignUp.feature",
+    "elements": [
+      {
+        "id": "plg-create-user-and-login;creating-the-plg-user-and-then-going-through-onbarding-and-login",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Creating the PLG user and then going through onbarding and login",
+        "tags": [
+          {
+            "name": "@signUpPlg",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I read the file with the \"profiles\" and \"signUpPlg\"",
+            "result": {
+              "status": "passed",
+              "duration": 283000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open up the core page",
+            "result": {
+              "status": "passed",
+              "duration": 7405000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter the username in the username field on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 1614000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter the password in the password field on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the submit button of second button",
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on the Generate Self-Serve SignUp Link",
+            "result": {
+              "status": "passed",
+              "duration": 22349000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on the Create Self-Serve SignUp button",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I enter the email id in the email field on the Generate Self-Serve SignUp page \"<username>\"",
+            "result": {
+              "status": "passed",
+              "duration": 586000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click on the Create button",
+            "result": {
+              "status": "passed",
+              "duration": 4651000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click on OK to close the pop up",
+            "result": {
+              "status": "passed",
+              "duration": 233000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I copy and redirect to the Sign Up token",
+            "result": {
+              "status": "failed",
+              "duration": 3169000000,
+              "error_message": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n    at Context.visit (https://sendoso.auth0.com/__cypress/runner/cypress_runner.js:157449:19)\nFrom Your Spec Code:\n    at Function.getLinkPlg (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:773:10)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:222:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:11621:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:10963:35)\nFrom Your Spec Code:\n    at Function.getLinkPlg (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:773:10)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:222:25)\n    at Context.resolveAndRunStepDefinition (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:11621:9)\n    at Context.eval (https://sendoso.auth0.com/__cypress/tests?p=cypress/integration/plg/signup/selfSignUp.feature:10963:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I complete the sign up form",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I login with the new PLG user",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I fill the onboarding form",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I add Credit Card Details",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I verify PLG user is redirected to core dashboard",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

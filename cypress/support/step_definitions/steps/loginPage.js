@@ -11,10 +11,6 @@ class LoginPage {
   }
 
   static visic() {
-    // cy.clearLocalStorage();
-    // console.log("Clearing Storage");
-    // cy.clearCookies()
-    // console.log("Clearing Cookies");
     cy.visit(URL)
 
   }

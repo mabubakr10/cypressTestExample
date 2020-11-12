@@ -1,6 +1,6 @@
 import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
-import plgStatic from '../steps/plg/plgStaticPages'
-import plgLink from '../steps/plg/plgSignUp'
+import plgStatic from '../../steps/plg/plgStaticPages.js'
+import plgLink from '../../steps/plg/plgSignUp'
 
 Before(() => {
     cy.viewport(1920, 1080)
