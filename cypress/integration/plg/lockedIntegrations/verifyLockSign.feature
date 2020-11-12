@@ -9,8 +9,7 @@ Feature: Verify the 'Upgrade' is displayed against all locked integrations on th
         And I click on the submit button of second button
         And I close the popup of the advertise in our application
         And I click on the integrations option
-        And I verify the upgrade sign is present on all locked integrations
-        But I verify the upgrade sign is not present on Salesforce integration
+        Then I verify the upgrade sign is present on all locked integrations
         Examples:
             | fileName | key     |
             | profiles | plgUser |
