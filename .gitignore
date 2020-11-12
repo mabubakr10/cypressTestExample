@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-node_modules
-=======
 # Logs
 logs
 *.log
@@ -34,4 +31,3 @@ cypress/screenshots
 .idea/workspace.xml
 allure-results/**/*
 cypress/cucumber-json
->>>>>>> 9fc591c77e8392229681b368da0d4fec4e904bdd
