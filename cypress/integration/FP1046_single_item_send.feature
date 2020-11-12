@@ -1,9 +1,8 @@
-@SingleItem
+@FP1046
 Feature: Single Item Send by selecting from the sending menu
-
   Scenario Outline: Send a single-item touch
-    And I read the file with the "<fileName>" and "<key>"
-    Given I open login page
+    And I read the file with the "<filepath>" and "<key>"
+    Given I open up the core page
     And I fill username with of sendoso applicaton "<username>"
     And I fill password with of sendoso applicaton "<password>"
     And I click on the submit button of second button
@@ -24,5 +23,5 @@ Feature: Single Item Send by selecting from the sending menu
     Then I signout of the application
 
     Examples:
-      |username                            |password          |fileName|key        |
-      |jaffar.lone+automation+1@sendoso.com|Ricochet_37_@_#_qe|profiles|SingleItem |
+      |username                            |password          |filepath                      |key        |
+      |jaffar.lone+automation+1@sendoso.com|Ricochet_37_@_#_qe|cypress/fixtures/profiles.json|SingleItem |
