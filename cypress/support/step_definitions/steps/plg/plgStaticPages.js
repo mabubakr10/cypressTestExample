@@ -48,5 +48,9 @@ class plgStaticPages {
     static verifyStaticActivityFeed() {
         cy.get('[class="icon icon-lock stl-text-size-12 stl-ml-2"]').should('be.visible')
     }
+
+    static verifyUploadCsv() {
+        cy.get('h2[class="stl-text-medium stl-mb-3"]').should('have.text', 'Unlock bulk sending via CSV uploads')
+    }
 }
 export default plgStaticPages

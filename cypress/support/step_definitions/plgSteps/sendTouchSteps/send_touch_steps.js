@@ -25,8 +25,16 @@ And('I select an eGift Touch', () => {
     eGiftTouch.selectGiftCard('Amazon Gift Card')
 })
 
+And('I select a Sendoso Direct Touch', () => {
+    directTouch.selectSendosoDirectSend('SnackNation - 15 Snack Box')
+})
+
 And('I select How to send the touch from drop down', () => {
     eGiftTouch.selectHowToSend('To a single Email address')
+})
+
+And('I select How to send the Sendoso Direct from drop down', () => {
+    directTouch.selectHowToSendDirect('To a group of people (Upload Excel CSV)')
 })
 
 And('I add details for the send touch to single email', () => {
