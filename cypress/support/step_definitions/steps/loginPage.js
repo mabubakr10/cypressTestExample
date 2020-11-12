@@ -1,17 +1,24 @@
-const URL = 'https://core-qa.sendoso.com/'
+
+const URL = 'https://integration-app.sendoso.com/'
 const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const Close_PopUp = '.btn-modal-close'
 
 class LoginPage {
+  constructor() {
+    this.dataSet = null
+  }
 
   static visic() {
     cy.visit(URL)
-    console.log("Hitting Core QA URL");
+
+  }
+  static fillUsername(username) {
+    cy.get(USERNAME_INPUT).type(username)
   }
 
-  static fillPassword() {
+  static fillPassword(password) {
     cy.get(PASSWORD_INPUT).type(this.data.password)
   }
 
@@ -25,22 +32,11 @@ class LoginPage {
     });
   }
 
-  static closePopUp() {
-    cy.get(Close_PopUp).click({ timeout: 3000, multiple: true, force: true });
+  static switchToFrameFun() {
+    const frameToSwitch = "#mce_0_ifr";
+    cy.visit('https://the-internet.herokuapp.com/iframe');
+    cy.switchToIframe(frameToSwitch).clear().type("testing");
   }
 
-  static closePopupAdvertise() {
-    cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({ timeout: 2000, multiple: true, force: true })
-  }
-
-  static enterUserName() {
-    cy.get(USERNAME_INPUT).type(this.data.username)
-    console.log("Entered" + this.data.username + " inside username  field")
-  }
-
-  static enterPassword() {
-    cy.get(PASSWORD_INPUT).type(this.data.password)
-  }
 }
-
 export default LoginPage

@@ -1,6 +1,5 @@
 @plgUser
 Feature: Verify Analytics Static Page
-
   Scenario Outline: For PLG user, verify the user is shown a static Analytics page
     And I read the file with the "<fileName>" and "<key>"
     Given I open up the core page

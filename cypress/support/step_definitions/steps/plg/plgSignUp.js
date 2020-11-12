@@ -86,8 +86,4 @@ class plgUserSignUp {
         cy.get('span[class="icon icon-lock stl-mr-3"]').should('have.text', 'UPGRADE')
     }
 }
-<<<<<<< HEAD
 export default plgUserSignUp
-=======
-export default plgUserSignUp
->>>>>>> e91d26495ecfce777dc949539834a0c6c8ca2d2e

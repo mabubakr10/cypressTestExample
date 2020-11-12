@@ -1,7 +1,5 @@
 @plgUser
-
 Feature: for PLG user, verify the pre created touches are available for a new user.
-
     Scenario Outline: Sign up/in a PLG user
         And I read the file with the "<fileName>" and "<key>"
         Given I open up the core page
@@ -29,8 +27,6 @@ Feature: for PLG user, verify the pre created touches are available for a new us
         And I click the Send button
         And I click the Sendoso Direct Main tab
         Then I verify the pre-created touches
-
-
         Examples:
             | fileName | key       |
             | profiles | signUpPlg |
