@@ -86,15 +86,3 @@ class plgUserSignUp {
     }
 }
 export default plgUserSignUp
-
-
-
-        //var token = cy.get('.table-condensed tr:first-child td:first-child').invoke('text').then((text1) => { return text1})
-        //var token = cy.get('.table-condensed tr:first-child td:first-child').text()
-        //cy.pause()
-        // var token = cy.get('.table-condensed tr:first-child td:first-child').should(($td) => {
-        //     const text = $td.text()
-        //     return text
-        // })
-        //var token = cy.get('.table-condensed tr:first-child td:first-child').getText();
-        //var token = cy.get('.table-condensed ').find('tr:first-child td:first-child').invoke('text').then((text => {return text}))

@@ -9,7 +9,7 @@ Feature: PLG Create user and login
     And I click on the submit button of second button
     And I click on the Generate Self-Serve SignUp Link
     And I click on the Create Self-Serve SignUp button
-    And I enter the email id in the email field on the Generate Self-Serve SignUp page "<username>"
+    And I enter the email id in the email field on the Generate Self-Serve SignUp page
     And I click on the Create button
     And I click on OK to close the pop up
     And I copy and redirect to the Sign Up token

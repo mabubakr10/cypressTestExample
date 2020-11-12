@@ -8,5 +8,4 @@ class TouchCreation {
         cy.get('.wm-visual-design-canvas svg.wm-ignore-css-reset').click({timeout:2000, multiple: true ,force: true})
     }
 }
-
 export default TouchCreation

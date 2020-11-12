@@ -19,22 +19,21 @@
    "plgUser": {
       "url": "https://core-qa.sendoso.com",
       "username": "abubakr+plg+1@sendoso.com",
-      "password": "yREAhDN8tqUt7!",
+      "password": "Admin123456!",
       "numberCC": "4242424242424242",
       "expiryCC": "1224",
       "cvcCC": "123"
+   },
+   "SingleItem": {
+      "url": "https://core-qa.sendoso.com",
+      "username": "jaffar.lone+automation+1@sendoso.com",
+      "password": "Ricochet_37_@_#_qe",
+      "MailingAdd": "32223 North US Highway 12",
+      "Floor": "1",
+      "City": "Volo",
+      "State": "IL",
+      "Zip": "60073",
+      "Country": "United States",
+      "RecipientName": "Jaffar"
    }
-},
-  "SingleItem": {
-    "url": "https://core-qa.sendoso.com",
-    "username": "jaffar.lone+automation+1@sendoso.com",
-    "password": "Ricochet_37_@_#_qe",
-    "MailingAdd": "32223 North US Highway 12",
-    "Floor": "1",
-    "City":"Volo",
-    "State": "IL",
-    "Zip": "60073",
-    "Country": "United States",
-    "RecipientName": "Jaffar"
-  }
 }
