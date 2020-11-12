@@ -2,6 +2,7 @@ const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const emailPLG = 'test+' + Math.floor(Math.random() * 99999) + '@sendoso.com'
+const emailPLGnew
 
 class plgUserSignUp {
     constructor() {
@@ -18,7 +19,7 @@ class plgUserSignUp {
 
     static addPlgEmail() {
         cy.get('input[id="reference_code_email"]').type(emailPLG)
-        console.log(emailPLG)
+        emailPLGnew = emailPLG;
     }
 
     static createLinkButton() {
@@ -58,7 +59,7 @@ class plgUserSignUp {
     }
 
     static logInPlg() {
-        cy.get(USERNAME_INPUT).type(emailPLG)
+        cy.get(USERNAME_INPUT).type(emailPLGnew)
         cy.get(PASSWORD_INPUT).type(this.data.password)
         cy.get(SUBMIT_BUTTON).click()
     }
@@ -85,4 +86,8 @@ class plgUserSignUp {
         cy.get('span[class="icon icon-lock stl-mr-3"]').should('have.text', 'UPGRADE')
     }
 }
+<<<<<<< HEAD
 export default plgUserSignUp
+=======
+export default plgUserSignUp
+>>>>>>> e91d26495ecfce777dc949539834a0c6c8ca2d2e

@@ -10,10 +10,6 @@ And('I click on the integrations option', () => {
     sideBar.viewIntegrations()
 })
 
-And('I verify the upgrade sign is present on all locked integrations', () => {
-    integrationPLG.verifyUpgrade('Marketo', 'Cameo', 'Outreach', 'SalesLoft')
-})
-
-But('I verify the upgrade sign is not present on Salesforce integration', () => {
-    integrationPLG.verifyUpgrade('Salesforce')
+Then('I verify the upgrade sign is present on all locked integrations', () => {
+    integrationPLG.verifyUpgrade()
 })
