@@ -4,10 +4,17 @@ import plgLink from '../steps/plg/plgSignUp'
 
 Before(() => {
     cy.viewport(1000, 660)
+<<<<<<< HEAD
 })
 
 Given('I open up the core page', () => {
     // cy.viewport(1000, 660)
+=======
+});
+
+Given('I open up the core page', () => {
+    cy.viewport(1000, 660)
+>>>>>>> 9fc591c... Merge pull request #34 from sendoso/PN-373-minor-indentation-updates
     LoginPage.visic()
 })
 
