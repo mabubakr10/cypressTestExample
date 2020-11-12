@@ -65,6 +65,10 @@ Then('I verify the sent success message appears and click Okay', () => {
     eGiftTouch.sendSuccessMessage()
 })
 
-Then ('I verify the todays date and touch was eGift item', () => {
+Then('I verify the todays date and touch was eGift item', () => {
     accountBalanceView.activityFeedView()
+})
+
+Then('I verify the pre-created touches', () => {
+    touchMain.verifyPreCreatedTouches()
 })

@@ -1,6 +1,7 @@
 import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
 import LoginPage from '../steps/loginPage'
 import plgLink from '../steps/plg/plgSignUp'
+const emailPlgNew
 
  Before(() => {
       cy.viewport(1000, 660)
@@ -22,8 +23,8 @@ And('I click on the Create Self-Serve SignUp button', () => {
     plgLink.clickGenerateButton()
 })
 
-And('I enter the email id in the email field on the Generate Self-Serve SignUp page {string}', email => {
-    plgLink.addPlgEmail(email)
+And('I enter the email id in the email field on the Generate Self-Serve SignUp page', () => {
+    plgLink.addPlgEmail()
 })
 
 And('I click on the Create button', () => {
