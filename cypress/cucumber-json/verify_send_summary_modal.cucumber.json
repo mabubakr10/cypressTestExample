@@ -1,0 +1,151 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "for PLG user, verify the hide/show send summary checkbox works",
+    "line": 2,
+    "id": "for-plg-user,-verify-the-hide/show-send-summary-checkbox-works",
+    "tags": [
+      {
+        "name": "@plgUser",
+        "line": 1
+      }
+    ],
+    "uri": "verify_send_summary_modal.feature",
+    "elements": [
+      {
+        "id": "for-plg-user,-verify-the-hide/show-send-summary-checkbox-works;change-from-settings-and-send-egift-touch-to-verify-send-summary-appears",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "change from settings and send eGift touch to verify send summary appears",
+        "tags": [
+          {
+            "name": "@plgUser",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I click the User Settings option",
+            "result": {
+              "status": "failed",
+              "duration": 50288000000,
+              "error_message": "AssertionError: Timed out retrying: Expected to find element: `[class=\"stl-nav__link_icon stl-mr-0\"] [class=\"icon-setting-fill\"]`, but never found it.\n    at Function.viewUserSettings (http://localhost:49734/__cypress/tests?p=cypress/integration/plg/sendTouch/verify_send_summary_modal.feature:1589:10)\n    at Context.eval (http://localhost:49734/__cypress/tests?p=cypress/integration/plg/sendTouch/verify_send_summary_modal.feature:507:28)\n    at Context.resolveAndRunStepDefinition (http://localhost:49734/__cypress/tests?p=cypress/integration/plg/sendTouch/verify_send_summary_modal.feature:12356:9)\n    at Context.eval (http://localhost:49734/__cypress/tests?p=cypress/integration/plg/sendTouch/verify_send_summary_modal.feature:11698:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I click the Notification tab",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I click the Send Summary Checkbox",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I click save for Send Summary change",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I click OK to success message",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I click the Send button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I click the eGift Tab",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I select an eGift Touch",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I select How to send the touch from drop down",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I add details for the send touch to single email",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I click the Send eGift touch button after adding details",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I click the Pay button on Send Summary view",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "I verify the sent success message appears and click Okay",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

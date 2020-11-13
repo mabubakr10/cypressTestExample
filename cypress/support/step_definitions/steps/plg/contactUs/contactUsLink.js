@@ -1,4 +1,4 @@
-class plgUserSignUp {
+class contactUsLink {
     constructor() {
         this.dataSet = null
     }
@@ -34,4 +34,4 @@ class plgUserSignUp {
         cy.get('[name="send_option"]').select(input).should('have.value', '6')
     }
 }
-export default plgUserSignUp
+export default contactUsLink

@@ -10,7 +10,6 @@ Feature: PLG Contact us button on Account Balance view
         And I close the popup of the advertise in our application
         And I click on Account Balance option
         Then I verify the new tab for Contact Us form
-
         Examples:
             | fileName | key     |
             | profiles | plgUser |
