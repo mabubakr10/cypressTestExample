@@ -1,5 +1,6 @@
 @plgUser
 Feature: PLG Contact us button on Send single touch in bulk
+
     Scenario Outline: for PLG user verify Contact us button on Send single touch in bulk to multiple email
         And I read the file with the "<fileName>" and "<key>"
         Given I open up the core page

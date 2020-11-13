@@ -19,10 +19,15 @@
    "plgUser": {
       "url": "https://core-qa.sendoso.com",
       "username": "abubakr+plg+1@sendoso.com",
-      "password": "Admin123456!",
+      "password": "yREAhDN8tqUt7!",
       "numberCC": "4242424242424242",
       "expiryCC": "1224",
-      "cvcCC": "123"
+      "cvcCC": "123",
+      "address": "447 Battery Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94111",
+      "country": "US"
    },
    "SingleItem": {
       "url": "https://core-qa.sendoso.com",
