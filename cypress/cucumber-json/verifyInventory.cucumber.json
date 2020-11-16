@@ -1,0 +1,107 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Verify Inventory Static Page",
+    "line": 2,
+    "id": "verify-inventory-static-page",
+    "tags": [
+      {
+        "name": "@plgUser",
+        "line": 1
+      }
+    ],
+    "uri": "verifyInventory.feature",
+    "elements": [
+      {
+        "id": "verify-inventory-static-page;for-plg-user,-verify-the-user-is-shown-a-static-inventory-page",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "For PLG user, verify the user is shown a static Inventory page",
+        "tags": [
+          {
+            "name": "@plgUser",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I read the file with the \"profiles\" and \"plgUser\"",
+            "result": {
+              "status": "passed",
+              "duration": 142000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open up the core page",
+            "result": {
+              "status": "passed",
+              "duration": 6090000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter the username in the username field on the login page",
+            "result": {
+              "status": "undefined",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter the password in the password field on the login page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the submit button of second button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am logged in as PLG user",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on the Inventory tab",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I verify the user is shown a Inventory static page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

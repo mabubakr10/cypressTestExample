@@ -11,6 +11,10 @@ class touchMain {
         cy.get('[href="#/touch_collections"]').click()
     }
 
+    static dontShowSummaryCheckbox() {
+        cy.get('[id="checkboxText"]').click()
+    }
+
     static sendSummaryPayButton() {
         cy.get('[id="pay-btn"]').click()
     }

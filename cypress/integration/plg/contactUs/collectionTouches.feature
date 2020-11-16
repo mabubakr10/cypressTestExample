@@ -9,7 +9,6 @@ Feature: PLG Contact us button on Collection of touches view
         And I click on the submit button of second button
         And I click on the Collections tab to change view to collection of touches
         Then I verify the new tab for Contact Us form
-
         Examples:
             | fileName | key     |
             | profiles | plgUser |
