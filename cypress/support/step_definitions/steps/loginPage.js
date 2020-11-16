@@ -15,11 +15,7 @@ class LoginPage {
 
   }
   static fillUsername(username) {
-<<<<<<< HEAD
     cy.get(USERNAME_INPUT).type(this.data.username)
-=======
-    cy.get(USERNAME_INPUT).type(username)
->>>>>>> 9fc591c... Merge pull request #34 from sendoso/PN-373-minor-indentation-updates
   }
 
   static fillPassword(password) {
@@ -33,11 +29,7 @@ class LoginPage {
   static readFileJson(fileName, key) {
     cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
       this.data = jsonObj[key]
-<<<<<<< HEAD
     })
-=======
-    });
->>>>>>> 9fc591c... Merge pull request #34 from sendoso/PN-373-minor-indentation-updates
   }
 
   static switchToFrameFun() {

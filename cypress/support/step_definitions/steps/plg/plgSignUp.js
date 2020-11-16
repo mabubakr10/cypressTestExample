@@ -2,7 +2,6 @@ const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const emailPLG = 'test+' + Math.floor(Math.random() * 99999) + '@sendoso.com'
-// const emailPLGnew = null
 
 class plgUserSignUp {
 
