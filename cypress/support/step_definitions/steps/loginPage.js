@@ -15,7 +15,7 @@ class LoginPage {
 
   }
   static fillUsername(username) {
-    cy.get(USERNAME_INPUT).type(username)
+    cy.get(USERNAME_INPUT).type(this.data.username)
   }
 
   static fillPassword(password) {
@@ -29,7 +29,7 @@ class LoginPage {
   static readFileJson(fileName, key) {
     cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
       this.data = jsonObj[key]
-    });
+    })
   }
 
   static switchToFrameFun() {

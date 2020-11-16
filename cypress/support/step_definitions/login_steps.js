@@ -3,7 +3,7 @@ import LoginPage from './steps/loginPage'
 
 Before(() => {
   cy.viewport(1280, 800)
-});
+})
 
 Given('I open login page', () => {
   LoginPage.visic()
@@ -40,9 +40,9 @@ Given(/^I fill username with of sendoso applicaton$/, function () {
 });
 
 Given(/^I enter the username in the username field on the login page$/, function () {
-  LoginPage.enterUserName()
+  LoginPage.fillUsername()
 });
 
 Given(/^I enter the password in the password field on the login page$/, function () {
-  LoginPage.enterPassword()
+  LoginPage.fillPassword()
 })
