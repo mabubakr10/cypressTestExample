@@ -22,7 +22,8 @@
       "password": "Admin123456!",
       "numberCC": "4242424242424242",
       "expiryCC": "1224",
-      "cvcCC": "123"
+      "cvcCC": "123",
+      "emailPLGnew": ""
    },
    "SingleItem": {
       "url": "https://core-qa.sendoso.com",
