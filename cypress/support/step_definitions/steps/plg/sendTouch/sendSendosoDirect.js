@@ -28,5 +28,9 @@ class sendosoDirectTouch {
     static sendSendosoDirectTouch() {
         cy.get('[id="send_submit"]').click()
     }
+
+    static selectHowToSendDirect(input) {
+        cy.get('[name="send_option"]').select(input).should('have.value', '5')
+    }
 }
 export default sendosoDirectTouch
