@@ -25,5 +25,14 @@ class touchMain {
             expect(touches.size()).to.equal(10)
         })
     }
+
+    static sendSuccessMessage() {
+        cy.get('[class="stl-modal__body"] p').invoke('text').should((success) => {
+
+            expect(success).to.include('Your eGift is on its way')
+        })
+
+        cy.get('[class="stl-button stl-button--primary close-modal"]').click()
+    }
 }
 export default touchMain

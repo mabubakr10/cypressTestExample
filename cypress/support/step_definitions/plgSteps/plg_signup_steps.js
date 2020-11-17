@@ -1,7 +1,6 @@
 import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
 import LoginPage from '../steps/loginPage'
 import plgLink from '../steps/plg/plgSignUp'
-const emailPlgNew
 
 Before(() => {
     cy.viewport(1920, 1080)
@@ -10,7 +9,7 @@ Before(() => {
 Given('I open up the core page', () => {
     cy.clearCookies({ log: true })
     cy.clearLocalStorage('test', { log: true })
-    LoginPage.visic()
+    LoginPage.visitCore()
     cy.log(URL)
 })
 

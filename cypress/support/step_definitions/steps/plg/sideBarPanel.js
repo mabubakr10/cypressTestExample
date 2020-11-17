@@ -4,7 +4,7 @@ class sideBarOptions {
     }
 
     static sendTouchButton() {
-        cy.xpath('[class="stl-button button--light"]').click()
+        cy.get('[class="stl-button button--light"]').click()
     }
 
     static selectModule(module) {
@@ -12,7 +12,7 @@ class sideBarOptions {
     }
 
     static viewIntegrations() {
-        cy.xpath('[class="stl-nav stl-nav--horizontal"] [href="/integrations"]').click()
+        cy.get('[class="stl-nav stl-nav--horizontal"] [href="/integrations"]').click()
     }
 
     static viewUserSettings() {

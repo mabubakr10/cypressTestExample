@@ -11,7 +11,7 @@ Feature: for PLG user, verify the Plan & Billing view
     And I click on the Plan & Billing Tab
     And I verify the Plan name
     And I click on replace the credit card button
-    And I add/replace the credit card info
+    And I add or replace the credit card info
     And I click the Add button to save info
     Then I verify the card is saved
     Examples:

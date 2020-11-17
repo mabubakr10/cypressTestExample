@@ -22,10 +22,6 @@ And('I click on the Collections tab to change view to collection of touches', ()
     contactUsLink.clickCollectionsTab()
 })
 
-And('I click on the Amazon Gift Card', () => {
-    contactUsLink.selectGiftCard('Amazon Gift Card')
-})
-
 And('I select In bulk to multiple email addresses option from the drop down', () => {
     contactUsLink.selectHowToSend('In bulk to multiple email addresses')
 })

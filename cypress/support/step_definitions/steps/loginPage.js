@@ -1,9 +1,9 @@
 
-const URL = 'https://integration-app.sendoso.com/'
+const URL = 'https://core-qa.sendoso.com/'
 const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
-const Close_PopUp='.btn-modal-close'
+const Close_PopUp = '.btn-modal-close'
 
 class LoginPage {
   constructor() {
@@ -14,6 +14,12 @@ class LoginPage {
     cy.visit(URL)
 
   }
+
+  static visitCore() {
+    cy.forceVisit(URL)
+
+  }
+
   static fillUsername(username) {
     cy.get(USERNAME_INPUT).type(this.data.username)
   }
@@ -37,6 +43,5 @@ class LoginPage {
     cy.visit('https://the-internet.herokuapp.com/iframe');
     cy.switchToIframe(frameToSwitch).clear().type("testing");
   }
-
 }
 export default LoginPage

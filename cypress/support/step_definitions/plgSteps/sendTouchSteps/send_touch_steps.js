@@ -62,8 +62,9 @@ And('I click the Pay button on Send Summary view', () => {
 })
 
 Then('I verify the sent success message appears and click Okay', () => {
-    eGiftTouch.sendSuccessMessage()
+    touchMain.sendSuccessMessage()
 })
+
 Then ('I verify the todays date and touch was eGift item', () => {
     accountBalanceView.activityFeedView()
 })

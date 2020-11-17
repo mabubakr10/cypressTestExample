@@ -14,7 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prettier": "^2.1.1"
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "prettier": "^2.1.1",
+    "save": "^2.4.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,

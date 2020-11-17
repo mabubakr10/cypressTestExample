@@ -27,7 +27,7 @@ And ('I click on replace the credit card button', () => {
     accountBalanceView.addReplaceCreditCardOption()
 })
 
-And ('I add/replace the credit card info', () => {
+And ('I add or replace the credit card info', () => {
     accountBalanceView.addReplaceCreditCardForm()
 })
 

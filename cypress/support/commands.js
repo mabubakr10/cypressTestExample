@@ -47,6 +47,6 @@ Cypress.Commands.add('readJSonData', (fileName, key) => {
 
 Cypress.Commands.add('forceVisit', url => {
   cy.window().then(win => {
-    return win.open(url, '_self');
-  });
-});
+    return win.open(url, '_self')
+  })
+})

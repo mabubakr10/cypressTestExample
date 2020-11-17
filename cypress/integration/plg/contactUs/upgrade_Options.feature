@@ -11,19 +11,19 @@ Feature: for PLG user, Contact us button, on each view of limited modules that c
         And I click on Touches option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Inventory view
+    # Scenario Outline: for PLG user verify Contact us button on Inventory view
         And I click on Inventory option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Templates view
+    # Scenario Outline: for PLG user verify Contact us button on Templates view
         And I click on Templates option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Analytics view
+    # Scenario Outline: for PLG user verify Contact us button on Analytics view
         And I click on Analytics option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Teams view
+    # Scenario Outline: for PLG user verify Contact us button on Teams view
         And I click on Teams option
         Then I verify the new tab for Contact Us form
         Examples:

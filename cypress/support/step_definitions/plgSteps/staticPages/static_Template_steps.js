@@ -7,7 +7,6 @@ Before(() => {
 });
 
 Given('I am logged in as PLG user', () => {
-    plgLink.closeSurvey()
     plgLink.verifyUserPlg()
 })
 

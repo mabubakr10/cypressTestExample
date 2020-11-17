@@ -19,7 +19,6 @@ class plgUserSignUp {
 
     static addPlgEmail() {
         cy.get('input[id="reference_code_email"]').type(emailPLG)
-        this.data.emailPLGnew = emailPLG;
     }
 
     static createLinkButton() {
@@ -53,13 +52,15 @@ class plgUserSignUp {
         cy.get('input[id="password"]').type(this.data.password)
         cy.get('input[id="confirm_password"]').type(this.data.password)
         cy.get('label[for="check-me"]').click()
-        cy.get('button[id="sign-up-btn"]').click()
     }
 
     static logInPlg() {
-        cy.get(USERNAME_INPUT).type(this.data.emailPLGnew)
-        cy.get(PASSWORD_INPUT).type(this.data.password)
-        cy.get(SUBMIT_BUTTON).click()
+        cy.get('input[placeholder="Email Address"]').invoke('text').then((plgEmail) => {
+            cy.get('button[id="sign-up-btn"]').click()
+            cy.get(USERNAME_INPUT).type(plgEmail)
+            cy.get(PASSWORD_INPUT).type(this.data.password)
+            cy.get(SUBMIT_BUTTON).click()
+        })
     }
 
     static onboardingForm() {
@@ -81,7 +82,7 @@ class plgUserSignUp {
     }
 
     static verifyUserPlg() {
-        cy.get('span[class="icon icon-lock stl-mr-3"]').should('have.text', 'UPGRADE')
+        cy.get('div[class="stl-text-size-12 stl-text-grays-5 stl-mb-3 stl-pl-4"]').should($el => expect($el.text().trim()).to.equal('UPGRADE'));
     }
 }
 export default plgUserSignUp
