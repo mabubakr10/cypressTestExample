@@ -14,4 +14,3 @@ Feature: PLG Contact us button on Send single touch in bulk
         Examples:
             | fileName | key     |
             | profiles | plgUser |
-            

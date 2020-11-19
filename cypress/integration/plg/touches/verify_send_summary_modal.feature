@@ -17,7 +17,7 @@ Feature: for PLG user, verify the hide/show send summary checkbox works
         And I click the Pay button on Send Summary view
         Then I verify the sent success message appears and click Okay
 
-    Scenario Outline: Send Sendoso Direct Touch and verify Send Summary remains hidden
+        # Scenario Outline: Send Sendoso Direct Touch and verify Send Summary remains hidden
         And I click the Send button
         And I click the Sendoso Direct Tab
         And I select a Sendoso Direct Touch
@@ -26,7 +26,7 @@ Feature: for PLG user, verify the hide/show send summary checkbox works
         And I click the Send Sendoso Direct touch button after adding details
         Then I verify the sent success message appears and click Okay
 
-    Scenario Outline: change from settings and send eGift touch to verify send summary appears
+        # Scenario Outline: change from settings and send eGift touch to verify send summary appears
         And I click the User Settings option
         And I click the Notification tab
         And I click the Send Summary Checkbox

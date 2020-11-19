@@ -7,7 +7,6 @@ Feature: for PLG user, Contact us button, on each view of limited modules that c
         And I enter the username in the username field on the login page
         And I enter the password in the password field on the login page
         And I click on the submit button of second button
-        And I close the popup of the advertise in our application
         And I click on Touches option
         Then I verify the new tab for Contact Us form
 
