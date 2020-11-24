@@ -10,7 +10,7 @@ Feature: for PLG user, verify the Invoices & Receipts view is correctly logging 
     And I click the Send button
     And I select an eGift Touch
     And I select How to send the eGift touch from drop down
-    And I add details for the send eGift touch to single email
+    # And I add details for the send eGift touch to single email
     And I click the Send eGift touch button after adding details
     And I click the Pay button on Send Summary view
     And I verify the sent success message appears and click Okay

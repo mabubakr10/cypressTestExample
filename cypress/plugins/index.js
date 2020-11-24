@@ -10,7 +10,6 @@
 // https://on.cypress.io/plugins-guide
 // ***********************************************************
 
-const AllureWriter = require('@shelex/cypress-allure-plugin/writer');
 const cucumber = require('cypress-cucumber-preprocessor').default
 //const mysql = require('mysql')
 
@@ -24,11 +23,16 @@ module.exports = (on, config) => {
       return queryTestDb(query, config)
     },
   })
+}
 
-  on('file:preprocessor', cucumber())
-  AllureWriter(on, config);
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber());
+  allureWriter(on, config);
   return config;
 }
+
 // function queryTestDb(query, config) {
 //   // creates a new mysql connection using credentials from cypress.json env's
 //   const connection = mysql.createConnection(config.env.db)

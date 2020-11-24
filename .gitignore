@@ -31,3 +31,4 @@ cypress/screenshots
 .idea/workspace.xml
 allure-results/**/*
 cypress/cucumber-json
+allure-report/**/*

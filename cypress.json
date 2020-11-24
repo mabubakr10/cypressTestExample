@@ -12,6 +12,7 @@
   "supportFile": "cypress/support/index.js",
 
   "env": {
+    "allureResultsPath": "allure-results",
     "db": {
       "host": "dev-sendoso.c7vion3zxz9k.us-west-2.rds.amazonaws.com",
       "user": "root",
@@ -21,4 +22,3 @@
     }
   }
 }
-

@@ -28,21 +28,20 @@
 Cypress.Commands.add('readJSonData', (fileName, key) => {
   cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
     this.data = jsonObj[key]
-  });
+  })
+})
 
-  Cypress.Commands.add('switchToIframe', (iframe) => {
-    return cy
-      .get(iframe)
-      .its('0.contentDocument.body')
-      .should('be.visible')
-      .then(cy.wrap);
-  });
+Cypress.Commands.add('switchToIframe', (iframe) => {
+  return cy
+    .get(iframe)
+    .its('0.contentDocument.body')
+    .should('be.visible')
+    .then(cy.wrap);
+})
 
-  Cypress.Commands.add('getText', { prevSubject: 'element' }, ($element) => {
-    cy.wrap($element).scrollIntoView();
-    return cy.wrap($element).invoke('text');
-  });
-
+Cypress.Commands.add('getText', { prevSubject: 'element' }, ($element) => {
+  cy.wrap($element).scrollIntoView();
+  return cy.wrap($element).invoke('text');
 })
 
 Cypress.Commands.add('forceVisit', url => {
