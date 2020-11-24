@@ -27,8 +27,8 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 cypress/videos
-cypress/screenshots
 .idea/workspace.xml
 allure-results/**/*
 cypress/cucumber-json
 allure-report/**/*
+cypress/screenshots

@@ -25,28 +25,61 @@ module.exports = (on, config) => {
   })
 }
 
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+const allureWriter = require('@shelex/cypress-allure-plugin/writer')
 
 module.exports = (on, config) => {
+
   on('file:preprocessor', cucumber());
   allureWriter(on, config);
-  return config;
-}
+  on('task', {
+      readAllureResults: () => {
+          try {
+              const dir = 'cypress/fixtures';
+              const subdirs = ['basic', 'cucumber'];
+              return subdirs.reduce((dirMap, subdir) => {
+                  const dirFiles = fs.readdirSync(path.join(dir, subdir));
+                  dirMap[subdir] = dirFiles.reduce((fileMap, f) => {
+                      const getType = (file) => {
+                          const types = {
+                              suites: (f) => f.includes('-container'),
+                              tests: (f) => f.includes('-result'),
+                              attachments: (f) => f.includes('-attachment')
+                          };
+                          return Object.keys(types).find((type) =>
+                              types[type](file)
+                          );
+                      };
 
-// function queryTestDb(query, config) {
-//   // creates a new mysql connection using credentials from cypress.json env's
-//   const connection = mysql.createConnection(config.env.db)
-//   // start connection to db
-//   connection.connect()
-//   // exec query + disconnect to db as a Promise
-//   return new Promise((resolve, reject) => {
-//     connection.query(query, (error, results) => {
-//       if (error) reject(error)
-//       else {
-//         connection.end()
-//         // console.log(results)
-//         return resolve(results)
-//       }
-//     })
-//   })
-// }
+                      const resultType = getType(f);
+
+                      const fileContent = fs.readFileSync(
+                          path.join(dir, subdir, f),
+                          {
+                              encoding: 'utf-8'
+                          }
+                      );
+
+                      const fileValue = f.endsWith('.json')
+                          ? {
+                                ...JSON.parse(fileContent),
+                                fileName: f
+                            }
+                          : {
+                                content: fileContent.substr(0, 20),
+                                fileName: f
+                            };
+
+                      !fileMap[resultType] && (fileMap[resultType] = []);
+
+                      fileMap[resultType].push(fileValue);
+                      return fileMap;
+                  }, {});
+                  return dirMap;
+              }, {});
+          } catch (e) {
+              return e;
+          }
+      }
+  });
+  return config;
+};
