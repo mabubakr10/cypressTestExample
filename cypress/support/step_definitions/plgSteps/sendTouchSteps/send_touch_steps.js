@@ -34,14 +34,14 @@ And('I select How to send the eGift touch from drop down', () => {
 })
 
 And('I select How to send the Sendoso Direct touch from drop down', () => {
-    sendosoDirectTouch.selectHowToSendSendosoDirect('To a single person/company')
+    sendosoDirectTouch.selectHowToSendSendosoDirect('To a group of people (Upload Excel CSV)')
 })
 
 And('I add details for the send eGift touch to single email', () => {
     eGiftTouch.singleEmailSendeGift()
 })
 
-And('I add details for the send Sendoso Direct touch to single person/company', () => {
+And('I add details for the send Sendoso Direct touch to single person or company', () => {
     sendosoDirectTouch.singleEmailSendDirect()
 })
 
@@ -53,7 +53,7 @@ And('I click the Send Sendoso Direct touch button after adding details', () => {
     sendosoDirectTouch.sendSendosoDirectTouch()
 })
 
-And('I click the (Dont Show Summary) checkbox', () => {
+And('I click the Dont Show Summary checkbox', () => {
     touchMain.dontShowSummaryCheckbox()
 })
 
@@ -61,8 +61,12 @@ And('I click the Pay button on Send Summary view', () => {
     touchMain.sendSummaryPayButton()
 })
 
-Then('I verify the sent success message appears and click Okay', () => {
-    touchMain.sendSuccessMessage()
+Then('I verify the sent success message appears for eGift and click Okay', () => {
+    touchMain.eGiftSuccessMessage()
+})
+
+Then('I verify the sent success message appears for Sendoso Direct and click Okay', () => {
+    touchMain.directSuccessMessage()
 })
 
 Then ('I verify the todays date and touch was eGift item', () => {

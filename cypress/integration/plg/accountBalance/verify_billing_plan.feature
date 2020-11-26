@@ -14,6 +14,7 @@ Feature: for PLG user, verify the Plan & Billing view
     And I add or replace the credit card info
     And I click the Add button to save info
     Then I verify the card is saved
+    And I click on log out button
     Examples:
       | fileName | key     |
       | profiles | plgUser |

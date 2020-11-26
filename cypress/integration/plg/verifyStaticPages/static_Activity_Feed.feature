@@ -10,6 +10,8 @@ Feature: for PLG user, verify the Activity Feed is a static page
     And I click on the Account Balance Module
     And I click on the Activity Feed Tab
     Then I verify Activity Feed is a static page
+    And I click on log out button
+    
     Examples:
       | fileName | key     |
       | profiles | plgUser |

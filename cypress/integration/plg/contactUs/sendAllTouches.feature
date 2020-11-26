@@ -12,6 +12,8 @@ Feature: PLG Contact us button on Send All touches view
         Then I verify the new tab for Contact Us form
         And I click on the Sendoso Direct tab to change view to Sendoso Direct touches
         Then I verify the new tab for Contact Us form
+        And I click on log out button
+        
         Examples:
             | fileName | key     |
             | profiles | plgUser |

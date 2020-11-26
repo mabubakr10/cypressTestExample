@@ -26,10 +26,19 @@ class touchMain {
         })
     }
 
-    static sendSuccessMessage() {
+    static eGiftSuccessMessage() {
         cy.get('[class="stl-modal__body"] p').invoke('text').should((success) => {
 
             expect(success).to.include('Your eGift is on its way')
+        })
+
+        cy.get('[class="stl-button stl-button--primary close-modal"]').click()
+    }
+
+    static directSuccessMessage() {
+        cy.get('[class="stl-modal__body"] p').invoke('text').should((success) => {
+
+            expect(success).to.include('when your package is shipped and delivered')
         })
 
         cy.get('[class="stl-button stl-button--primary close-modal"]').click()

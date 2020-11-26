@@ -27,6 +27,8 @@ Feature: for PLG user, verify the pre created touches are available for a new us
         And I click the Send button
         And I click the Sendoso Direct Main tab
         Then I verify the pre-created touches
+        And I click on log out button
+        
         Examples:
             | fileName | key       |
             | profiles | signUpPlg |

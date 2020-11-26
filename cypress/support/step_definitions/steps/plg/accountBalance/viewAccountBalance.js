@@ -60,7 +60,7 @@ class accountBalanceView {
 
     static verifyInvoicesReceipts() {
 
-        const todaysDate = Cypress.moment().tz('America/New_York').format('DD-MMM-YYYY')
+        const todaysDate = Cypress.moment().tz('America/Los_Angeles').format('DD-MMM-YYYY')
         cy.get('[class="stl-infinit_scroll__body"] [id="transaction-data"] tr td').eq(1).invoke('text').should((text1) => {
             expect(text1).to.contain(todaysDate)
         })

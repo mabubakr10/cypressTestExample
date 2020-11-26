@@ -1,3 +1,8 @@
+const address = "447 Battery Street"
+const city = "San Francisco"
+const state =  "CA"
+const zip = "94111"
+const country = "US"
 class sendosoDirectTouch {
     constructor() {
         this.dataSet = null
@@ -8,21 +13,23 @@ class sendosoDirectTouch {
     }
 
     static selectSendosoDirectSend(input) {
-        cy.get('[class="stl-grid-row"]' + 'img[alt=' + input + ']').click()
+        cy.get('[class="stl-grid-row"]'+' img[alt="'+input+'"]').click()
+
     }
 
     static selectHowToSendSendosoDirect(input) {
-        cy.get('[name="send_option"]').select(input).should('have.value', '6')
+        cy.get('[name="send_option"]').select(input).should('have.value', '5')
     }
 
     static singleEmailSendDirect() {
         cy.get('[id="send_name"]').type('Sendoso Direct')
-        cy.get('[id="street_number"]').type(this.data.address)
-        cy.get('[id="locality"]').type(this.data.city)
-        cy.get('[id="administrative_area_level_1"]').type(this.data.state)
-        cy.get('[id="postal_code"]').type(this.data.zip)
-        cy.get('[id="country"]').type(this.data.country)
-        cy.get('Add your message here').type('This is a Sendoso Direct Send')
+        cy.get('[id="street_number"]').type(address)
+        cy.get('[id="locality"]').type(city)
+        cy.get('[id="administrative_area_level_1"]').type(state)
+        cy.get('[id="postal_code"]').type(zip)
+        cy.get('[id="country"]').type(country)
+        cy.switchToIframe('[id="send_custom_message_ifr"]').type('This is a Sendoso Direct Send')
+        // cy.get('Add your message here').type('This is a Sendoso Direct Send')
     }
 
     static sendSendosoDirectTouch() {

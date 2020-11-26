@@ -25,6 +25,8 @@ Feature: for PLG user, Contact us button, on each view of limited modules that c
     # Scenario Outline: for PLG user verify Contact us button on Teams view
         And I click on Teams option
         Then I verify the new tab for Contact Us form
+        And I click on log out button
+        
         Examples:
             | fileName | key     |
             | profiles | plgUser |

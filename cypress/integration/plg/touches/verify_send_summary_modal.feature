@@ -10,21 +10,21 @@ Feature: for PLG user, verify the hide/show send summary checkbox works
         And I click the Send button
         And I click the eGift Tab
         And I select an eGift Touch
-        And I select How to send the touch from drop down
-        And I add details for the send touch to single email
+        # And I select How to send the touch from drop down
+        And I add details for the send eGift touch to single email
         And I click the Send eGift touch button after adding details
-        And I click the (Dont Show Summary) checkbox
+        And I click the Dont Show Summary checkbox
         And I click the Pay button on Send Summary view
-        Then I verify the sent success message appears and click Okay
+        Then I verify the sent success message appears for eGift and click Okay
 
         # Scenario Outline: Send Sendoso Direct Touch and verify Send Summary remains hidden
         And I click the Send button
         And I click the Sendoso Direct Tab
         And I select a Sendoso Direct Touch
-        And I select How to send the Sendoso Direct touch from drop down
-        And I add details for the send Sendoso Direct touch to single person/company
+        # And I select How to send the Sendoso Direct touch from drop down
+        And I add details for the send Sendoso Direct touch to single person or company
         And I click the Send Sendoso Direct touch button after adding details
-        Then I verify the sent success message appears and click Okay
+        Then I verify the sent success message appears for Sendoso Direct and click Okay
 
         # Scenario Outline: change from settings and send eGift touch to verify send summary appears
         And I click the User Settings option
@@ -35,11 +35,13 @@ Feature: for PLG user, verify the hide/show send summary checkbox works
         And I click the Send button
         And I click the eGift Tab
         And I select an eGift Touch
-        And I select How to send the touch from drop down
-        And I add details for the send touch to single email
+        # And I select How to send the touch from drop down
+        And I add details for the send eGift touch to single email
         And I click the Send eGift touch button after adding details
         And I click the Pay button on Send Summary view
-        Then I verify the sent success message appears and click Okay
+        Then I verify the sent success message appears for eGift and click Okay
+        And I click on log out button
+        
         Examples:
             | fileName | key     |
             | profiles | plgUser |

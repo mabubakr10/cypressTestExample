@@ -1,6 +1,8 @@
 import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
 import LoginPage from '../steps/loginPage'
 import plgLink from '../steps/plg/plgSignUp'
+import sideBar from '../steps/plg/sideBarPanel'
+
 
 Before(() => {
     cy.viewport(1920, 1080)
@@ -35,6 +37,10 @@ And('I click on OK to close the pop up', () => {
 
 And('I copy and redirect to the Sign Up token', () => {
     plgLink.getLinkPlg()
+})
+
+And('I click on log out button', () => {
+    sideBar.logOutButton()
 })
 
 Then('I complete the sign up form', () => {

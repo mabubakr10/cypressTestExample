@@ -10,7 +10,7 @@ Given('I am logged in as PLG user', () => {
     plgLink.verifyUserPlg()
 })
 
-And('I click on the Templates tab“', () => {
+And('I click on the Templates tab', () => {
     plgStatic.clickTemplatesTab()
 })
 

@@ -9,6 +9,8 @@ Feature: Verify the 'Upgrade' is displayed against all locked integrations on th
         And I click on the submit button of second button
         And I click on the integrations option
         Then I verify the upgrade sign is present on all locked integrations
+        And I click on log out button
+        
         Examples:
             | fileName | key     |
             | profiles | plgUser |

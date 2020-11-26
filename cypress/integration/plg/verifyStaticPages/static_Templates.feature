@@ -9,6 +9,8 @@ Feature: Verify Templates Static Page
     And I am logged in as PLG user
     And I click on the Templates tab
     Then I verify the user is shown a Templates static page
+    And I click on log out button
+    
     Examples:
       | fileName | key     |
       | profiles | plgUser |

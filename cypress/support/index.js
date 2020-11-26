@@ -24,8 +24,9 @@ require('@shelex/cypress-allure-plugin');
 import './commands.js';
 require('cypress-xpath');
 
-Cypress.moment.locale('en')
 Cypress.moment = require('moment-timezone')
+
+Cypress.moment.locale('en')
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   return false

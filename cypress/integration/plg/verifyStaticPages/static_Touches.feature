@@ -9,6 +9,8 @@ Feature: Verify Touches Static Page
         And I am logged in as PLG user
         And I click on the Touches tab
         Then I verify the user is shown a Touches static page
+        And I click on log out button
+        
         Examples:
             | fileName | key     |
             | profiles | plgUser |
