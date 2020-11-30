@@ -24,7 +24,7 @@ Feature: Verify the checkbox functionality is working correctly in user settings
         And I click the Notification tab
         Then I verify Email checkboxes are all marked
 
-    Scenario Outline: for PLG user verify the SMS checkbox functionality is working correctly in user settings
+    # Scenario Outline: for PLG user verify the SMS checkbox functionality is working correctly in user settings
         And I click the unsubscribe from all checkbox under SMS section
         And I click save for SMS settings
         And I click OK to success message
@@ -39,7 +39,7 @@ Feature: Verify the checkbox functionality is working correctly in user settings
         And I click the Notification tab
         Then I verify SMS checkboxes are all marked
 
-    Scenario Outline: for PLG user verify the In App checkbox functionality is working correctly in user settings
+    # Scenario Outline: for PLG user verify the In App checkbox functionality is working correctly in user settings
         And I click the Send Summary Checkbox
         And I click save for Send Summary change
         And I click OK to success message

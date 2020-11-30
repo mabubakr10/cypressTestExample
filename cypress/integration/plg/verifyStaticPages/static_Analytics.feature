@@ -10,6 +10,8 @@ Feature: Verify Analytics Static Page
     And I am logged in as PLG user
     And I click on the Analytics tab
     Then I verify the user is shown a Analytics static page
+    And I click on log out button
+    
     Examples:
       | fileName | key     |
       | profiles | plgUser |

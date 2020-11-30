@@ -7,9 +7,10 @@ Feature: PLG Contact us button on Account Balance view
         And I enter the username in the username field on the login page
         And I enter the password in the password field on the login page
         And I click on the submit button of second button
-        And I close the popup of the advertise in our application
         And I click on Account Balance option
         Then I verify the new tab for Contact Us form
+        And I click on log out button
+
         Examples:
             | fileName | key     |
             | profiles | plgUser |

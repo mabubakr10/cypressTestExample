@@ -7,25 +7,26 @@ Feature: for PLG user, Contact us button, on each view of limited modules that c
         And I enter the username in the username field on the login page
         And I enter the password in the password field on the login page
         And I click on the submit button of second button
-        And I close the popup of the advertise in our application
         And I click on Touches option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Inventory view
+    # Scenario Outline: for PLG user verify Contact us button on Inventory view
         And I click on Inventory option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Templates view
+    # Scenario Outline: for PLG user verify Contact us button on Templates view
         And I click on Templates option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Analytics view
+    # Scenario Outline: for PLG user verify Contact us button on Analytics view
         And I click on Analytics option
         Then I verify the new tab for Contact Us form
 
-    Scenario Outline: for PLG user verify Contact us button on Teams view
+    # Scenario Outline: for PLG user verify Contact us button on Teams view
         And I click on Teams option
         Then I verify the new tab for Contact Us form
+        And I click on log out button
+        
         Examples:
             | fileName | key     |
             | profiles | plgUser |

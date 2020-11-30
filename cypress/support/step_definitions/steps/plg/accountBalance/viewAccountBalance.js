@@ -1,3 +1,6 @@
+const numberCC = '4242424242424242'
+const expiryCC = '1224'
+const cvcCC = '456'
 class accountBalanceView {
     constructor() {
         this.dataSet = null
@@ -25,9 +28,10 @@ class accountBalanceView {
     }
 
     static verifyBillingPlan() {
-        cy.get('[class="stl-card__content"] h3').invoke('text').should((text1) => {
-            expect(text1).to.eq('Sendoso for Individuals')
+        cy.get('[class="stl-card__content"] h3').invoke('text').should(text1 => {
+            expect(text1.trim()).to.equal('Sendoso for Individuals')
         })
+
     }
 
     static addReplaceCreditCardOption() {
@@ -35,13 +39,13 @@ class accountBalanceView {
     }
 
     static addReplaceCreditCardForm() {
-        cy.get('[placeholder="1111 2222 3333 4444"]').type(this.data.numberCC)
-        cy.get('input[placeholder="09/24"]').type(this.data.expiryCC)
-        cy.get('input[placeholder="687"]').type(this.data.cvcCC)
+        cy.get('[class="stl-position-relative"] input').eq(0).type(numberCC)
+        cy.get('input[placeholder="09/24"]').type(expiryCC)
+        cy.get('[class="stl-position-relative"] input').eq(1).type(cvcCC)
     }
 
     static addReplaceCCButtonAdd() {
-        cy.get('add Card').click()
+        cy.get('[class="stl-button stl-button--primary"]').click()
     }
 
     static addReplaceCCButtonCancel() {
@@ -55,11 +59,16 @@ class accountBalanceView {
     }
 
     static verifyInvoicesReceipts() {
-        cy.get('[id="transaction-data"] tr').eq(1).then(() => {
-            const todaysDate = Cypress.moment().format('DD-MMM-YYYY')
-            cy.get('td').eq(1).should('have.text', todaysDate)
-            cy.get('td').eq(4).should('have.text', 'Credit Card')
-            cy.get('td').eq(6).should('have.text', 'Paid in full')
+
+        const todaysDate = Cypress.moment().tz('America/Los_Angeles').format('DD-MMM-YYYY')
+        cy.get('[class="stl-infinit_scroll__body"] [id="transaction-data"] tr td').eq(1).invoke('text').should((text1) => {
+            expect(text1).to.contain(todaysDate)
+        })
+        cy.get('[class="stl-infinit_scroll__body"] [id="transaction-data"] tr td').eq(4).invoke('text').should((text1) => {
+            expect(text1).to.contain('Credit Card')
+        })
+        cy.get('[class="stl-infinit_scroll__body"] [id="transaction-data"] tr td').eq(6).invoke('text').should((text1) => {
+            expect(text1).to.contain('Paid in full')
         })
     }
 }

@@ -8,10 +8,11 @@ Feature: PLG Contact us button on Send single touch in bulk
         And I enter the password in the password field on the login page
         And I click on the submit button of second button
         And I click on the eGifts tab to change view to eGifts
-        And I click on the Amazon Gift Card
+        And I select an eGift Touch
         And I select In bulk to multiple email addresses option from the drop down
         Then I verify the new tab for Contact Us form
+        And I click on log out button
+        
         Examples:
             | fileName | key     |
             | profiles | plgUser |
-            

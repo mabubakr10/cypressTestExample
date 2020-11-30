@@ -26,23 +26,38 @@ class plgStaticPages {
     }
 
     static verifyStaticTemplate() {
-        cy.get(staticHeading).should('have.text', 'Execute campaigns seamlessly with Templates')
+        cy.get(staticHeading).invoke('text').should((success) => {
+    
+            expect(success).to.include('Execute campaigns seamlessly with Templates')
+        })
     }
 
     static verifyStaticTeams() {
-        cy.get(staticHeading).should('have.text', 'Enterprise grade controls for teams')
+        cy.get(staticHeading).invoke('text').should((success) => {
+    
+            expect(success).to.include('Enterprise grade controls for teams')
+        })
     }
 
     static verifyStaticAnalytics() {
-        cy.get(staticHeading).should('have.text', 'Detailed insights into your team’s Sendoso usage')
+        cy.get(staticHeading).invoke('text').should((success) => {
+    
+            expect(success).to.include('Detailed insights into your team’s Sendoso usage')
+        })
     }
 
     static verifyStaticInventory() {
-        cy.get(staticHeading).should('have.text', 'Get access to Sendoso Warehouses')
+        cy.get(staticHeading).invoke('text').should((success) => {
+    
+            expect(success).to.include('Get access to Sendoso Warehouses')
+        })
     }
 
     static verifyStaticTouches() {
-        cy.get(staticHeading).should('have.text', 'Unlock more send options')
+        cy.get(staticHeading).invoke('text').should((success) => {
+    
+            expect(success).to.include('Unlock more send options')
+        })
     }
 
     static verifyStaticActivityFeed() {
@@ -50,7 +65,10 @@ class plgStaticPages {
     }
 
     static verifyUploadCsv() {
-        cy.get('h2[class="stl-text-medium stl-mb-3"]').should('have.text', 'Unlock bulk sending via CSV uploads')
+        cy.get('h2[class="stl-text-medium stl-mb-3"]').invoke('text').should((bulkCsv) => {
+    
+            expect(bulkCsv).to.include('Unlock bulk sending via CSV uploads')
+        })
     }
 }
 export default plgStaticPages

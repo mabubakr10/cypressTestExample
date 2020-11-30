@@ -18,15 +18,17 @@ Feature: for PLG user, verify the pre created touches are available for a new us
         And I add Credit Card Details
         Then I verify PLG user is redirected to core dashboard
 
-    Scenario Outline: for eGifts, verify pre created touches for the new PLG user
+    # Scenario Outline: for eGifts, verify pre created touches for the new PLG user
         And I click the Send button
         And I click the eGifts Main tab
         Then I verify the pre-created touches
 
-    Scenario Outline: for Sendoso Direct, verify pre created touches for the new PLG user
+    # Scenario Outline: for Sendoso Direct, verify pre created touches for the new PLG user
         And I click the Send button
         And I click the Sendoso Direct Main tab
         Then I verify the pre-created touches
+        And I click on log out button
+        
         Examples:
             | fileName | key       |
             | profiles | signUpPlg |

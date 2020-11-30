@@ -9,6 +9,8 @@ Feature: Verify Teams Static Page
     And I am logged in as PLG user
     And I click on the Teams tab
     Then I verify the user is shown a Teams static page
+    And I click on log out button
+    
     Examples:
       | fileName | key     |
       | profiles | plgUser |

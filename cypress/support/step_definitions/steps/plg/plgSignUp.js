@@ -2,6 +2,7 @@ const USERNAME_INPUT = '#1-email'
 const PASSWORD_INPUT = 'input[name="password"]'
 const SUBMIT_BUTTON = 'button[name="submit"]'
 const emailPLG = 'test+' + Math.floor(Math.random() * 99999) + '@sendoso.com'
+const password = 'Admin123456!'
 
 class plgUserSignUp {
 
@@ -19,7 +20,6 @@ class plgUserSignUp {
 
     static addPlgEmail() {
         cy.get('input[id="reference_code_email"]').type(emailPLG)
-        this.data.emailPLGnew = emailPLG;
     }
 
     static createLinkButton() {
@@ -50,16 +50,19 @@ class plgUserSignUp {
         cy.get('input[id="first_name"]').type('first-name-here')
         cy.get('input[id="last_name"]').type('last-name-here')
         cy.get('input[id="company_name"]').type('company-name-here')
-        cy.get('input[id="password"]').type(this.data.password)
-        cy.get('input[id="confirm_password"]').type(this.data.password)
-        cy.get('label[for="check-me"]').click()
-        cy.get('button[id="sign-up-btn"]').click()
+        cy.get('input[placeholder="Password"]').type(password)
+        cy.get('input[placeholder="Retype Password"]').type(password)
+        cy.get('[class="stl-form__checkbox stl-form__checkbox--custom"]').click()
+        cy.get('[id="sign-up-btn"]').click()
     }
 
     static logInPlg() {
-        cy.get(USERNAME_INPUT).type(this.data.emailPLGnew)
-        cy.get(PASSWORD_INPUT).type(this.data.password)
-        cy.get(SUBMIT_BUTTON).click()
+        cy.get('input[placeholder="Email Address"]').invoke('text').then((plgEmail) => {
+            cy.get('button[id="sign-up-btn"]').click()
+            cy.get(USERNAME_INPUT).type(plgEmail)
+            cy.get(PASSWORD_INPUT).type(this.data.password)
+            cy.get(SUBMIT_BUTTON).click()
+        })
     }
 
     static onboardingForm() {
@@ -81,7 +84,7 @@ class plgUserSignUp {
     }
 
     static verifyUserPlg() {
-        cy.get('span[class="icon icon-lock stl-mr-3"]').should('have.text', 'UPGRADE')
+        cy.get('div[class="stl-text-size-12 stl-text-grays-5 stl-mb-3 stl-pl-4"]').should($el => expect($el.text().trim()).to.equal('UPGRADE'));
     }
 }
 export default plgUserSignUp

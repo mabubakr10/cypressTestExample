@@ -8,10 +8,13 @@ Feature: for PLG user, verify the Upload Bulk CSV view
     And I click on the submit button of second button
     And I am logged in as PLG user
     And I click the Send button
-    And I click the Sendoso Direct Main tab
+    And I click the Sendoso Direct Tab
     And I select a Sendoso Direct Touch
-    And I select How to send the Sendoso Direct from drop down
+    And I add details for the send Sendoso Direct touch to single person or company
+    And I select How to send the Sendoso Direct touch from drop down
     Then I verify the user is shown an Unlock bulk sending static page
+    And I click on log out button
+    
     Examples:
       | fileName | key     |
       | profiles | plgUser |

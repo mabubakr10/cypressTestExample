@@ -8,17 +8,16 @@ class eGiftTouch {
     }
 
     static selectGiftCard(input) {
-        cy.get('[class="stl-grid-row"]'+'img[alt='+input+']').click()
+        cy.get('[class="stl-grid-row"]'+' img[alt="'+input+'"]').click()
     }
 
     static selectHowToSendeGift(input) {
-        cy.get('[name="send_option"]').select(input).should('have.value', '6')
+        cy.get('[name="send_option"]').select(input).should('have.value', '1')
     }
 
     static singleEmailSendeGift() {
         cy.get('[id="send_email"]').type('test@sendoso.com')
-        cy.get('[id="send_email"]').select('$100').should('have.value', '100')
-        cy.get('[class="custom-placeholder-label tinymce-placeholder"]').type('This is an automated test')
+        cy.get('[id="send_amount"]').select('$100').should('have.value', '100')
     }
 
     static sendEGiftTouch() {
