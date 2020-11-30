@@ -29,7 +29,6 @@ class sendosoDirectTouch {
         cy.get('[id="postal_code"]').type(zip)
         cy.get('[id="country"]').type(country)
         cy.switchToIframe('[id="send_custom_message_ifr"]').type('This is a Sendoso Direct Send')
-        // cy.get('Add your message here').type('This is a Sendoso Direct Send')
     }
 
     static sendSendosoDirectTouch() {
