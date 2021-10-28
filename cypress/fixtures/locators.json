@@ -1,0 +1,12 @@
+{
+  "loginBtn": "button[type='submit']",
+  "signUpLink": "a[href*='/u/signup']",
+  "emailField": "input[id='email']",
+  "passwordField": "input[id='password']",
+  "continueBtn": "button[type='submit']",
+  "acceptBtn": "button[value='accept']",
+  "DashboardHeading": "h1[class]",
+  "integrationsBtn": "a[href*='/integrations']",
+  "profileBtn": "button[id='headlessui-menu-button-1']",
+  "signOutBtn": "a[id*='headlessui']"
+}

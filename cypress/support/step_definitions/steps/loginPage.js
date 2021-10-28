@@ -1,47 +1,53 @@
+import signUp from "../../../fixtures/locators.json";
+import profiles from "../../../fixtures/profiles.json";
 
-const URL = 'https://core-qa.sendoso.com/'
-const USERNAME_INPUT = '#1-email'
-const PASSWORD_INPUT = 'input[name="password"]'
-const SUBMIT_BUTTON = 'button[name="submit"]'
-const Close_PopUp = '.btn-modal-close'
+const faker = require("faker");
+
+let email = faker.internet.email();
 
 class LoginPage {
   constructor() {
-    this.dataSet = null
+    this.dataSet = null;
   }
 
-  static visic() {
-    cy.visit(URL)
-
+  static visitIntegry() {
+    cy.clearCookies();
+    cy.clearLocalStorage("test", { log: true });
+    cy.forceVisit(profiles.integry.url);
   }
 
-  static visitCore() {
-    cy.forceVisit(URL)
-
-  }
-
-  static fillUsername(username) {
-    cy.get(USERNAME_INPUT).type(this.data.username)
-  }
-
-  static fillPassword(password) {
-    cy.get(PASSWORD_INPUT).type(this.data.password)
-  }
-
-  static submit() {
-    cy.get(SUBMIT_BUTTON).click()
+  static clickSignIn() {
+    cy.get(signUp.loginBtn).click();
   }
 
   static readFileJson(fileName, key) {
-    cy.readFile("cypress/fixtures/profiles.json").then(jsonObj => {
-      this.data = jsonObj[key]
-    })
+    cy.readFile("cypress/fixtures/profiles.json").then((jsonObj) => {
+      this.data = jsonObj[key];
+    });
   }
 
-  static switchToFrameFun() {
-    const frameToSwitch = "#mce_0_ifr";
-    cy.visit('https://the-internet.herokuapp.com/iframe');
-    cy.switchToIframe(frameToSwitch).clear().type("testing");
+  static clickSignUpLink() {
+    cy.get(signUp.signUpLink).click();
+  }
+
+  static addEmail() {
+    cy.get(signUp.emailField).type(email);
+  }
+
+  static addPassword() {
+    cy.get(signUp.passwordField).type(profiles.integry.password);
+  }
+
+  static clickContinue() {
+    cy.get(signUp.loginBtn).click();
+  }
+
+  static clickAccept() {
+    cy.get(signUp.acceptBtn).click();
+  }
+
+  static verifyDashboard() {
+    cy.get(signUp.DashboardHeading).should("have.text", "Dashboard");
   }
 }
-export default LoginPage
+export default LoginPage;

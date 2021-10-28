@@ -1,48 +1,52 @@
-import { Given, When, Then, And, Before } from 'cypress-cucumber-preprocessor/steps'
-import LoginPage from './steps/loginPage'
+import {
+  Given,
+  When,
+  Then,
+  And,
+  Before,
+} from "cypress-cucumber-preprocessor/steps";
+import SignUpPage from "../../support/step_definitions/steps/loginPage";
 
 Before(() => {
-  cy.viewport(1280, 800)
-})
+  cy.viewport(1280, 800);
+});
 
-Given('I open login page', () => {
-  LoginPage.visic()
-})
-
-And('I fill password with of sendoso applicaton', () => {
-  LoginPage.fillPassword();
-})
-
-When('I click on submit login', () => {
-  LoginPage.submit()
-})
-
-When('I add {int} and {int}', (a, b) => {
-  console.log(a);
-  console.log(b)
+Given("I open up the integry page", () => {
+  // cy.clearCookies({ log: true });
+  // cy.clearLocalStorage("test", { log: true });
+  SignUpPage.visitIntegry();
+  cy.log(URL);
 });
 
 When(/^I read the file with the "([^"]*)" and "([^"]*)"$/, (fileName, key) => {
   let keyValues = {};
-  LoginPage.readFileJson(fileName, key)
+  SignUpPage.readFileJson(fileName, key);
 });
 
-Given(/^I close pop up button$/, function () {
-  LoginPage.closePopUp();
+And("I click on the Sign In button", () => {
+  SignUpPage.clickSignIn();
 });
 
-Given(/^I close the popup of the advertise in our application$/, function () {
-  LoginPage.closePopupAdvertise();
+And("I click on the Sign Up link", () => {
+  SignUpPage.clickSignUpLink();
 });
 
-Given(/^I fill username with of sendoso applicaton$/, function () {
-  LoginPage.enterUserName();
+And("I enter email in the email field", () => {
+  SignUpPage.addEmail();
 });
 
-Given(/^I enter the username in the username field on the login page$/, function () {
-  LoginPage.fillUsername()
+And("I enter password in the password field", () => {
+  SignUpPage.addPassword();
 });
 
-Given(/^I enter the password in the password field on the login page$/, function () {
-  LoginPage.fillPassword()
-})
+And("I click Continue button", () => {
+  SignUpPage.clickContinue();
+});
+
+And("I click Accept button", () => {
+  SignUpPage.clickAccept();
+});
+
+Then("I verify Dashboard Page", () => {
+  SignUpPage.verifyDashboard();
+});

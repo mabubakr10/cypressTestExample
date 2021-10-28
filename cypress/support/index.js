@@ -14,20 +14,15 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-require('@shelex/cypress-allure-plugin');
-import './commands.js';
-require('cypress-xpath');
+require("@shelex/cypress-allure-plugin");
+import "./commands.js";
+require("cypress-xpath");
 
-Cypress.moment = require('moment-timezone')
-
-Cypress.moment.locale('en')
-
-Cypress.on('uncaught:exception', (err, runnable) => {
-  return false
-})
+Cypress.on("uncaught:exception", (err, runnable) => {
+  return false;
+});

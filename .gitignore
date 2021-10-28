@@ -28,7 +28,5 @@ build/Release
 node_modules
 cypress/videos
 .idea/workspace.xml
-allure-results/**/*
 cypress/cucumber-json
-allure-report/**/*
 cypress/screenshots
