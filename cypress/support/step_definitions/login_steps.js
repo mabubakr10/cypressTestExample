@@ -12,8 +12,6 @@ Before(() => {
 });
 
 Given("I open up the integry page", () => {
-  // cy.clearCookies({ log: true });
-  // cy.clearLocalStorage("test", { log: true });
   SignUpPage.visitIntegry();
   cy.log(URL);
 });
